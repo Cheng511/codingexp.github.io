@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on 不務正業文人</title>
-    <link>https://github.com/Cheng511.github.io/codingexp.github.io/blog/</link>
+    <link>https://cheng511.github.io/codingexp.github.io/blog/</link>
     <description>Recent content in Blog on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>繁體中文</language><atom:link href="https://github.com/Cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>繁體中文</language><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
