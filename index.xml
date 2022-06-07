@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>不務正業文人</title>
+    <link>https://github.com/Cheng511.github.io/codingexp.github.io/</link>
+    <description>Recent content on 不務正業文人</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>繁體中文</language><atom:link href="https://github.com/Cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>不務正業也能過得好好的</title>
+      <link>https://github.com/Cheng511.github.io/codingexp.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/Cheng511.github.io/codingexp.github.io/about/</guid>
+      <description>有句老話叫「學非所用」，然而每條路都不會白走，就只看你怎麼適應人生</description>
+    </item>
+    
+    <item>
+      <title>聯絡我</title>
+      <link>https://github.com/Cheng511.github.io/codingexp.github.io/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://github.com/Cheng511.github.io/codingexp.github.io/contact/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
