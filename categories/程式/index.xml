@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>程式 on 不務正業文人</title>
+    <link>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</link>
+    <description>Recent content in 程式 on 不務正業文人</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>繁體中文</language>
+    <lastBuildDate>Wed, 08 Jun 2022 13:19:34 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自學程式如何 100% 提高工作效率：Python 工作資料庫 GUI 介面</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/</link>
+      <pubDate>Wed, 08 Jun 2022 13:19:34 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/</guid>
+      <description>今天來跟大家介紹一下學會寫程式對於我目前日常工作帶來的影響，同時也會簡單先介紹一下目前日常工作主程式如何幫助我提昇效率。</description>
+    </item>
+    
+  </channel>
+</rss>
