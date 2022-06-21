@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知</title>
+<title>自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</title>
 
 
 
@@ -40,25 +40,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/cover.jpg" />
-  <meta name="twitter:image" content="https://cheng511.github.io/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/cover.jpg"/>
+<meta property="og:image" content="https://cheng511.github.io/images/python-with-openpyxl/cover.jpg" />
+  <meta name="twitter:image" content="https://cheng511.github.io/images/python-with-openpyxl/cover.jpg"/>
       <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="1920">
-    <meta property="og:image:height" content="1082">
+    <meta property="og:image:width" content="736">
+    <meta property="og:image:height" content="414">
     <meta property="og:image:type" content="image/jpeg">
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知"/>
-<meta name="twitter:description" content="Well&hellip;抓是抓了張大數據（Big Data）當首圖，但其實我們目前在用的資料庫也沒有到「大」數據就是了。"/>
-<meta property="og:title" content="自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知" />
-<meta property="og:description" content="Well&hellip;抓是抓了張大數據（Big Data）當首圖，但其實我們目前在用的資料庫也沒有到「大」數據就是了。" />
+<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序"/>
+<meta name="twitter:description" content="今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。"/>
+<meta property="og:title" content="自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序" />
+<meta property="og:description" content="今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/sql-automatically-detect-and-send-line-notification/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-06-10T08:31:28+08:00" />
-<meta property="article:modified_time" content="2022-06-10T08:31:28+08:00" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-06-21T08:12:17+08:00" />
+<meta property="article:modified_time" content="2022-06-21T08:12:17+08:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知"/>
-<meta name="twitter:description" content="Well&hellip;抓是抓了張大數據（Big Data）當首圖，但其實我們目前在用的資料庫也沒有到「大」數據就是了。"/>
+<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序"/>
+<meta name="twitter:description" content="今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。"/>
 
 
 
@@ -205,12 +205,12 @@
         
         
         <picture>
-          <source srcset="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/cover_hude3f101b417045c2f9f6f0cbe73a73b8_253070_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
-          <source srcset="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/cover_hude3f101b417045c2f9f6f0cbe73a73b8_253070_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
-          <source srcset="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/cover_hude3f101b417045c2f9f6f0cbe73a73b8_253070_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
-          <source srcset="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/cover_hude3f101b417045c2f9f6f0cbe73a73b8_253070_1110x0_resize_q75_h2_box.webp">
-          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/cover_hude3f101b417045c2f9f6f0cbe73a73b8_253070_1110x0_resize_q75_box.jpg"
-            alt="post image" width="1920" height="1082">
+          <source srcset="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
+          <source srcset="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
+          <source srcset="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
+          <source srcset="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_1110x0_resize_q75_h2_box.webp">
+          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_1110x0_resize_q75_box.jpg"
+            alt="post image" width="736" height="414">
         </picture>
         
         
@@ -224,9 +224,9 @@
             <a href="/codingexp.github.io/categories%e7%a8%8b%e5%bc%8f/">程式</a>
             
           </div>
-          <h1 class="mb-3">自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知</h1>
+          <h1 class="mb-3">自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</h1>
           <div class="card-meta">
-            <em>Jun 10, 2022</em>
+            <em>Jun 21, 2022</em>
             <em>
               <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
                 JC
@@ -234,10 +234,21 @@
           </div>
           </em>
         </div>
-        <div class="content"><p>Well&hellip;抓是抓了張大數據（Big Data）當首圖，但其實我們目前在用的資料庫也沒有到「大」數據就是了。</p>
-<p>現階段規模應該頂多上百筆資料，畢竟不像公司 ERP 系統整合所有資料，我目前用的這套 Python GUI 程式終究只是為了工作上的個人需求所寫。</p>
-<h3 id="整合資料庫語法和-python-達到自動化推播">整合資料庫語法和 Python 達到自動化推播</h3>
-<p>ok，言歸正傳，這次要繼續跟大家介紹一下我們目前這個 Python GUI 程式的另外一個主要功能，也就是整合 SQL 資料庫後，除了做基本的 CRUD 指令外，另外也就由 SQL 語法將其和 Python 模組中前人留下的 LineBot 訊息做合併，目標是偵測特定時間時（比如距離目標 60 天前）自動發出 Line 機器人訊息提醒，另外也自動將部分資料庫內容更新。</p>
+        <div class="content"><p>今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。</p>
+<h3 id="重複性任務才最瑣碎">重複性任務才最瑣碎</h3>
+<p>相信多數還在坐辦公室的員工平日最大的體悟就是：「執行重複性任務最無聊&hellip;」舉例來說，如果要為上千組文組製作QRCode的話，如果沒有學過程式語言的人，可能會一組一組文字上網輸入、然後逐一下載，好一點的網站可能會有辦法讓你批次執行大量任務，但多數應該還是會有數量或檔案大小限制，相對仍是不太方便，這時其實以 Python 來說就有自己的 QRCode 製作模組可以直接套用，但這又是另一個文章的故事我們暫且不提。</p>
+<p>回到辦公室重複性任務這檔事，最常見的或許莫過於製作 Excel 表格，尤其以我自己碰到的經驗來說，甚至是會需要從資料庫自動拋轉出 Excel 出貨單，同時對應儲存格要有對應數字、大小，甚至字體等等，雖然多數企業用戶都會有對應的軟體可執行此拋轉任務，不過若是時常需要處理大量 Excel 資料的話，我認為還是有機會從 Python 的 openpyxl 這個模組中找到方便的解答。</p>
+<h3 id="openpyxl-幾乎可說是必學">openpyxl 幾乎可說是必學</h3>
+<p>就 Python 的實戰經歷來說，openpyxl 幾乎可以說是必學的模組，它能應用的日常範圍可能不在資料庫之下，要怎麼安裝 openpyxl 我這邊就簡單先用一組命令提示元件（Command Line）或 Powershell 指令帶過囉（記得要連網路～）！關於 pip 或是 powershell 甚至 command-line 的一些相關用法也是以後再慢慢說～</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>pip install openpyxl
+</span></span></code></pre></div><p>執行完以後就等於是安裝 openpyxl，接下來就可以在 python 程式中匯入了</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> openpyxl
+</span></span></code></pre></div><p>這邊我個人習慣 openpyxl 直接匯入而不用別名，這樣比較不容易和其他自定義變數或常數搞混，二來是「openpyxl.xxx」這樣的形式相對也容易辨別。</p>
+<p>好！那我們模組安裝、也匯入了以後，第一步就是要先定義你的活頁簿，這邊主要會有兩種方式，一種是直接新增一本、另一種則是導入已經建立好的活頁簿，我們這一篇先以新增一本空白活頁簿的方式導入好了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wb <span style="color:#f92672">=</span> openpyxl<span style="color:#f92672">.</span>Workbook() <span style="color:#75715e"># 建立一個名為 wb 的活頁簿</span>
+</span></span></code></pre></div><p>這邊值得注意的是，初次建立 wb 活頁簿的時候都是用上面這組程式碼來導入，後方函式中的括弧內可以帶入活頁簿的絕對路徑來直接導入已存在 Excel 檔案。關於絕對路徑的概念我們先移到下一篇文章再說。</p>
+<p>順帶一提，在 openpyxl 的世界中幾乎都是用「活頁簿」（Workbook）來稱呼 Excel 檔案，而內部則是會有頁籤（Worksheet）、行（row）、欄（column）等名詞，所以在我後面的文章或是有看其他文章的話可能都會發現多數和 openpyxl 有關的變數都是以 wb、ws 來代表活頁簿和頁籤，這算是一個簡單的傳統，主要是在方便辨別。</p>
+<p>好，導入活頁簿後接下來要告訴 Python 我們要開啟哪一個頁籤，一般來說任何 Excel 檔案開啟時都會有一個預設的頁籤，其實也就是下排頁籤中最左邊的第一個，當然如果只有頁籤的話自然就是唯一的。</p>
 
 
 
@@ -304,9 +315,9 @@
 
 
 
-<figure class="img-center" role="group" aria-describedby="caption-▲ 本次 GUI 程式主畫面">
-  <img title="" loading="lazy" decoding="async" class="" width="994" height="629" src="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/Screenshot_1_hu4b9871e638902b6167a2b3a97c01673c_99704_994x629_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/sql-automatically-detect-and-send-line-notification\/Screenshot_1_hu4b9871e638902b6167a2b3a97c01673c_99704_994x629_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 本次 GUI 程式主畫面">▲ 本次 GUI 程式主畫面</figcaption>
+<figure class="img-center" role="group" aria-describedby="caption-▲ 通常最左邊的頁籤會是每個活頁簿預設開啟的頁籤">
+  <img title="" loading="lazy" decoding="async" class="" width="484" height="234" src="/codingexp.github.io/images/python-with-openpyxl/Screenshot_1_huc393d4928d17d0ebd577919e506e9a77_19629_484x234_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/python-with-openpyxl\/Screenshot_1_huc393d4928d17d0ebd577919e506e9a77_19629_484x234_resize_q75_box.jpg'">
+  <figcaption id="caption-▲ 通常最左邊的頁籤會是每個活頁簿預設開啟的頁籤">▲ 通常最左邊的頁籤會是每個活頁簿預設開啟的頁籤</figcaption>
 </figure>
 
 
@@ -315,364 +326,120 @@
 
 
 
-<p>這次要介紹的程式其實就是上篇文章中跟大家提到的別的頁籤內容，由於目前該內容還尚未正式開放給需要的同事使用，所以內容都還是測試資料，不過功能已經建置完畢。</p>
+<p>而要取用預設頁籤內容的話我們要先告訴 Python 這件事，藉由「.active」這個方法可以定義變數，這時候我們就已經準確告知 Python 該處理那一個頁籤了，如果今天各位的活頁簿中有許多頁籤的話，也可以用程式語言中常見的編號去取用，只是要注意的是預設頁籤編號是 0，第二個頁籤編號是 1、第三個是 2&hellip;以此類推。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>active
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如果要取用其他頁籤內容的話，</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 可對應其他編號</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 只是要注意頁籤為一列</span>
+</span></span><span style="display:flex;"><span>ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>worksheets[<span style="color:#ae81ff">1</span>] <span style="color:#75715e"># 第二個頁籤</span>
+</span></span><span style="display:flex;"><span>ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>worksheets[<span style="color:#ae81ff">2</span>] <span style="color:#75715e"># 第三個頁籤</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
+</span></span></code></pre></div><p>這個時候其實我們已經可以針對活頁簿裡面的內容去存儲囉！這裡面最簡單的方法是直接把要存取的值存到對應的儲存格內，比如說如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>ws[<span style="color:#e6db74">&#34;A1&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>ws[<span style="color:#e6db74">&#34;A2&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;你好&#34;</span>
+</span></span></code></pre></div><p>如此一來 Python 會在 A1 和 A2 這兩個儲存格分別輸入對應值，不過在我們結束以前要先告訴 Python 儲存這個檔案，這個動作是所有程式語言執行檔案存取時幾乎都會經歷的過程，你必須告訴 Python 說「我完成檔案存取了，請存檔」。利用「save()」的函式可以儲存，不過要注意的是此函式必須提供**「檔名作為參數」**，否則會報錯。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#34;test.xlsx&#34;</span>)
+</span></span></code></pre></div><p>完成以後就會在和此 python 程式中相同的資料夾目錄中找到 test.xlsx 的 Excel 檔案，開啟後就會看到 A1 和 A2 已經確實被輸入內容囉！</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="img-center" role="group" aria-describedby="caption-▲ 執行程式後產生的 Excel 檔內容">
+  <img title="" loading="lazy" decoding="async" class="" width="331" height="220" src="/codingexp.github.io/images/python-with-openpyxl/Screenshot_2_hu887fe00c2838bc5a0da01625c18349aa_12399_331x220_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/python-with-openpyxl\/Screenshot_2_hu887fe00c2838bc5a0da01625c18349aa_12399_331x220_resize_q75_box.jpg'">
+  <figcaption id="caption-▲ 執行程式後產生的 Excel 檔內容">▲ 執行程式後產生的 Excel 檔內容</figcaption>
+</figure>
+
+
+
+
+
+
+
+<h3 id="這還只是基本">這還只是基本</h3>
+<p>沒錯，以上的操作想必大家會覺得也太簡單，直接開 Excel 檔案執行不是更快？的確，但如果說再做更多的格式調整、字體大小、甚至多欄位內容預先謄寫，然後再搭配資料庫來導入資料內容呢？這時候事情就變得有趣了吧～</p>
+<p>我們下次就來跟大家介紹這部分，openpyxl 能夠做的事情很多，就跟前面提到的一樣，認真來說幾乎多數 Excel 日常工作都可以用 openpyxl 來使用，其實對應 Microsoft Word 的模組也是存在，但我個人簡單使用以後認為還是沒有 openpyxl 來得成熟，畢竟 Excel 這玩意兒不只是一般企業或消費者日常使用，在大數據領域中也容易看到相關的檔案痕跡，加上 Python 本身對於大數據領域也是非常容易使用的語言，openpyxl 的成熟度也就可想而知了。</p>
 <ul>
 <li><strong>延伸閱讀：<a href="https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/">自學程式如何 100% 提高工作效率 (1)：Python 工作資料庫 GUI 介面</a></strong></li>
 </ul>
-<p>介面左下是資料庫 CRUD 編輯功能這部分就暫時先不多做贅述了，比較特別的是當中的「附聲明書」這個勾選選項，首先在新增資料時若目標資料已經「附聲明書」的情況下，只要將該選項打勾，那麼上方 Treeview 中的「下次送驗日期」便會自動更改成「已附聲明書」，若此欄位為已附聲明書的話，我在 SQL 資料庫那邊偵測目標時間時就會自動略過該筆資料，也就是未來不必再檢測該項目。PS: 我有設定上排 Treeview 中資料只要滑鼠單點任何一筆的話，下方 CRUD 編輯欄位會自動預先填入對應資料，加快更新或刪除需求。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 資料庫 CRUD 和勾選項目">
-  <img title="" loading="lazy" decoding="async" class="" width="413" height="256" src="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/Screenshot_2_hu80e74ae8c3d1757a9b6a323834adaac6_21527_413x256_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/sql-automatically-detect-and-send-line-notification\/Screenshot_2_hu80e74ae8c3d1757a9b6a323834adaac6_21527_413x256_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 資料庫 CRUD 和勾選項目">▲ 資料庫 CRUD 和勾選項目</figcaption>
-</figure>
-
-
-
-
-
-
-
-<p>當然，如果原本就已經是「已附聲明書」的資料臨時要更改成需要送驗的話，僅需在更改資料時，將打勾處取消打勾、並打上目標年月日之後即可，下次例行性檢查時我的程式就會將該資料納入檢測對象中。</p>
-<p>原則上這就是此程式的主要功能了，過程中運用到 SQL 資料庫語法和 Python 連結資料庫進行 CRUD，以及導入 Line 機器人訊息模組，整個 GUI 介面仍然是以 Tkinter 做主要設計。右下方的 Tkinter Text 欄位則是單點任何資料後，會將該資料的完整內容拋轉至該欄位中，當欄位資料量多時，此設計可以更輕鬆的一覽資料。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 右側 Text 欄位可將每筆資料的內容完整顯示">
-  <img title="" loading="lazy" decoding="async" class="" width="584" height="287" src="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/Screenshot_3_hu089206e4a188a54c961ae7e347c9b452_21139_584x287_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/sql-automatically-detect-and-send-line-notification\/Screenshot_3_hu089206e4a188a54c961ae7e347c9b452_21139_584x287_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 右側 Text 欄位可將每筆資料的內容完整顯示">▲ 右側 Text 欄位可將每筆資料的內容完整顯示</figcaption>
-</figure>
-
-
-
-
-
-
-
-<h3 id="sql-資料庫超級實用">SQL 資料庫超級實用</h3>
-<p>好！那我們就先針對我在此程式中使用的 SQL 資料庫部分作介紹吧！目前市面上的資料庫程式有非常多可以選擇，除了我自己選用的 MySQL 外，多數開發人員自行開發時最常使用的可能就是 SQLite 了，這套資料庫我在自己練習 Django 的時候也有用過，個人開發時架設快速，不過缺點就是無法架設到其他伺服器上，比較適合單打獨鬥的單機型態，不過因為這部分我個人也沒實測過，也許有辦法繞過也說不定（?）；另一套就是 PostgreSQL，這套資料庫由於我還沒用過，所以暫時不多做說明；另外企業很常見的資料庫就是 Oracle 或是 Microsoft SQLServer 這兩種，由於個人也還沒有機會實際以此兩套資料庫架設，所以也暫時不多說，但由於主要是企業使用，所以其功能和架構上絕對會比前面提到的幾種還要更豐富。</p>
-<p>我自己在架設資料庫上是使用 MySQL，至於為什麼會選它的原因則是因為一開始學習 Python 時接觸到的資料庫就是它，所以就順理成章的都先用它了，那因為一開始騎時就有打算將資料庫架設到別台電腦，然後讓我跟主管的電腦能在內網中的任何 IP 連線，所以 MySQL 這部分也剛好符合需求。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 我選擇 MySQL 做資料庫架設">
-  <img title="" loading="lazy" decoding="async" class="" width="279" height="164" src="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/Screenshot_4_hu19b18fa3847c30ea65148f789f5d685b_9690_279x164_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/sql-automatically-detect-and-send-line-notification\/Screenshot_4_hu19b18fa3847c30ea65148f789f5d685b_9690_279x164_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 我選擇 MySQL 做資料庫架設">▲ 我選擇 MySQL 做資料庫架設</figcaption>
-</figure>
-
-
-
-
-
-
-
-<p>關於資料庫的安裝部分這篇文章暫且不提，有興趣想直接下載的話，MySQL 首頁算是滿複雜，加上能夠下載的版本也非常多，有興趣的話我這邊直接先附上給社群（Community）下載的免費版本，這是 for Windows 的，原則上如果是在 Mac 或 Linux 上的話，應該比較容易會對應到 MariaDB 這套資料庫，不過基本上它和 MySQL 的架構、語法類似，兩者只有在不同系統上的安裝步驟上有些許差異。下載完畢後請依照基本的「下一步到底」邏輯安裝（細節本文先不談～）</p>
-<ul>
-<li><strong>連結點我：<a href="https://dev.mysql.com/downloads/installer/">MySql 社群（Community）下載免費版本</a></strong></li>
-</ul>
-<p>原則上安裝完畢後我建立的資料庫 Table 如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-MySQL" data-lang="MySQL"><span style="display:flex;"><span>    <span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#a6e22e">line</span> (
-</span></span><span style="display:flex;"><span>        id <span style="color:#66d9ef">INT</span> <span style="color:#66d9ef">AUTO_INCREMENT</span>, <span style="color:#75715e"># 編號
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        name <span style="color:#66d9ef">VARCHAR</span>(<span style="color:#ae81ff">20</span>), <span style="color:#75715e"># 名稱
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        code <span style="color:#66d9ef">VARCHAR</span>(<span style="color:#ae81ff">50</span>), <span style="color:#75715e"># 代碼
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        correction <span style="color:#66d9ef">VARCHAR</span>(<span style="color:#ae81ff">15</span>), <span style="color:#75715e"># 本次時間
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        next_correction <span style="color:#66d9ef">VARCHAR</span>(<span style="color:#ae81ff">15</span>), <span style="color:#75715e"># 下次時間
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        department <span style="color:#66d9ef">VARCHAR</span>(<span style="color:#ae81ff">50</span>), <span style="color:#75715e"># 部門
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        blank_column2 <span style="color:#66d9ef">VARCHAR</span>(<span style="color:#ae81ff">50</span>), <span style="color:#75715e"># 預留兩個空白欄位
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        blank_column3 <span style="color:#66d9ef">VARCHAR</span>(<span style="color:#ae81ff">50</span>),
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">PRIMARY</span> <span style="color:#66d9ef">KEY</span>(id), <span style="color:#75715e"># 主 key 是 id
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    );
-</span></span></code></pre></div><p>原則上我沒有設定 NOT NULL，因為目前的資料屬性有時會有空白欄位很正常，再加上因為預留兩個空欄位的關係，所以設定為 NULL 的話相對彈性大一點。</p>
-<p>接下來就是 Python 連接 MySQL 的部分了，我這邊後來是搭配 Class 物件的形式去設計，所以後期 CRUD 的方法如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>notify_db <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;host&#34;</span>: <span style="color:#e6db74">&#34;MySQL Server IP 或 Localhost&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;port&#34;</span>: <span style="color:#ae81ff">3306</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;user&#34;</span>: <span style="color:#e6db74">&#34;使用者名稱&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;passwd&#34;</span>: <span style="color:#e6db74">&#34;密碼&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;database&#34;</span>: <span style="color:#e6db74">&#34;資料庫名稱&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;charset&#34;</span>: <span style="color:#e6db74">&#34;utf8&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>notfiy_conn <span style="color:#f92672">=</span> pymysql<span style="color:#f92672">.</span>connect(<span style="color:#f92672">**</span>notify_db)
-</span></span><span style="display:flex;"><span>notfiy_cursor <span style="color:#f92672">=</span> notfiy_conn<span style="color:#f92672">.</span>cursor() <span style="color:#75715e"># 預先建立好這兩個變數，會讓後續 CRUD 的程式碼更簡潔</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">LineNotification</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, name, code, correction, next_correction, department):
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>code <span style="color:#f92672">=</span> code
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>correction <span style="color:#f92672">=</span> correction
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>next_correction <span style="color:#f92672">=</span> next_correction
-</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>department <span style="color:#f92672">=</span> department
-</span></span></code></pre></div><p>至於實際上 CRUD 的程式碼內容這邊就先不提了，日後有機會再說，這邊比較特別的是在日期的比較上，我這邊先用 @classmethod 的形式建立方法：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#a6e22e">@classmethod</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">checkLeftDays</span>(cls):
-</span></span><span style="display:flex;"><span>        notfiy_cursor<span style="color:#f92672">.</span>execute(
-</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;SELECT * FROM line;&#34;</span>)
-</span></span><span style="display:flex;"><span>        result <span style="color:#f92672">=</span> notfiy_cursor<span style="color:#f92672">.</span>fetchall()  <span style="color:#75715e"># 這邊會拋出個別含五個字串的多組列表</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> result
-</span></span></code></pre></div><p>然後再從主要的通知程式那邊調用它：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> classes <span style="color:#f92672">import</span> LineNotification
-</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> datetime
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>result <span style="color:#f92672">=</span> LineNotification<span style="color:#f92672">.</span>checkLeftDays()
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> n <span style="color:#f92672">in</span> range(len(result)):
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> result[n]:
-</span></span><span style="display:flex;"><span>        department <span style="color:#f92672">=</span> result[n][<span style="color:#ae81ff">5</span>]  <span style="color:#75715e"># 部門</span>
-</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> result[n][<span style="color:#ae81ff">1</span>]  <span style="color:#75715e"># 名稱</span>
-</span></span><span style="display:flex;"><span>        code <span style="color:#f92672">=</span> result[n][<span style="color:#ae81ff">2</span>]  <span style="color:#75715e"># 編號</span>
-</span></span><span style="display:flex;"><span>        correction <span style="color:#f92672">=</span> result[n][<span style="color:#ae81ff">3</span>]  <span style="color:#75715e"># 本次校正時間</span>
-</span></span><span style="display:flex;"><span>        next_correction <span style="color:#f92672">=</span> result[n][<span style="color:#ae81ff">4</span>]  <span style="color:#75715e"># 下次校正時間</span>
-</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> next_correction<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#34;-&#34;</span>)
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 這邊由於拋轉出來的變數 type 是字串，所以要先轉換成 datatime 的型態</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> data:
-</span></span><span style="display:flex;"><span>        year <span style="color:#f92672">=</span> int(data[<span style="color:#ae81ff">0</span>])
-</span></span><span style="display:flex;"><span>        month <span style="color:#f92672">=</span> int(data[<span style="color:#ae81ff">1</span>])
-</span></span><span style="display:flex;"><span>        day <span style="color:#f92672">=</span> int(data[<span style="color:#ae81ff">2</span>])
-</span></span><span style="display:flex;"><span>    next_correction <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>date(year, month, day)
-</span></span><span style="display:flex;"><span>    left_days <span style="color:#f92672">=</span> (next_correction <span style="color:#f92672">-</span> today)<span style="color:#f92672">.</span>days  <span style="color:#75715e"># 相差天數</span>
-</span></span><span style="display:flex;"><span>    msg <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n\n</span><span style="color:#e6db74">部門: </span><span style="color:#e6db74">{</span>department<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">機台: </span><span style="color:#e6db74">{</span>name<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">編號: </span><span style="color:#e6db74">{</span>code<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">本次校正日期: </span><span style="color:#e6db74">{</span>correction<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">下次校正日期: </span><span style="color:#e6db74">{</span>next_correction<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">距離下次校正日期剩: </span><span style="color:#e6db74">{</span>left_days<span style="color:#e6db74">}</span><span style="color:#e6db74">天</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>
-</span></span></code></pre></div><p>此處我們這邊是用 left_days 去計算相差天數，然後只要相差天數在目標天數時，就會執行下一個指令。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> requests
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>line_token <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;要去 https://notify-bot.line.me/zh_TW/ 登入設定 token&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">lineNotifyMessage</span>(line_token, msg):
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Line機器人發出通知</span>
-</span></span><span style="display:flex;"><span>    headers <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Authorization&#34;</span>: <span style="color:#e6db74">&#34;Bearer &#34;</span> <span style="color:#f92672">+</span> line_token,
-</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;Content-Type&#34;</span>: <span style="color:#e6db74">&#34;application/x-www-form-urlencoded&#34;</span>
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    payload <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;message&#39;</span>: msg}
-</span></span><span style="display:flex;"><span>    r <span style="color:#f92672">=</span> requests<span style="color:#f92672">.</span>post(<span style="color:#e6db74">&#34;https://notify-api.line.me/api/notify&#34;</span>,
-</span></span><span style="display:flex;"><span>                      headers<span style="color:#f92672">=</span>headers, params<span style="color:#f92672">=</span>payload)
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> r<span style="color:#f92672">.</span>status_code
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> left_days <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">30</span> <span style="color:#f92672">and</span> left_days <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:
-</span></span><span style="display:flex;"><span>    lineNotifyMessage(line_token, msg) <span style="color:#75715e"># 調用 lineNotifyMessage 這個函式</span>
-</span></span></code></pre></div><p>後期因為主管有額外需求，需要將目標天數自動增加比如 60 天後，直接修改到資料庫下次時間。程式碼如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> left_days <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">60</span> <span style="color:#f92672">and</span> left_days <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>:  <span style="color:#75715e"># 兩個月60天前通知，通知過後自動將下次複訓日期再加60天</span>
-</span></span><span style="display:flex;"><span>    lineNotifyMessage(line_token, msg) <span style="color:#75715e"># 發送 line 訊息後</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 將原本的下次時間再增加 60 天，並回寫到資料庫中</span>
-</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> next_train <span style="color:#f92672">+</span> datetime<span style="color:#f92672">.</span>timedelta(days<span style="color:#f92672">=</span><span style="color:#ae81ff">60</span>)
-</span></span><span style="display:flex;"><span>    new_next_train_date <span style="color:#f92672">=</span> datetime<span style="color:#f92672">.</span>date<span style="color:#f92672">.</span>strftime(data, <span style="color:#e6db74">&#39;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74">&#39;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 這邊是調用了另一個資料庫物件，不過邏輯相通</span>
-</span></span><span style="display:flex;"><span>    Certification<span style="color:#f92672">.</span>updateNotificationNewTrainDate(new_next_train_date, paper_name, name, next_train)
-</span></span></code></pre></div><h3 id="line-自動推播-api-非常好用">Line 自動推播 API 非常好用</h3>
-<p>基本上這就是這個 Line 的自動通知程式程式碼，當然中間是略過了一些內容，像是 CRUD 這部分我本來就打算之後講更多 SQL 時再提，其他像是 MySQL的安裝、Line Notify Token 的設定等等，這些就都留到日後提到更多相關文章的時候再說了。</p>
-<p>其實剛才那個 LineNotifyMessage 函式我個人認為非常好用，這個函式也是其他人先前在網路上分享的，我把它挪來使用一下～最主要方便的還是這個函式很簡單調用，我式簡單針對發出的訊息格式部分做個換行（\n），這會讓 Line 通知在閱讀上更簡單些。</p>
-<p>同時這個推播功能也可以很輕易的作為通知系統的替代方案，雖說 Python 可以去連通 Google Calender 做到更全面的行事曆通知，不過簡易使用的話，這個函式搭配資料庫也可以做到簡單的通知系統，同時也是訓練 Line Notfiy API 以及 API 這玩意兒概念的小橋梁，個人認為非常值得新手去嘗試。</p>
-<hr>
-<p>以下是後記：
-原則上我不希望這個網站的文章篇幅太長，希望大家能夠只要花 5～10 分鐘左右就能把文章讀完（其實 10 分鐘都還有點太長～），同時也希望每篇文章都能提供一點點不管是撇步還是教學的內容，讓來這個網站的讀者都能有一點點收穫。</p>
 </div>
         <div class="single-post-meta">
           
           <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
             <li class="list-inline-item">
-              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fsql-automatically-detect-and-send-line-notification%2f" target="_blank" class="facebook">
+              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fuse-python-to-automate-excel-work%2f" target="_blank" class="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/intent/tweet/?text=%e8%87%aa%e5%ad%b8%e7%a8%8b%e5%bc%8f%e5%a6%82%e4%bd%95%20100%25%20%e6%8f%90%e9%ab%98%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%20%282%29%ef%bc%9aSQL%20%e8%b3%87%e6%96%99%e5%ba%ab%e5%81%b5%e6%b8%ac%e6%99%82%e9%96%93%e8%87%aa%e5%8b%95%e7%99%bc%20Line%20%e9%80%9a%e7%9f%a5&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fsql-automatically-detect-and-send-line-notification%2f" target="_blank"
+              <a href="https://twitter.com/intent/tweet/?text=%e8%87%aa%e5%ad%b8%e7%a8%8b%e5%bc%8f%e5%a6%82%e4%bd%95%20100%25%20%e6%8f%90%e9%ab%98%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%20%283%29%ef%bc%9aPython%20%2f%20Excel%20%e5%9c%93%e8%88%9e%e6%9b%b2%20openpyxl%20-%20%e5%ba%8f&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fuse-python-to-automate-excel-work%2f" target="_blank"
                 class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fsql-automatically-detect-and-send-line-notification%2f" target="_blank" class="pinterest">
+              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fuse-python-to-automate-excel-work%2f" target="_blank" class="pinterest">
                 <i class="fab fa-pinterest"></i>
               </a>
             </li>

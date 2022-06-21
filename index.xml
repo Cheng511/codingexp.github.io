@@ -6,7 +6,16 @@
     <description>Recent content on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Fri, 10 Jun 2022 08:31:28 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jun 2022 08:12:17 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/</link>
+      <pubDate>Tue, 21 Jun 2022 08:12:17 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/</guid>
+      <description>今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。</description>
+    </item>
+    
     <item>
       <title>自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/sql-automatically-detect-and-send-line-notification/</link>
