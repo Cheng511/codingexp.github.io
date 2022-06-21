@@ -246,7 +246,7 @@
 </span></span></code></pre></div><p>這邊我個人習慣 openpyxl 直接匯入而不用別名，這樣比較不容易和其他自定義變數或常數搞混，二來是「openpyxl.xxx」這樣的形式相對也容易辨別。</p>
 <p>好！那我們模組安裝、也匯入了以後，第一步就是要先定義你的活頁簿，這邊主要會有兩種方式，一種是直接新增一本、另一種則是導入已經建立好的活頁簿，我們這一篇先以新增一本空白活頁簿的方式導入好了。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wb <span style="color:#f92672">=</span> openpyxl<span style="color:#f92672">.</span>Workbook() <span style="color:#75715e"># 建立一個名為 wb 的活頁簿</span>
-</span></span></code></pre></div><p>這邊值得注意的是，初次建立 wb 活頁簿的時候都是用上面這組程式碼來導入，後方函式中的括弧內可以帶入活頁簿的絕對路徑來直接導入已存在 Excel 檔案。關於絕對路徑的概念我們先移到下一篇文章再說。</p>
+</span></span></code></pre></div><p>這邊值得注意的是，初次建立 wb 活頁簿的時候都是用上面這組程式碼來導入；如果是要導入已存在的 Excel 檔案的話，就必須用 load_workbook() 這個方法，並在函式中的括弧內帶入活頁簿的絕對路徑。關於絕對路徑的概念我們先移到下一篇文章再說。</p>
 <p>順帶一提，在 openpyxl 的世界中幾乎都是用「活頁簿」（Workbook）來稱呼 Excel 檔案，而內部則是會有頁籤（Worksheet）、行（row）、欄（column）等名詞，所以在我後面的文章或是有看其他文章的話可能都會發現多數和 openpyxl 有關的變數都是以 wb、ws 來代表活頁簿和頁籤，這算是一個簡單的傳統，主要是在方便辨別。</p>
 <p>好，導入活頁簿後接下來要告訴 Python 我們要開啟哪一個頁籤，一般來說任何 Excel 檔案開啟時都會有一個預設的頁籤，其實也就是下排頁籤中最左邊的第一個，當然如果只有頁籤的話自然就是唯一的。</p>
 
