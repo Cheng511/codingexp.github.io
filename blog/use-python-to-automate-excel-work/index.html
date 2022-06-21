@@ -328,9 +328,8 @@
 
 <p>而要取用預設頁籤內容的話我們要先告訴 Python 這件事，藉由「.active」這個方法可以定義變數，這時候我們就已經準確告知 Python 該處理那一個頁籤了，如果今天各位的活頁簿中有許多頁籤的話，也可以用程式語言中常見的編號去取用，只是要注意的是預設頁籤編號是 0，第二個頁籤編號是 1、第三個是 2&hellip;以此類推。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>active
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如果要取用其他頁籤內容的話，</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 可對應其他編號</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 只是要注意頁籤為一列</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 如果要取用其他頁籤內容的話，可對應其他編號</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 只是要注意：頁籤的編碼為列表（list），故要用中括號表示</span>
 </span></span><span style="display:flex;"><span>ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>worksheets[<span style="color:#ae81ff">1</span>] <span style="color:#75715e"># 第二個頁籤</span>
 </span></span><span style="display:flex;"><span>ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>worksheets[<span style="color:#ae81ff">2</span>] <span style="color:#75715e"># 第三個頁籤</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">...</span>
