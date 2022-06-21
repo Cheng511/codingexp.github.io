@@ -336,7 +336,7 @@
 </span></span></code></pre></div><p>這個時候其實我們已經可以針對活頁簿裡面的內容去存儲囉！這裡面最簡單的方法是直接把要存取的值存到對應的儲存格內，比如說如下：</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span>ws[<span style="color:#e6db74">&#34;A1&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
 </span></span><span style="display:flex;"><span>ws[<span style="color:#e6db74">&#34;A2&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;你好&#34;</span>
-</span></span></code></pre></div><p>如此一來 Python 會在 A1 和 A2 這兩個儲存格分別輸入對應值，不過在我們結束以前要先告訴 Python 儲存這個檔案，這個動作是所有程式語言執行檔案存取時幾乎都會經歷的過程，你必須告訴 Python 說「我完成檔案存取了，請存檔」。利用「save()」的函式可以儲存，不過要注意的是此函式必須提供**「檔名作為參數」**，否則會報錯。</p>
+</span></span></code></pre></div><p>如此一來 Python 會在 A1 和 A2 這兩個儲存格分別輸入對應值，不過在我們結束以前要先告訴 Python 儲存這個檔案，這個動作是所有程式語言執行檔案存取時幾乎都會經歷的過程，你必須告訴 Python 說「我完成檔案存取了，請存檔」。利用「save()」的函式可以儲存，不過要注意的是此函式必須提供「<strong>檔名作為參數</strong>」，否則會報錯。</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#34;test.xlsx&#34;</span>)
 </span></span></code></pre></div><p>完成以後就會在和此 python 程式中相同的資料夾目錄中找到 test.xlsx 的 Excel 檔案，開啟後就會看到 A1 和 A2 已經確實被輸入內容囉！</p>
 
