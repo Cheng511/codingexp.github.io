@@ -6,7 +6,16 @@
     <description>Recent content in 程式 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Tue, 21 Jun 2022 08:12:17 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jun 2022 09:00:59 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/</link>
+      <pubDate>Wed, 22 Jun 2022 09:00:59 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/</guid>
+      <description>在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！</description>
+    </item>
+    
     <item>
       <title>自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/</link>
