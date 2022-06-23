@@ -6,7 +6,16 @@
     <description>Recent content in 程式 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Wed, 22 Jun 2022 09:00:59 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jun 2022 13:13:49 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (5)：Python pyautogui 模組鍵盤滑鼠自動化</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/python-keyboard-and-mouse-automation-with-pyautogui/</link>
+      <pubDate>Thu, 23 Jun 2022 13:13:49 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/python-keyboard-and-mouse-automation-with-pyautogui/</guid>
+      <description>提到 Python 自動化，日常辦公的極致自動化是連同鍵盤滑鼠也做到，搭配先前提到的 Excel 對應模組 openpyxl，結合後幾乎可對應所有工作日常。</description>
+    </item>
+    
     <item>
       <title>自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/</link>
