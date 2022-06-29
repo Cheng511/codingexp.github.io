@@ -6,9 +6,18 @@
     <description>Recent content in 所有不務正業的文章 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Mon, 27 Jun 2022 10:48:15 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 08:18:20 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>提高工作效率 101：善用原生信件系統，避免 IMAP / POP3</title>
+      <title>自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和密碼加密</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/easy-encrypted-password-changing-system/</link>
+      <pubDate>Wed, 29 Jun 2022 08:18:20 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/easy-encrypted-password-changing-system/</guid>
+      <description>那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！</description>
+    </item>
+    
+    <item>
+      <title>MIS 日常瑣事：善用原生信件系統，避免 IMAP / POP3</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/increase-working-efficiency-use-native-mail-service/</link>
       <pubDate>Mon, 27 Jun 2022 10:48:15 +0800</pubDate>
       

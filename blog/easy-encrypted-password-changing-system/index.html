@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組</title>
+<title>自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和密碼加密</title>
 
 
 
@@ -40,25 +40,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/images/python-os-module-is-useful/cover.jpg" />
-  <meta name="twitter:image" content="https://cheng511.github.io/images/python-os-module-is-useful/cover.jpg"/>
+<meta property="og:image" content="https://cheng511.github.io/images/python-password-encrypted/cover.jpg" />
+  <meta name="twitter:image" content="https://cheng511.github.io/images/python-password-encrypted/cover.jpg"/>
       <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="900">
-    <meta property="og:image:height" content="470">
+    <meta property="og:image:width" content="1920">
+    <meta property="og:image:height" content="1238">
     <meta property="og:image:type" content="image/jpeg">
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組"/>
-<meta name="twitter:description" content="在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！"/>
-<meta property="og:title" content="自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組" />
-<meta property="og:description" content="在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！" />
+<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和密碼加密"/>
+<meta name="twitter:description" content="那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！"/>
+<meta property="og:title" content="自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和密碼加密" />
+<meta property="og:description" content="那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-06-22T09:00:59+08:00" />
-<meta property="article:modified_time" content="2022-06-22T09:00:59+08:00" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/easy-encrypted-password-changing-system/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-06-29T08:18:20+08:00" />
+<meta property="article:modified_time" content="2022-06-29T08:18:20+08:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組"/>
-<meta name="twitter:description" content="在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！"/>
+<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和密碼加密"/>
+<meta name="twitter:description" content="那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！"/>
 
 
 
@@ -205,12 +205,12 @@
         
         
         <picture>
-          <source srcset="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
-          <source srcset="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
-          <source srcset="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
-          <source srcset="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_1110x0_resize_q75_h2_box.webp">
-          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_1110x0_resize_q75_box.jpg"
-            alt="post image" width="900" height="470">
+          <source srcset="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
+          <source srcset="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
+          <source srcset="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
+          <source srcset="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_1110x0_resize_q75_h2_box.webp">
+          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_1110x0_resize_q75_box.jpg"
+            alt="post image" width="1920" height="1238">
         </picture>
         
         
@@ -221,12 +221,12 @@
         <div class="text-center mb-5">
           <div class="card-meta-tag ">
             
-            <a href="/codingexp.github.io/categories%e7%a8%8b%e5%bc%8f/">程式</a>
+            <a href="/codingexp.github.io/categories/"></a>
             
           </div>
-          <h1 class="mb-3">自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組</h1>
+          <h1 class="mb-3">自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和密碼加密</h1>
           <div class="card-meta">
-            <em>Jun 22, 2022</em>
+            <em>Jun 29, 2022</em>
             <em>
               <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
                 JC
@@ -234,132 +234,93 @@
           </div>
           </em>
         </div>
-        <div class="content"><p>在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！</p>
-<p>上回提到 openpyxl 的好用之處，部分新手程式入門者可能已經開始著手熟悉該模組帶來的便利性，本來今天是要繼續跟大家介紹的，但因為在做程式微調的過程中發現 os 模組的另一個好用之處，可以進一步的優化我先前提到過的 GUI 主資料庫程式，所以打算今天先講一下 Python os 模組。</p>
+        <div class="content"><p>那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！</p>
+<h3 id="密碼加密問題最棘手">密碼加密問題最棘手</h3>
+<p>這個程式自然就是在第一篇文章就提到過的 GUI 員工資料庫程式，原先因為只有我和主管兩人要使用，所以我只需要設定個別密碼對應即可（反正才兩組 XD！），不過後續因為該程式中的功能要分配給其他同事使用，進而就有了這次更改密碼的需求。</p>
 <p><strong>延伸閱讀</strong></p>
 <ul>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/">自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</a></li>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/">自學程式如何 100% 提高工作效率 (1)：Python 工作資料庫 GUI 介面</a></li>
+<li><a href="https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work//">自學程式如何 100% 提高工作效率 (1)：Python 工作資料庫 GUI 介面</a></li>
 </ul>
-<h3 id="系統管理大師os-模組">系統管理大師：os 模組</h3>
-<p>先來快速說一下這次發現的小東西吧！os 模組的主要功能在於以類似 Linux 系統的 Command-line 邏輯語言去做系統溝通，比如像是 mkdir（新增目錄）就是一個簡單的例子，不過這邊要提的是 os 模組中的其中一個小方法。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+<p>原先我其實一開始就用「with open」的語法打開 pw.txt 記事本，內部書寫密碼來將密碼寫入，然後再將密碼儲存在電腦中的某個位置，如此一來就能以最簡單的方法達到「設定密碼」或「更改密碼」的目的，大致的概念是這樣：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pw <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;請輸入密碼: &#34;</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>user_name <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin() <span style="color:#75715e"># 這裡</span>
-</span></span><span style="display:flex;"><span>print(user_name)
-</span></span></code></pre></div><p>相信每個讀者各位在使用的電腦本身都會有一個登入使用者名稱，以 Windows 系統來說的話會記錄在 Users 資料夾以下，形成 「<strong>Users/ (使用者名稱)</strong>」這樣的結構。而許多程式在下載安裝後，部分可能會在該資料夾中建立各自的獨立資料夾，這點以我們的ERP系統來說即是，而且因為ERP程式路徑的安裝位置是固定的，所以每台使用者之間最大的差異就只在最前面的使用者名稱不同。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="405" height="189" src="/codingexp.github.io/images/python-os-module-is-useful/Screenshot_1_hu5c9772f616e96522f88daf19785a3c22_14405_405x189_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/python-os-module-is-useful\/Screenshot_1_hu5c9772f616e96522f88daf19785a3c22_14405_405x189_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-<p>上圖來說我的使用者名稱是「cheng」，但我主管的名稱可能是其他名字，這時先前設計的 GUI 程式中最針對 ERP 路徑名稱的不同，去抓去指定路徑中的特定路徑檔案，但因我們兩台電腦間的使用者名稱不同，所以我原先設計兩個 .py 檔案，一個給我自己、一個給我主管，以此來做維護。</p>
-<p>然而，雖然說已經將程式的設計型態改成物件導向，但兩者之間要做的改良還是有些麻煩，而且在寫程式語言時，我自己最不喜歡看到的地方就是「複製貼上」，只要在寫程式時出現需要複製貼上動作時，通常就代表 9 成會有更好的解決辦法。</p>
-<p>因此我就將新的程式做了以下的簡單設計：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;pw.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8) as f:</span>
+</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(pw)
+</span></span></code></pre></div><p>原則上不管是初次進入程式還是後續更改密碼兩個指令都能用上述程式碼簡單達成，不過這就造成一個困擾：萬一有人找到這個 pw.txt 記事本的話，就有可能可以直接猜到是某個程式的密碼，這樣相對還是不太安全，因此想說做個加密好了。</p>
+<p>於是上網爬了一下 Python 搭配的加密模組，包含像是 base64、cryptography 等等，雖然在終端（terminal）上確實能 print 出我要的效果，然而一旦演變到要從 .txt 檔抓出字串、再轉換成 byte 類型去解密時就會出現問題&hellip;</p>
+<h5 id="cs50-拯救世界">CS50 拯救世界！</h5>
+<p>這時我突然想到先前在看 CS50 的程式語言影片時，曾經有講到可以利用字母本身的 Ascii 編碼數字去做加減乘除以加密並寫入記事本，然後再反轉回來取得解密後字串，最後再去比對使用者輸入的密碼是否和解密後的字串相同以確認身分，結果就是；Voilà！搞定！</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>word <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;enter word: &#34;</span>) <span style="color:#75715e"># 輸入密碼</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>user_name <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin() <span style="color:#75715e"># 取得使用者名稱</span>
-</span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;假設是 Tkinter entry 擷取來的字串&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 加密</span>
+</span></span><span style="display:flex;"><span>cryptedWord <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># 先建立空字串</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> word:
+</span></span><span style="display:flex;"><span>    characterOrder <span style="color:#f92672">=</span> ord(_) <span style="color:#75715e"># 取得密碼中每一字元的 ascii 編號</span>
+</span></span><span style="display:flex;"><span>    characterOrder <span style="color:#f92672">+=</span> <span style="color:#ae81ff">10</span> <span style="color:#75715e"># 將其做數學運算</span>
+</span></span><span style="display:flex;"><span>    cryptedWord <span style="color:#f92672">+=</span> chr(characterOrder) <span style="color:#75715e"># 將編號加入到空字串中</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> user_name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;我的使用者名字&#34;</span> <span style="color:#f92672">and</span> password <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;設定好的密碼&#34;</span> <span style="color:#f92672">or</span> user_name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;主管使用者名字&#34;</span> <span style="color:#f92672">and</span> password <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;設定好的密碼&#34;</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;那我這時候才開始執行下一個任務&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;否則的話就跳使用者密碼錯誤之類的訊息&#34;</span>)
-</span></span></code></pre></div><p>另外一種情境則是可以將 user_name 變數套入 format 語法中更輕鬆的帶出程式執行的絕對路徑，比如說我可以利用 os.startfile() 這個方法去執行參數的絕對路徑程式。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>user_name <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin() <span style="color:#75715e"># 一樣先取得使用者名稱</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;pw.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> w:
+</span></span><span style="display:flex;"><span>    w<span style="color:#f92672">.</span>write(str(cryptedWord)) <span style="color:#75715e"># 將字串寫入記事本</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>startfile(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;C://Users//</span><span style="color:#e6db74">{</span>user_name<span style="color:#e6db74">}</span><span style="color:#e6db74">//前往//指定程式//的絕對路徑&#34;</span>)
-</span></span></code></pre></div><p>綜合上述兩段程式碼的指令，我就可以將原本的兩套程式碼檔案縮減成一個版本即可，可以進一步減少後續程式碼維護所需的時間。</p>
-<p>這樣的設計邏輯可以讓程式設計人員有更多的彈性想像空間，別忘了程式設計的天花板不在語言能力，其實是在想像力，儘管現實和電腦世界不同，但多數時候都會有辦法化作電腦世界語言的。</p>
-<h3 id="os-模組還有很多好用的功能">os 模組還有很多好用的功能</h3>
-<p>同樣的，我這次只先針對 os.getlogin() 這個方法先做簡單的介紹，其實 os 模組還有很多好用的方法，包含像是取得目前目錄、遍尋資料夾內容等等，都可以藉由程式碼來執行，許多時候甚至會比 Windows 內建的命令提示元件或 Powershell 的指令還要好用，缺點就是要先預設好程式碼，不過後續的其他 os 模組用法就留到以後再聊囉！</p>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 解密</span>
+</span></span><span style="display:flex;"><span>decryptedWord <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># 建立空字串</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;pw.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> r:
+</span></span><span style="display:flex;"><span>    cryptedWord <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>read() <span style="color:#75715e"># 先去記事本中讀取字串</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> cryptedWord:
+</span></span><span style="display:flex;"><span>    characterOrder <span style="color:#f92672">=</span> ord(_) <span style="color:#75715e"># 取得字串中每一字元 ascii 編號</span>
+</span></span><span style="display:flex;"><span>    characterOrder <span style="color:#f92672">-=</span> <span style="color:#ae81ff">10</span> <span style="color:#75715e"># 反轉數學運算</span>
+</span></span><span style="display:flex;"><span>    decryptedWord <span style="color:#f92672">+=</span> chr(characterOrder) <span style="color:#75715e"># 將數字加回到解密字串中</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 後續只要再以 decryptedWord 去和使用者輸入的密碼對應即可</span>
+</span></span></code></pre></div><h3 id="不是最嚴謹加密設計">不是最嚴謹加密設計</h3>
+<p>其實如果小時候有跟同學或好友之間玩過這種加密遊戲的讀者其實就會對上述邏輯很有概念了～不過當然啦！這絕對不會是最安全的機密設計邏輯，不過畢竟只是私人內部在使用，因此就暫時不追究這麼多了，日後有機會的話再回頭做加密優化。但如果要做密碼加密的話，這應該會是 Python 加密方式裡面最簡單的一個了，非常適合第一次想要做密碼加密，但又不知從何下手的新手工程師。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img title="" loading="lazy" decoding="async" src="https://cheng511.github.io/codingexp.github.io/" alt="" class=" img-center" width="" height="">
+
+
+
+
+
 </div>
         <div class="single-post-meta">
           
           <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
             <li class="list-inline-item">
-              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fpython-os-module-manupulation-is-super-useful%2f" target="_blank" class="facebook">
+              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2feasy-encrypted-password-changing-system%2f" target="_blank" class="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/intent/tweet/?text=%e8%87%aa%e5%ad%b8%e7%a8%8b%e5%bc%8f%e5%a6%82%e4%bd%95%20100%25%20%e6%8f%90%e9%ab%98%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%20%284%29%ef%bc%9aPython%20%e7%b3%bb%e7%b5%b1%e7%ae%a1%e7%90%86%e5%a4%a7%e5%b8%ab%20os%20%e6%a8%a1%e7%b5%84&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fpython-os-module-manupulation-is-super-useful%2f" target="_blank"
+              <a href="https://twitter.com/intent/tweet/?text=%e8%87%aa%e5%ad%b8%e7%a8%8b%e5%bc%8f%e5%a6%82%e4%bd%95%20100%25%20%e6%8f%90%e9%ab%98%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%20%286%29%ef%bc%9a%e5%a6%82%e4%bd%95%e8%a8%ad%e5%ae%9a%e6%9b%b4%e6%94%b9%e5%af%86%e7%a2%bc%e5%92%8c%e5%af%86%e7%a2%bc%e5%8a%a0%e5%af%86&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2feasy-encrypted-password-changing-system%2f" target="_blank"
                 class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fpython-os-module-manupulation-is-super-useful%2f" target="_blank" class="pinterest">
+              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2feasy-encrypted-password-changing-system%2f" target="_blank" class="pinterest">
                 <i class="fab fa-pinterest"></i>
               </a>
             </li>
