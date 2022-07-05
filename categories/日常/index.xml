@@ -6,16 +6,7 @@
     <description>Recent content in 日常 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Mon, 27 Jun 2022 10:48:15 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>MIS 日常瑣事：善用原生信件系統，避免 IMAP / POP3</title>
-      <link>https://cheng511.github.io/codingexp.github.io/blog/increase-working-efficiency-use-native-mail-service/</link>
-      <pubDate>Mon, 27 Jun 2022 10:48:15 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/blog/increase-working-efficiency-use-native-mail-service/</guid>
-      <description>作為一個企業的 MIS 維護，除非你各位的公司有自己的 Mail Server，否則建議是不要用 IMAP 和 POP3 去收發信，麻煩事很多&amp;hellip;</description>
-    </item>
-    
+    <lastBuildDate>Tue, 07 Jun 2022 15:40:31 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>不務正業文人正式上線</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/my-first-blog/</link>

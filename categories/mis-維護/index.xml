@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MIS 維護 on 不務正業文人</title>
+    <link>https://cheng511.github.io/codingexp.github.io/categories/mis-%E7%B6%AD%E8%AD%B7/</link>
+    <description>Recent content in MIS 維護 on 不務正業文人</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>繁體中文</language>
+    <lastBuildDate>Tue, 05 Jul 2022 13:19:37 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/mis-%E7%B6%AD%E8%AD%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MIS 維護日記 (2)：忙碌與否、操之在我</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/mis-casual-day-record-no1/</link>
+      <pubDate>Tue, 05 Jul 2022 13:19:37 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/mis-casual-day-record-no1/</guid>
+      <description>MIS 這檔事，說忙不忙、說閒不閒，聽起來屁話，但真的可以由你自己決定。</description>
+    </item>
+    
+    <item>
+      <title>MIS 維護日記 (1)：善用原生信件系統，避免 IMAP / POP3</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/increase-working-efficiency-use-native-mail-service/</link>
+      <pubDate>Mon, 27 Jun 2022 10:48:15 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/increase-working-efficiency-use-native-mail-service/</guid>
+      <description>作為一個企業的 MIS 維護，除非你各位的公司有自己的 Mail Server，否則建議是不要用 IMAP 和 POP3 去收發信，麻煩事很多&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>
