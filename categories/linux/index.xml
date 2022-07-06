@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on 不務正業文人</title>
+    <link>https://cheng511.github.io/codingexp.github.io/categories/linux/</link>
+    <description>Recent content in Linux on 不務正業文人</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>繁體中文</language>
+    <lastBuildDate>Wed, 06 Jul 2022 09:24:45 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從 0 開始學 Linux：VMWare 和 Ubuntu</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/learn-linux-from-scratch/</link>
+      <pubDate>Wed, 06 Jul 2022 09:24:45 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/learn-linux-from-scratch/</guid>
+      <description>雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。</description>
+    </item>
+    
+  </channel>
+</rss>

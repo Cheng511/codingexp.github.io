@@ -6,7 +6,16 @@
     <description>Recent content in 程式 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Wed, 29 Jun 2022 08:18:20 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Jul 2022 09:24:45 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從 0 開始學 Linux：VMWare 和 Ubuntu</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/learn-linux-from-scratch/</link>
+      <pubDate>Wed, 06 Jul 2022 09:24:45 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/learn-linux-from-scratch/</guid>
+      <description>雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。</description>
+    </item>
+    
     <item>
       <title>自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/easy-encrypted-password-changing-system/</link>
