@@ -6,7 +6,16 @@
     <description>Recent content in MIS 維護 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Tue, 05 Jul 2022 13:19:37 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/mis-%E7%B6%AD%E8%AD%B7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Jul 2022 13:26:44 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/mis-%E7%B6%AD%E8%AD%B7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MIS 維護日記 (3)：防火牆日誌絕對是你的好朋友</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/firewall-log-is-very-useful-if-you-know-how-to-use-it/</link>
+      <pubDate>Fri, 08 Jul 2022 13:26:44 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/firewall-log-is-very-useful-if-you-know-how-to-use-it/</guid>
+      <description>我們都知道防火牆的最大功用就是在內部和外部網路之間做溝通橋梁，MIS 可以直接在防火牆上設定用戶可使用的每個網頁，高階產品甚至能直接鎖定 L7 層上的程式，不過今天要談的其實是 Log 日誌。</description>
+    </item>
+    
     <item>
       <title>MIS 維護日記 (2)：忙碌與否、操之在我</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/mis-casual-day-record-no1/</link>

@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密</title>
+<title>MIS 維護日記 (3)：防火牆日誌絕對是你的好朋友</title>
 
 
 
@@ -40,25 +40,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/images/python-password-encrypted/cover.jpg" />
-  <meta name="twitter:image" content="https://cheng511.github.io/images/python-password-encrypted/cover.jpg"/>
+<meta property="og:image" content="https://cheng511.github.io/images/firewall-log-is-very-useful/cover.jpg" />
+  <meta name="twitter:image" content="https://cheng511.github.io/images/firewall-log-is-very-useful/cover.jpg"/>
       <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="1920">
-    <meta property="og:image:height" content="1238">
+    <meta property="og:image:width" content="944">
+    <meta property="og:image:height" content="391">
     <meta property="og:image:type" content="image/jpeg">
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密"/>
-<meta name="twitter:description" content="那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！"/>
-<meta property="og:title" content="自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密" />
-<meta property="og:description" content="那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！" />
+<meta name="twitter:title" content="MIS 維護日記 (3)：防火牆日誌絕對是你的好朋友"/>
+<meta name="twitter:description" content="我們都知道防火牆的最大功用就是在內部和外部網路之間做溝通橋梁，MIS 可以直接在防火牆上設定用戶可使用的每個網頁，高階產品甚至能直接鎖定 L7 層上的程式，不過今天要談的其實是 Log 日誌。"/>
+<meta property="og:title" content="MIS 維護日記 (3)：防火牆日誌絕對是你的好朋友" />
+<meta property="og:description" content="我們都知道防火牆的最大功用就是在內部和外部網路之間做溝通橋梁，MIS 可以直接在防火牆上設定用戶可使用的每個網頁，高階產品甚至能直接鎖定 L7 層上的程式，不過今天要談的其實是 Log 日誌。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/easy-encrypted-password-changing-system/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-06-29T08:18:20+08:00" />
-<meta property="article:modified_time" content="2022-06-29T08:18:20+08:00" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/firewall-log-is-very-useful-if-you-know-how-to-use-it/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-08T13:26:44+08:00" />
+<meta property="article:modified_time" content="2022-07-08T13:26:44+08:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密"/>
-<meta name="twitter:description" content="那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！"/>
+<meta name="twitter:title" content="MIS 維護日記 (3)：防火牆日誌絕對是你的好朋友"/>
+<meta name="twitter:description" content="我們都知道防火牆的最大功用就是在內部和外部網路之間做溝通橋梁，MIS 可以直接在防火牆上設定用戶可使用的每個網頁，高階產品甚至能直接鎖定 L7 層上的程式，不過今天要談的其實是 Log 日誌。"/>
 
 
 
@@ -205,12 +205,12 @@
         
         
         <picture>
-          <source srcset="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
-          <source srcset="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
-          <source srcset="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
-          <source srcset="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_1110x0_resize_q75_h2_box.webp">
-          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_1110x0_resize_q75_box.jpg"
-            alt="post image" width="1920" height="1238">
+          <source srcset="/codingexp.github.io/images/firewall-log-is-very-useful/cover_hu5f5ab268b9e3960eea80de202695264c_23672_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
+          <source srcset="/codingexp.github.io/images/firewall-log-is-very-useful/cover_hu5f5ab268b9e3960eea80de202695264c_23672_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
+          <source srcset="/codingexp.github.io/images/firewall-log-is-very-useful/cover_hu5f5ab268b9e3960eea80de202695264c_23672_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
+          <source srcset="/codingexp.github.io/images/firewall-log-is-very-useful/cover_hu5f5ab268b9e3960eea80de202695264c_23672_1110x0_resize_q75_h2_box.webp">
+          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/firewall-log-is-very-useful/cover_hu5f5ab268b9e3960eea80de202695264c_23672_1110x0_resize_q75_box.jpg"
+            alt="post image" width="944" height="391">
         </picture>
         
         
@@ -221,12 +221,12 @@
         <div class="text-center mb-5">
           <div class="card-meta-tag ">
             
-            <a href="/codingexp.github.io/categories%e7%a8%8b%e5%bc%8f/">程式</a>
+            <a href="/codingexp.github.io/categoriesmis-%e7%b6%ad%e8%ad%b7/">MIS 維護</a>
             
           </div>
-          <h1 class="mb-3">自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密</h1>
+          <h1 class="mb-3">MIS 維護日記 (3)：防火牆日誌絕對是你的好朋友</h1>
           <div class="card-meta">
-            <em>Jun 29, 2022</em>
+            <em>Jul 8, 2022</em>
             <em>
               <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
                 JC
@@ -234,47 +234,11 @@
           </div>
           </em>
         </div>
-        <div class="content"><p>那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！</p>
-<h3 id="密碼加密問題最棘手">密碼加密問題最棘手</h3>
-<p>這個程式自然就是在第一篇文章就提到過的 GUI 員工資料庫程式，原先因為只有我和主管兩人要使用，所以我只需要設定個別密碼對應即可（反正才兩組 XD！），不過後續因為該程式中的功能要分配給其他同事使用，進而就有了這次更改密碼的需求。</p>
-<p><strong>延伸閱讀</strong></p>
-<ul>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work//">自學程式如何 100% 提高工作效率 (1)：Python 工作資料庫 GUI 介面</a></li>
-</ul>
-<p>原先我其實一開始就用「with open」的語法打開 pw.txt 記事本，內部書寫密碼來將密碼寫入，然後再將密碼儲存在電腦中的某個位置，如此一來就能以最簡單的方法達到「設定密碼」或「更改密碼」的目的，大致的概念是這樣：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pw <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;請輸入密碼: &#34;</span>)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;pw.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8) as f:</span>
-</span></span><span style="display:flex;"><span>    f<span style="color:#f92672">.</span>write(pw)
-</span></span></code></pre></div><p>原則上不管是初次進入程式還是後續更改密碼兩個指令都能用上述程式碼簡單達成，不過這就造成一個困擾：萬一有人找到這個 pw.txt 記事本的話，就有可能可以直接猜到是某個程式的密碼，這樣相對還是不太安全，因此想說做個加密好了。</p>
-<p>於是上網爬了一下 Python 搭配的加密模組，包含像是 base64、cryptography 等等，雖然在終端（terminal）上確實能 print 出我要的效果，然而一旦演變到要從 .txt 檔抓出字串、再轉換成 byte 類型去解密時就會出現問題&hellip;</p>
-<h5 id="cs50-拯救世界">CS50 拯救世界！</h5>
-<p>這時我突然想到先前在看 CS50 的程式語言影片時，曾經有講到可以利用字母本身的 Ascii 編碼數字去做加減乘除以加密並寫入記事本，然後再反轉回來取得解密後字串，最後再去比對使用者輸入的密碼是否和解密後的字串相同以確認身分，結果就是；Voilà！搞定！</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>word <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;enter word: &#34;</span>) <span style="color:#75715e"># 輸入密碼</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 加密</span>
-</span></span><span style="display:flex;"><span>cryptedWord <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># 先建立空字串</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> word:
-</span></span><span style="display:flex;"><span>    characterOrder <span style="color:#f92672">=</span> ord(_) <span style="color:#75715e"># 取得密碼中每一字元的 ascii 編號</span>
-</span></span><span style="display:flex;"><span>    characterOrder <span style="color:#f92672">+=</span> <span style="color:#ae81ff">10</span> <span style="color:#75715e"># 將其做數學運算</span>
-</span></span><span style="display:flex;"><span>    cryptedWord <span style="color:#f92672">+=</span> chr(characterOrder) <span style="color:#75715e"># 將編號加入到空字串中</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;pw.txt&#34;</span>, <span style="color:#e6db74">&#34;w&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> w:
-</span></span><span style="display:flex;"><span>    w<span style="color:#f92672">.</span>write(str(cryptedWord)) <span style="color:#75715e"># 將字串寫入記事本</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 解密</span>
-</span></span><span style="display:flex;"><span>decryptedWord <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># 建立空字串</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;pw.txt&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>, encoding<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utf-8&#34;</span>) <span style="color:#66d9ef">as</span> r:
-</span></span><span style="display:flex;"><span>    cryptedWord <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>read() <span style="color:#75715e"># 先去記事本中讀取字串</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> _ <span style="color:#f92672">in</span> cryptedWord:
-</span></span><span style="display:flex;"><span>    characterOrder <span style="color:#f92672">=</span> ord(_) <span style="color:#75715e"># 取得字串中每一字元 ascii 編號</span>
-</span></span><span style="display:flex;"><span>    characterOrder <span style="color:#f92672">-=</span> <span style="color:#ae81ff">10</span> <span style="color:#75715e"># 反轉數學運算</span>
-</span></span><span style="display:flex;"><span>    decryptedWord <span style="color:#f92672">+=</span> chr(characterOrder) <span style="color:#75715e"># 將數字加回到解密字串中</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 後續只要再以 decryptedWord 去和使用者輸入的密碼對應即可</span>
-</span></span></code></pre></div><h3 id="不是最嚴謹加密設計">不是最嚴謹加密設計</h3>
-<p>其實如果小時候有跟同學或好友之間玩過這種加密遊戲的讀者其實就會對上述邏輯很有概念了～不過當然啦！這絕對不會是最安全的機密設計邏輯，不過畢竟只是私人內部在使用，因此就暫時不追究這麼多了，日後有機會的話再回頭做加密優化。但如果要做密碼加密的話，這應該會是 Python 加密方式裡面最簡單的一個了，非常適合第一次想要做密碼加密，但又不知從何下手的新手工程師。</p>
+        <div class="content"><p>我們都知道防火牆的最大功用就是在內部和外部網路之間做溝通橋梁，MIS 可以直接在防火牆上設定用戶可使用的每個網頁，高階產品甚至能直接鎖定 L7 層上的程式，不過今天要談的其實是 Log 日誌。</p>
+<h3 id="防火牆鎖定功能">防火牆鎖定功能</h3>
+<p>當前所有資訊都在網路上透明化的現在，要知道所有有和防火牆掛鉤的使用者前往那些IP、使用哪些程式可說是輕而易舉，都可以直接從主要防火牆後台裡的日誌（Log）中找到，好一點的防火牆產品甚至會做到來源 IP、目的 IP、套用政策及細項等顯示項目，能夠更快且方便的讓 MIS 人員直接從後台了解使用者們的網路使用情形。</p>
+<p>各家防火牆的後台設計雖然大抵邏輯有跡可循，但終究不盡相同，所以我也不會特別再針對各家去設計，不過以近期接觸過的產品類型來說，目前最常碰到的就是企業內要鎖定員工前往特定網頁、使用特定程式的設定，這時候多數防火牆多會有限定網域，或者是鎖定內部網路 IP 去外網或特定黑名單網頁的能力。</p>
+<p>近期接觸到的中高階產品也有做到 <strong>Layer 7 的程式類型鎖定功能</strong>，比如說有公司不希望員工上班期間用公司電腦打遊戲，這時候就可以將遊戲類型項目鎖定；又或者是不想要使用者連上社群媒體、聊天軟體等等，此時也能夠在大類項目鎖定的同時，針對細項去解除鎖定，比如像是台灣常見的 Line、Google Meet 等等，使用上可說是方便許多。</p>
 
 
 
@@ -298,29 +262,229 @@
 
 
 
-<img title="" loading="lazy" decoding="async" src="https://cheng511.github.io/codingexp.github.io/" alt="" class=" img-center" width="" height="">
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img title="" loading="lazy" decoding="async" class=" img-center" width="1661" height="774" src="/codingexp.github.io/images/firewall-log-is-very-useful/Screenshot_1_huac7733fff2ac2212e6c90c4ffb9e6ca0_139311_1661x774_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/firewall-log-is-very-useful\/Screenshot_1_huac7733fff2ac2212e6c90c4ffb9e6ca0_139311_1661x774_resize_q75_box.jpg'">
+
+
+
+
+
+
+
+<h3 id="log-做得好維護沒煩惱">Log 做得好、維護沒煩惱</h3>
+<p>那這邊要提的其實還是 Log 日誌這點，近期碰到的狀況就是有公司員工希望能開啟 Skype 的鎖定功能，由於最一開始設定聊天軟體類別時，並未特別將 Skype 排除鎖定，所以這時就得回到鎖定類別中將其打開，然後當我解開所有和 Skype 有相關字眼的鎖定項目後，卻發現員工表示 Skype 訊息無法傳送，這就有趣了。</p>
+<p>於是回頭進入防火牆 Log 後台查看才恍然大悟（下圖僅為範例），原來部分軟體在做不同功能時，會動用到額外的功能，假如此類功能沒解開的話，就會造成某些功能能用、某些不能用的窘境～以 Skype 為例的話，在配合的防火牆中就是 <strong>WLM WebChat</strong> 這項程式沒有解開，才導致如此的解果，只要將其納入白名單中即可順利解決此問題。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img title="" loading="lazy" decoding="async" class=" img-center" width="1881" height="824" src="/codingexp.github.io/images/firewall-log-is-very-useful/Screenshot_3_hu23680af5cedcacc48fd670ab081c0221_201424_1881x824_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/firewall-log-is-very-useful\/Screenshot_3_hu23680af5cedcacc48fd670ab081c0221_201424_1881x824_resize_q75_box.jpg'">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img title="" loading="lazy" decoding="async" class=" img-center" width="1628" height="652" src="/codingexp.github.io/images/firewall-log-is-very-useful/Screenshot_2_hu66c7f7f332e8320d1cc4c01f93d385e9_128876_1628x652_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/firewall-log-is-very-useful\/Screenshot_2_hu66c7f7f332e8320d1cc4c01f93d385e9_128876_1628x652_resize_q75_box.jpg'">
+
+
+
+
+
+
+
+<p>諸如此類的例子可說是層出不窮，不過好的防火牆都會將 Log 日誌頁面做得不錯，當然也不是樣樣都完美，但至少就這次例子的狀況來說，由於防火牆後台有詳細介紹是哪一類項目的什麼細項造成阻擋，所以在排除問題的時候也就特別容易，敬～防火牆日誌，MIS 維護日常的好幫手！</p>
 </div>
         <div class="single-post-meta">
           
           <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
             <li class="list-inline-item">
-              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2feasy-encrypted-password-changing-system%2f" target="_blank" class="facebook">
+              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2ffirewall-log-is-very-useful-if-you-know-how-to-use-it%2f" target="_blank" class="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/intent/tweet/?text=%e8%87%aa%e5%ad%b8%e7%a8%8b%e5%bc%8f%e5%a6%82%e4%bd%95%20100%25%20%e6%8f%90%e9%ab%98%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%20%286%29%ef%bc%9a%e5%a6%82%e4%bd%95%e8%a8%ad%e5%ae%9a%e6%9b%b4%e6%94%b9%e5%af%86%e7%a2%bc%e5%92%8c%e5%8a%a0%e5%af%86&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2feasy-encrypted-password-changing-system%2f" target="_blank"
+              <a href="https://twitter.com/intent/tweet/?text=MIS%20%e7%b6%ad%e8%ad%b7%e6%97%a5%e8%a8%98%20%283%29%ef%bc%9a%e9%98%b2%e7%81%ab%e7%89%86%e6%97%a5%e8%aa%8c%e7%b5%95%e5%b0%8d%e6%98%af%e4%bd%a0%e7%9a%84%e5%a5%bd%e6%9c%8b%e5%8f%8b&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2ffirewall-log-is-very-useful-if-you-know-how-to-use-it%2f" target="_blank"
                 class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2feasy-encrypted-password-changing-system%2f" target="_blank" class="pinterest">
+              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2ffirewall-log-is-very-useful-if-you-know-how-to-use-it%2f" target="_blank" class="pinterest">
                 <i class="fab fa-pinterest"></i>
               </a>
             </li>
