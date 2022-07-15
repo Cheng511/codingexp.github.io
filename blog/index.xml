@@ -6,7 +6,16 @@
     <description>Recent content in 所有不務正業的文章 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Fri, 15 Jul 2022 09:08:34 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 15:11:41 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Linux (4)：常用程式安裝、GUI 和終端機兩種選擇</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/</link>
+      <pubDate>Fri, 15 Jul 2022 15:11:41 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/</guid>
+      <description>總算要來開始安裝程式了，不同的 Linux 發行版本有不同的安裝程式方法，不過基本上一通百通，不是用 GUI 桌面環境下載、就是用終端機下載，但前者能做到的，後者也可以。</description>
+    </item>
+    
     <item>
       <title>從零開始學 Linux (3)：安裝完系統後的首要任務</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/</link>
