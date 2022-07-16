@@ -6,9 +6,27 @@
     <description>Recent content in 程式 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Wed, 13 Jul 2022 13:44:20 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Jul 2022 15:11:41 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>從零開始學 Linux (2)：Ubuntu 超基本設定和指令介紹</title>
+      <title>從零開始學 Linux (4)：常用程式安裝、GUI 和終端機兩種選擇</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/</link>
+      <pubDate>Fri, 15 Jul 2022 15:11:41 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/</guid>
+      <description>總算要來開始安裝程式了，不同的 Linux 發行版本有不同的安裝程式方法，不過基本上一通百通，不是用 GUI 桌面環境下載、就是用終端機下載，但前者能做到的，後者也可以。</description>
+    </item>
+    
+    <item>
+      <title>從零開始學 Linux (3)：安裝完系統後的首要任務</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/</link>
+      <pubDate>Fri, 15 Jul 2022 09:08:34 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/</guid>
+      <description>今天不管你各位選擇安裝的是哪一款 Linux 發行版本（distro），甚至是哪一套流派的 Linux，在初次安裝完以後都有幾件事情要先做，其中最重要的就是確保系統是最新版。</description>
+    </item>
+    
+    <item>
+      <title>從零開始學 Linux (2)：Ubuntu 超基本初次安裝設定</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part2/</link>
       <pubDate>Wed, 13 Jul 2022 13:44:20 +0800</pubDate>
       
@@ -26,7 +44,7 @@
     </item>
     
     <item>
-      <title>從零開始學 Linux (1)：VMWare 和 Ubuntu</title>
+      <title>從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part1/</link>
       <pubDate>Wed, 06 Jul 2022 09:24:45 +0800</pubDate>
       
