@@ -1,48 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>程式 on 不務正業文人</title>
-    <link>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</link>
-    <description>Recent content in 程式 on 不務正業文人</description>
+    <title>Python on 不務正業文人</title>
+    <link>https://cheng511.github.io/codingexp.github.io/categories/python/</link>
+    <description>Recent content in Python on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Sat, 16 Jul 2022 23:02:11 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</title>
-      <link>https://cheng511.github.io/codingexp.github.io/blog/vscode-server/</link>
-      <pubDate>Sat, 16 Jul 2022 23:02:11 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/blog/vscode-server/</guid>
-      <description>各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～</description>
-    </item>
-    
-    <item>
-      <title>從零開始學 Linux (4)：常用程式安裝、GUI 和終端機兩種選擇</title>
-      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/</link>
-      <pubDate>Fri, 15 Jul 2022 15:11:41 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/</guid>
-      <description>總算要來開始安裝程式了，不同的 Linux 發行版本有不同的安裝程式方法，不過基本上一通百通，不是用 GUI 桌面環境下載、就是用終端機下載，但前者能做到的，後者也可以。</description>
-    </item>
-    
-    <item>
-      <title>從零開始學 Linux (3)：安裝完系統後的首要任務</title>
-      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/</link>
-      <pubDate>Fri, 15 Jul 2022 09:08:34 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/</guid>
-      <description>今天不管你各位選擇安裝的是哪一款 Linux 發行版本（distro），甚至是哪一套流派的 Linux，在初次安裝完以後都有幾件事情要先做，其中最重要的就是確保系統是最新版。</description>
-    </item>
-    
-    <item>
-      <title>從零開始學 Linux (2)：Ubuntu 超基本初次安裝設定</title>
-      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part2/</link>
-      <pubDate>Wed, 13 Jul 2022 13:44:20 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part2/</guid>
-      <description>先前講到安裝 VMWare 和架起簡單的 Ubuntu 虛擬機，這次來實際把虛擬機打開吧！同時也把一些最基本的前置設定作業流程做介紹，這年頭要測試作業系統真的很簡單！</description>
-    </item>
-    
+    <lastBuildDate>Mon, 11 Jul 2022 13:05:40 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/learn-python-from-0-to-1-no_1/</link>
@@ -50,15 +14,6 @@
       
       <guid>https://cheng511.github.io/codingexp.github.io/blog/learn-python-from-0-to-1-no_1/</guid>
       <description>在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！</description>
-    </item>
-    
-    <item>
-      <title>從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞</title>
-      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part1/</link>
-      <pubDate>Wed, 06 Jul 2022 09:24:45 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part1/</guid>
-      <description>雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。</description>
     </item>
     
     <item>

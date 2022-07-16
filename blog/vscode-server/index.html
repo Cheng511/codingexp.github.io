@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</title>
+<title>遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</title>
 
 
 
@@ -40,25 +40,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/images/python-with-openpyxl/cover.jpg" />
-  <meta name="twitter:image" content="https://cheng511.github.io/images/python-with-openpyxl/cover.jpg"/>
+<meta property="og:image" content="https://cheng511.github.io/codingexp.github.io/images/vscode-server/cover.jpg" />
+  <meta name="twitter:image" content="https://cheng511.github.io/codingexp.github.io/images/vscode-server/cover.jpg"/>
       <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="736">
-    <meta property="og:image:height" content="414">
+    <meta property="og:image:width" content="1239">
+    <meta property="og:image:height" content="759">
     <meta property="og:image:type" content="image/jpeg">
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序"/>
-<meta name="twitter:description" content="今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。"/>
-<meta property="og:title" content="自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序" />
-<meta property="og:description" content="今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。" />
+<meta name="twitter:title" content="遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限"/>
+<meta name="twitter:description" content="各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～"/>
+<meta property="og:title" content="遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限" />
+<meta property="og:description" content="各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-06-21T08:12:17+08:00" />
-<meta property="article:modified_time" content="2022-06-21T08:12:17+08:00" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/vscode-server/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-16T23:02:11+08:00" />
+<meta property="article:modified_time" content="2022-07-16T23:02:11+08:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序"/>
-<meta name="twitter:description" content="今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。"/>
+<meta name="twitter:title" content="遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限"/>
+<meta name="twitter:description" content="各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～"/>
 
 
 
@@ -225,12 +225,12 @@ if (!doNotTrack) {
         
         
         <picture>
-          <source srcset="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
-          <source srcset="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
-          <source srcset="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
-          <source srcset="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_1110x0_resize_q75_h2_box.webp">
-          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_1110x0_resize_q75_box.jpg"
-            alt="post image" width="736" height="414">
+          <source srcset="/codingexp.github.io/images/vscode-server/cover_hu6b3a7ec9d7babaee1580a138875e8b81_80122_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
+          <source srcset="/codingexp.github.io/images/vscode-server/cover_hu6b3a7ec9d7babaee1580a138875e8b81_80122_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
+          <source srcset="/codingexp.github.io/images/vscode-server/cover_hu6b3a7ec9d7babaee1580a138875e8b81_80122_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
+          <source srcset="/codingexp.github.io/images/vscode-server/cover_hu6b3a7ec9d7babaee1580a138875e8b81_80122_1110x0_resize_q75_h2_box.webp">
+          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/vscode-server/cover_hu6b3a7ec9d7babaee1580a138875e8b81_80122_1110x0_resize_q75_box.jpg"
+            alt="post image" width="1239" height="759">
         </picture>
         
         
@@ -243,14 +243,12 @@ if (!doNotTrack) {
             
             <a href="/codingexp.github.io/categories/%e7%a8%8b%e5%bc%8f/">程式</a>
             
-            <a href="/codingexp.github.io/categories/python/">python</a>
-            
-            <a href="/codingexp.github.io/categories/%e8%be%a6%e5%85%ac/">辦公</a>
+            <a href="/codingexp.github.io/categories/print%e6%96%b0%e8%81%9e/">print新聞</a>
             
           </div>
-          <h1 class="mb-3">自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</h1>
+          <h1 class="mb-3">遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</h1>
           <div class="card-meta">
-            <em>Jun 21, 2022</em>
+            <em>Jul 16, 2022</em>
             <em>
               <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
                 JC
@@ -258,213 +256,31 @@ if (!doNotTrack) {
           </div>
           </em>
         </div>
-        <div class="content"><p>今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。</p>
-<h3 id="重複性任務才最瑣碎">重複性任務才最瑣碎</h3>
-<p>相信多數還在坐辦公室的員工平日最大的體悟就是：「執行重複性任務最無聊&hellip;」舉例來說，如果要為上千組文組製作QRCode的話，如果沒有學過程式語言的人，可能會一組一組文字上網輸入、然後逐一下載，好一點的網站可能會有辦法讓你批次執行大量任務，但多數應該還是會有數量或檔案大小限制，相對仍是不太方便，這時其實以 Python 來說就有自己的 QRCode 製作模組可以直接套用，但這又是另一個文章的故事我們暫且不提。</p>
-<p>回到辦公室重複性任務這檔事，最常見的或許莫過於製作 Excel 表格，尤其以我自己碰到的經驗來說，甚至是會需要從資料庫自動拋轉出 Excel 出貨單，同時對應儲存格要有對應數字、大小，甚至字體等等，雖然多數企業用戶都會有對應的軟體可執行此拋轉任務，不過若是時常需要處理大量 Excel 資料的話，我認為還是有機會從 Python 的 openpyxl 這個模組中找到方便的解答。</p>
-<h3 id="openpyxl-幾乎可說是必學">openpyxl 幾乎可說是必學</h3>
-<p>就 Python 的實戰經歷來說，openpyxl 幾乎可以說是必學的模組，它能應用的日常範圍可能不在資料庫之下，要怎麼安裝 openpyxl 我這邊就簡單先用一組命令提示元件（Command Line）或 Powershell 指令帶過囉（記得要連網路～）！關於 pip 或是 powershell 甚至 command-line 的一些相關用法也是以後再慢慢說～</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">pip install openpyxl
-</code></pre></div><p>執行完以後就等於是安裝 openpyxl，接下來就可以在 python 程式中匯入了</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> openpyxl
-</code></pre></div><p>這邊我個人習慣 openpyxl 直接匯入而不用別名，這樣比較不容易和其他自定義變數或常數搞混，二來是「openpyxl.xxx」這樣的形式相對也容易辨別。</p>
-<p>好！那我們模組安裝、也匯入了以後，第一步就是要先定義你的活頁簿，這邊主要會有兩種方式，一種是直接新增一本、另一種則是導入已經建立好的活頁簿，我們這一篇先以新增一本空白活頁簿的方式導入好了。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">wb <span style="color:#f92672">=</span> openpyxl<span style="color:#f92672">.</span>Workbook() <span style="color:#75715e"># 建立一個名為 wb 的活頁簿</span>
-</code></pre></div><p>這邊值得注意的是，初次建立 wb 活頁簿的時候都是用上面這組程式碼來導入；如果是要導入已存在的 Excel 檔案的話，就必須用 load_workbook() 這個方法，並在函式中的括弧內帶入活頁簿的絕對路徑。關於絕對路徑的概念我們先移到下一篇文章再說。</p>
-<p>順帶一提，在 openpyxl 的世界中幾乎都是用「活頁簿」（Workbook）來稱呼 Excel 檔案，而內部則是會有頁籤（Worksheet）、行（row）、欄（column）等名詞，所以在我後面的文章或是有看其他文章的話可能都會發現多數和 openpyxl 有關的變數都是以 wb、ws 來代表活頁簿和頁籤，這算是一個簡單的傳統，主要是在方便辨別。</p>
-<p>好，導入活頁簿後接下來要告訴 Python 我們要開啟哪一個頁籤，一般來說任何 Excel 檔案開啟時都會有一個預設的頁籤，其實也就是下排頁籤中最左邊的第一個，當然如果只有頁籤的話自然就是唯一的。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 通常最左邊的頁籤會是每個活頁簿預設開啟的頁籤">
-  <img title="" loading="lazy" decoding="async" class="" width="484" height="234" src="/codingexp.github.io/images/python-with-openpyxl/Screenshot_1_huc393d4928d17d0ebd577919e506e9a77_19629_484x234_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/python-with-openpyxl\/Screenshot_1_huc393d4928d17d0ebd577919e506e9a77_19629_484x234_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 通常最左邊的頁籤會是每個活頁簿預設開啟的頁籤">▲ 通常最左邊的頁籤會是每個活頁簿預設開啟的頁籤</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-<p>而要取用預設頁籤內容的話我們要先告訴 Python 這件事，藉由「.active」這個方法可以定義變數，這時候我們就已經準確告知 Python 該處理那一個頁籤了，如果今天各位的活頁簿中有許多頁籤的話，也可以用程式語言中常見的編號去取用，只是要注意的是預設頁籤編號是 0，第二個頁籤編號是 1、第三個是 2&hellip;以此類推。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>active
-<span style="color:#75715e"># 如果要取用其他頁籤內容的話，可對應其他編號</span>
-<span style="color:#75715e"># 只是要注意：頁籤的編碼為列表（list），故要用中括號表示</span>
-ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>worksheets[<span style="color:#ae81ff">1</span>] <span style="color:#75715e"># 第二個頁籤</span>
-ws <span style="color:#f92672">=</span> wb<span style="color:#f92672">.</span>worksheets[<span style="color:#ae81ff">2</span>] <span style="color:#75715e"># 第三個頁籤</span>
-<span style="color:#f92672">...</span>
-</code></pre></div><p>這個時候其實我們已經可以針對活頁簿裡面的內容去存儲囉！這裡面最簡單的方法是直接把要存取的值存到對應的儲存格內，比如說如下：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Python" data-lang="Python">ws[<span style="color:#e6db74">&#34;A1&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
-ws[<span style="color:#e6db74">&#34;A2&#34;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;你好&#34;</span>
-</code></pre></div><p>如此一來 Python 會在 A1 和 A2 這兩個儲存格分別輸入對應值，不過在我們結束以前要先告訴 Python 儲存這個檔案，這個動作是所有程式語言執行檔案存取時幾乎都會經歷的過程，你必須告訴 Python 說「我完成檔案存取了，請存檔」。利用「save()」的函式可以儲存，不過要注意的是此函式必須提供「<strong>檔名作為參數</strong>」，否則會報錯。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">wb<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#34;test.xlsx&#34;</span>)
-</code></pre></div><p>完成以後就會在和此 python 程式中相同的資料夾目錄中找到 test.xlsx 的 Excel 檔案，開啟後就會看到 A1 和 A2 已經確實被輸入內容囉！</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 執行程式後產生的 Excel 檔內容">
-  <img title="" loading="lazy" decoding="async" class="" width="331" height="220" src="/codingexp.github.io/images/python-with-openpyxl/Screenshot_2_hu887fe00c2838bc5a0da01625c18349aa_12399_331x220_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/python-with-openpyxl\/Screenshot_2_hu887fe00c2838bc5a0da01625c18349aa_12399_331x220_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 執行程式後產生的 Excel 檔內容">▲ 執行程式後產生的 Excel 檔內容</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-<h3 id="這還只是基本">這還只是基本</h3>
-<p>沒錯，以上的操作想必大家會覺得也太簡單，直接開 Excel 檔案執行不是更快？的確，但如果說再做更多的格式調整、字體大小、甚至多欄位內容預先謄寫，然後再搭配資料庫來導入資料內容呢？這時候事情就變得有趣了吧～</p>
-<p>我們下次就來跟大家介紹這部分，openpyxl 能夠做的事情很多，就跟前面提到的一樣，認真來說幾乎多數 Excel 日常工作都可以用 openpyxl 來使用，其實對應 Microsoft Word 的模組也是存在，但我個人簡單使用以後認為還是沒有 openpyxl 來得成熟，畢竟 Excel 這玩意兒不只是一般企業或消費者日常使用，在大數據領域中也容易看到相關的檔案痕跡，加上 Python 本身對於大數據領域也是非常容易使用的語言，openpyxl 的成熟度也就可想而知了。</p>
-<ul>
-<li><strong>延伸閱讀：<a href="https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/">自學程式如何 100% 提高工作效率 (1)：Python 工作資料庫 GUI 介面</a></strong></li>
-</ul>
+        <div class="content"><p>各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～</p>
+<h3 id="延續-vscodedev">延續 vscode.dev</h3>
+<p>今年稍早微軟其實就有針對 VS Code 推出「 <strong>VSCode.dev</strong> 」，這是一個能夠直接線上連線的雲端桌面版 VC Code 介面，若是就一般簡單的編程練習或小型專案的話，這個新功能可說是非常實用。</p>
+<p>不過它最大的問題在於 VS Code 之所以這麼好用除了他本身是 IDE 的緣故能自動針對不同程式語言做語法上的醒目標示外，最重要的功能就是<strong>延伸模組</strong>的能力，但當時 VSCode.dev 網頁版還不支援安裝這些模組，導致諸如 Live Server、Prettier 這類常用模組帶來的便利性皆消失一空，倒也不是說這樣就不能編程，而是多少少了點方便。（由奢入儉難Ｒ～）</p>
+<p>這次準備要新推出的 VS Code Server 則是進一步讓<strong>雲端編程</strong>進化，顧名思義就是一個伺服器的概念，未來工程師們只需要在一台主要主機上安裝 VS Code 並將該電腦設定為 VS Code 伺服器，就可以在任何裝置上以網頁瀏覽的方式與其連線，配合 Github 的雙重認證後，就能隨時登入到 VS Code 的介面寫程式囉！</p>
+<h3 id="所有功能都能使用">所有功能都能使用</h3>
+<p>由於這是在一台完整的電腦上安裝 VS Code 的緣故，所有原本在一般 VS Code 上面能使用的功能，在 VS Code Server 網頁頁面上也都能使用，能夠安裝延伸模組、也能直接開啟在該電腦上的任何資料，成為名符其實的 VS Code 伺服器。</p>
+<p>目前這項功能還在 Beta 階段，不過已經接受各位預先申請測試，我自己也已經在第一時間就馬上申請了，不過目前還在等待測試通知～有任何消息的話會再發測試報告出來，敬請期待囉！</p>
 </div>
         <div class="single-post-meta">
           
           <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
             <li class="list-inline-item">
-              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fuse-python-to-automate-excel-work%2f" target="_blank" class="facebook">
+              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fvscode-server%2f" target="_blank" class="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/intent/tweet/?text=%e8%87%aa%e5%ad%b8%e7%a8%8b%e5%bc%8f%e5%a6%82%e4%bd%95%20100%25%20%e6%8f%90%e9%ab%98%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%20%283%29%ef%bc%9aPython%20%2f%20Excel%20%e5%9c%93%e8%88%9e%e6%9b%b2%20openpyxl%20-%20%e5%ba%8f&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fuse-python-to-automate-excel-work%2f" target="_blank"
+              <a href="https://twitter.com/intent/tweet/?text=%e9%81%a0%e7%ab%af%20IDE%20%e6%96%b0%e7%94%9f%e6%b4%bb%ef%bc%9aVscode%20Server%20%e7%99%bc%e8%a1%a8%ef%bc%8c%e7%b7%a8%e7%a8%8b%e6%99%82%e9%96%93%e5%9c%b0%e9%bb%9e%e5%be%9e%e6%ad%a4%e4%b8%8d%e5%8f%97%e9%99%90&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fvscode-server%2f" target="_blank"
                 class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fuse-python-to-automate-excel-work%2f" target="_blank" class="pinterest">
+              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fvscode-server%2f" target="_blank" class="pinterest">
                 <i class="fab fa-pinterest"></i>
               </a>
             </li>

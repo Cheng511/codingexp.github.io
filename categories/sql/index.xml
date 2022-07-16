@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on 不務正業文人</title>
+    <link>https://cheng511.github.io/codingexp.github.io/categories/sql/</link>
+    <description>Recent content in SQL on 不務正業文人</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>繁體中文</language>
+    <lastBuildDate>Fri, 10 Jun 2022 08:31:28 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/sql-automatically-detect-and-send-line-notification/</link>
+      <pubDate>Fri, 10 Jun 2022 08:31:28 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/sql-automatically-detect-and-send-line-notification/</guid>
+      <description>Well&amp;hellip;抓是抓了張大數據（Big Data）當首圖，但其實我們目前在用的資料庫也沒有到「大」數據就是了。</description>
+    </item>
+    
+  </channel>
+</rss>

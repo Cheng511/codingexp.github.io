@@ -6,7 +6,16 @@
     <description>Recent content in 所有不務正業的文章 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Fri, 15 Jul 2022 15:11:41 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 23:02:11 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/vscode-server/</link>
+      <pubDate>Sat, 16 Jul 2022 23:02:11 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/vscode-server/</guid>
+      <description>各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～</description>
+    </item>
+    
     <item>
       <title>從零開始學 Linux (4)：常用程式安裝、GUI 和終端機兩種選擇</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/</link>

@@ -6,7 +6,25 @@
     <description>Recent content in Categories on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Fri, 15 Jul 2022 15:11:41 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Jul 2022 23:02:11 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>print新聞</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/print%E6%96%B0%E8%81%9E/</link>
+      <pubDate>Sat, 16 Jul 2022 23:02:11 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/print%E6%96%B0%E8%81%9E/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>程式</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</link>
+      <pubDate>Sat, 16 Jul 2022 23:02:11 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>從零開始學Linux</title>
       <link>https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8linux/</link>
@@ -17,11 +35,11 @@
     </item>
     
     <item>
-      <title>程式</title>
-      <link>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</link>
-      <pubDate>Fri, 15 Jul 2022 15:11:41 +0800</pubDate>
+      <title>Python</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/python/</link>
+      <pubDate>Mon, 11 Jul 2022 13:05:40 +0800</pubDate>
       
-      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</guid>
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/python/</guid>
       <description></description>
     </item>
     
@@ -31,6 +49,33 @@
       <pubDate>Fri, 08 Jul 2022 13:26:44 +0800</pubDate>
       
       <guid>https://cheng511.github.io/codingexp.github.io/categories/mis-%E7%B6%AD%E8%AD%B7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>防火牆</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/%E9%98%B2%E7%81%AB%E7%89%86/</link>
+      <pubDate>Fri, 08 Jul 2022 13:26:44 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E9%98%B2%E7%81%AB%E7%89%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>辦公</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/%E8%BE%A6%E5%85%AC/</link>
+      <pubDate>Tue, 21 Jun 2022 08:12:17 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E8%BE%A6%E5%85%AC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/sql/</link>
+      <pubDate>Fri, 10 Jun 2022 08:31:28 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/sql/</guid>
       <description></description>
     </item>
     
