@@ -6,7 +6,16 @@
     <description>Recent content in 所有不務正業的文章 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Mon, 18 Jul 2022 08:19:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Jul 2022 14:59:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Python (2)：先懂基礎資料類型、其餘暫且不談</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no2/</link>
+      <pubDate>Mon, 18 Jul 2022 14:59:25 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no2/</guid>
+      <description>久違了，近期迷上 Linux 系統的操作，幾乎忘了從零開始系列還要 Python 要搞！今天一樣維持 10 分鐘不到的閱讀時間，我們迅速來了解一下 Python 最常用的幾種資料類型。</description>
+    </item>
+    
     <item>
       <title>從零開始學 Linux (5)：Linux 終端機常用指令介紹，你也能成為鍵盤魔人</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no5/</link>
