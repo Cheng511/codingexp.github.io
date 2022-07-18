@@ -8,11 +8,11 @@
     <language>繁體中文</language>
     <lastBuildDate>Mon, 18 Jul 2022 08:19:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>從零開始學Linux</title>
-      <link>https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8linux/</link>
+      <title>從零開始學 Linux</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8-linux/</link>
       <pubDate>Mon, 18 Jul 2022 08:19:25 +0800</pubDate>
       
-      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8linux/</guid>
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8-linux/</guid>
       <description></description>
     </item>
     
@@ -35,11 +35,11 @@
     </item>
     
     <item>
-      <title>Python</title>
-      <link>https://cheng511.github.io/codingexp.github.io/categories/python/</link>
+      <title>從零開始學 python</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8-python/</link>
       <pubDate>Mon, 11 Jul 2022 13:05:40 +0800</pubDate>
       
-      <guid>https://cheng511.github.io/codingexp.github.io/categories/python/</guid>
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8-python/</guid>
       <description></description>
     </item>
     
@@ -58,6 +58,15 @@
       <pubDate>Fri, 08 Jul 2022 13:26:44 +0800</pubDate>
       
       <guid>https://cheng511.github.io/codingexp.github.io/categories/%E9%98%B2%E7%81%AB%E7%89%86/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://cheng511.github.io/codingexp.github.io/categories/python/</link>
+      <pubDate>Wed, 29 Jun 2022 08:18:20 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/python/</guid>
       <description></description>
     </item>
     

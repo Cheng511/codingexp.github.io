@@ -6,16 +6,7 @@
     <description>Recent content in Python on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Mon, 11 Jul 2022 13:05:40 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</title>
-      <link>https://cheng511.github.io/codingexp.github.io/blog/learn-python-from-0-to-1-no_1/</link>
-      <pubDate>Mon, 11 Jul 2022 13:05:40 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/blog/learn-python-from-0-to-1-no_1/</guid>
-      <description>在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！</description>
-    </item>
-    
+    <lastBuildDate>Wed, 29 Jun 2022 08:18:20 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/easy-encrypted-password-changing-system/</link>

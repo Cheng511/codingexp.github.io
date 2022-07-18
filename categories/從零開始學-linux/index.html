@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞</title>
+<title>從零開始學 Linux</title>
 
 
 
@@ -40,25 +40,23 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/images/let%27s%20learn%20linux/no1/cover.jpg" />
-  <meta name="twitter:image" content="https://cheng511.github.io/images/let%27s%20learn%20linux/no1/cover.jpg"/>
-      <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="1915">
-    <meta property="og:image:height" content="949">
-    <meta property="og:image:type" content="image/jpeg">
-<meta name="twitter:title" content="從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞"/>
-<meta name="twitter:description" content="雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。"/>
-<meta property="og:title" content="從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞" />
-<meta property="og:description" content="雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part1/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-07-06T09:24:45+08:00" />
-<meta property="article:modified_time" content="2022-07-06T09:24:45+08:00" />
+<meta property="og:image" content="https://cheng511.github.io/codingexp.github.io/images/logo.png" />
+  <meta name="twitter:image" content="https://cheng511.github.io/codingexp.github.io/images/logo.png"/>
+      <meta name="twitter:card" content="summary">
+    <meta property="og:image:width" content="280">
+    <meta property="og:image:height" content="188">
+    <meta property="og:image:type" content="image/png">
+<meta name="twitter:title" content="從零開始學 Linux"/>
+<meta name="twitter:description" content="This is meta description"/>
+<meta property="og:title" content="從零開始學 Linux" />
+<meta property="og:description" content="This is meta description" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8-linux/" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞"/>
-<meta name="twitter:description" content="雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。"/>
+<meta name="twitter:title" content="從零開始學 Linux"/>
+<meta name="twitter:description" content="This is meta description"/>
 
 
 
@@ -206,1131 +204,12 @@ if (!doNotTrack) {
   <main>
     
 
-<section id="post-block" class="post-block section pb-0">
+<section class="section">
   <div class="container">
-    <div class="row no-gutters justify-content-center">
-      <div class="col-lg-12">
-        
-        
-        
-        
-        
-
-        
-        
-        
-        
-        
-        
-        
-        
-        <picture>
-          <source srcset="/codingexp.github.io/images/let%27s%20learn%20linux/no1/cover_hud7a65ca8f53ae3659d66b2d8e63e844b_111887_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
-          <source srcset="/codingexp.github.io/images/let%27s%20learn%20linux/no1/cover_hud7a65ca8f53ae3659d66b2d8e63e844b_111887_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
-          <source srcset="/codingexp.github.io/images/let%27s%20learn%20linux/no1/cover_hud7a65ca8f53ae3659d66b2d8e63e844b_111887_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
-          <source srcset="/codingexp.github.io/images/let%27s%20learn%20linux/no1/cover_hud7a65ca8f53ae3659d66b2d8e63e844b_111887_1110x0_resize_q75_h2_box.webp">
-          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/cover_hud7a65ca8f53ae3659d66b2d8e63e844b_111887_1110x0_resize_q75_box.jpg"
-            alt="post image" width="1915" height="949">
-        </picture>
-        
-        
-        
-        
-      </div>
-      <div class="col-lg-9 mt-5">
-        <div class="text-center mb-5">
-          <div class="card-meta-tag ">
-            
-            <a href="/codingexp.github.io/categories/%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8-linux/">從零開始學 Linux</a>
-            
-            <a href="/codingexp.github.io/categories/%e7%a8%8b%e5%bc%8f/">程式</a>
-            
-          </div>
-          <h1 class="mb-3">從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞</h1>
-          <div class="card-meta">
-            <em>Jul 6, 2022</em>
-            <em>
-              <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
-                JC
-              </a>
-          </div>
-          </em>
-        </div>
-        <div class="content"><p>雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。</p>
-<h3 id="如果你重視時間效率就別玩-linux">如果你重視時間效率，就別玩 Linux</h3>
-<p>有句關於 Linux 的老梗就是「Linux is freem if you don&rsquo;t value your time.」Linux 是一套開源的作業系統，是 Linus Torvalds 在 1991 年時開發而來，至今成為許多世界重要伺服器的主要作業系統，關於 Linux 作業系統的介紹老實說讀 Wikipedia 就有滿詳盡的基本介紹，所以我這邊就不打算多談了。</p>
-<p>但我想講的是，Linux 雖然強調是免費的，但也因為相對於一般消費者來說非主流，所以各大軟硬體廠商在設計程式時，多數不會特別再針對 Linux 系統做優化、甚至發行，所以很多時候 Linux 玩家們需要做額外的繞道手術，才能達到原本在 Windows 或 Mac 上安裝即用的效果，這點如果你各位沒有足夠耐心或鑽研精神的話，很容易半途而廢，因為我最一開始接觸 Linux 時候就有點是這樣&hellip;XD！</p>
-<p>不過，Linux 雖然敗在蕭何，但成也蕭何，開源的特色使其系統非常自由，使其系統客製化程度非常高，你幾乎可以在 Linux 系統上做到你想在電腦上作的所有事，而且不會有任何限制或額外付費問題。此外，由於其核心 Kernel 也是開放原始碼，任何人其實都可以將其拿來用作其他使用用途，甚至可以拿來作屬於自己的 Linux 系統。</p>
-<p>這其實也是為什麼你會在市面上看到許多不同的 Linux Distro，包含像是 Ubuntu、Mint、Arch、Debian 等等一大堆，但因為主要還是希望能以新入門玩家為主要 TA，所以我後續的文章基本上會先以最常見的 Ubuntu 來做介紹，整體來說在使用上會相對友善些。</p>
-<h3 id="起手勢安裝-vmware-和下載-ubuntu-iso">起手勢：安裝 VMWare 和下載 Ubuntu iso</h3>
-<p>除非各位有不要用的舊電腦，否則的話我們先暫時以虛擬機的型態去做基本的介紹，這樣各位也不用擔心直接影響電腦本身的檔案或設定。至於虛擬軟體選擇部分會以 VMWare 來做介紹，其實各大虛擬軟體的操作邏輯大致上相同，但 VMWare 在實際日常的領域上更常見些，且能找到的資源也更多一點。</p>
-<p>那廢話不多說，我們直接進入到重點吧！先到 VMWare 官網上下載 VMWare Player，版本部分我截稿時間是落在 16.0，我這邊直接附上下載頁面的網址給大家，進入頁面後往下滑動就會看到立即試用的下載選項，這邊 VMWare Player 版本可支援個人使用者非商業用途的免費下載，當然如果後續有興趣的話，可購買其他版本的序號，然後直接在軟體中新增序號後就能切換到對應版本了。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="1844" height="838" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_1_huac8b351254f2cd013425be02cd3fb509_193805_1844x838_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_1_huac8b351254f2cd013425be02cd3fb509_193805_1844x838_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<ul>
-<li><a href="https://www.vmware.com/tw/products/workstation-player/workstation-player-evaluation.html">VMWare Player 16 下載連結頁面</a></li>
-</ul>
-<p>下載完成後可直接點擊開始安裝，這邊就是 Windows 一系列的下一步選項到底即可，過程中若詢問是否有序號的話，點選沒有序號免費使用的選項即可。</p>
-<h5 id="ubuntu-iso-下載">Ubuntu iso 下載</h5>
-<p>另外當然也要下載 Linux 作業系統的 iso，這邊請各位直接前往Ubuntu 正體中文站下載即可，一來速度較快、二來是下載選項較直覺好理解，當然如果有興趣的話也可前往 Ubuntu 官網了解各項細節。</p>
-<ul>
-<li><a href="https://www.ubuntu-tw.org/modules/tinyd0/">Ubuntu 正體中文站下載連結</a></li>
-<li><a href="https://ubuntu.com/">Ubuntu 官方網站</a></li>
-</ul>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="1536" height="860" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_2_hufd89042d53c65484438fb68667da8a74_223799_1536x860_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_2_hufd89042d53c65484438fb68667da8a74_223799_1536x860_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<h3 id="vmware-設定-ubuntu-虛擬機">VMWare 設定 Ubuntu 虛擬機</h3>
-<p>這篇文章最後就先停留在 VMWare 架設虛擬機好了，以下用圖文說明較迅速。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 開啟 VMWare Player 後點選「新增虛擬機」選項">
-  <img title="" loading="lazy" decoding="async" class="" width="839" height="592" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_3_hu991d6a17c89c66d27f24fb796966ccf3_73166_839x592_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_3_hu991d6a17c89c66d27f24fb796966ccf3_73166_839x592_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 開啟 VMWare Player 後點選「新增虛擬機」選項">▲ 開啟 VMWare Player 後點選「新增虛擬機」選項</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 點選「後續再導入 iso 檔案」，並進行下一步，如此一來在判定系統時較不會產生誤會">
-  <img title="" loading="lazy" decoding="async" class="" width="840" height="714" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_4_hu52cddc6ae4e1c0c496103b1b54f2b888_99686_840x714_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_4_hu52cddc6ae4e1c0c496103b1b54f2b888_99686_840x714_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 點選「後續再導入 iso 檔案」，並進行下一步，如此一來在判定系統時較不會產生誤會">▲ 點選「後續再導入 iso 檔案」，並進行下一步，如此一來在判定系統時較不會產生誤會</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 選擇 Linux 系統，然後在下拉選單中找到 Ubuntu-64選項，也就是 64 位元版本">
-  <img title="" loading="lazy" decoding="async" class="" width="840" height="715" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_5_hu4d93837b84c5b598f7ae0e7ace678173_86940_840x715_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_5_hu4d93837b84c5b598f7ae0e7ace678173_86940_840x715_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 選擇 Linux 系統，然後在下拉選單中找到 Ubuntu-64選項，也就是 64 位元版本">▲ 選擇 Linux 系統，然後在下拉選單中找到 Ubuntu-64選項，也就是 64 位元版本</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 接下來可選擇該虛擬機名稱以及想要存在電腦的什麼位置上">
-  <img title="" loading="lazy" decoding="async" class="" width="846" height="712" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_6_huf69466f4a3d4519fbcfa55ebe1f17ce6_89109_846x712_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_6_huf69466f4a3d4519fbcfa55ebe1f17ce6_89109_846x712_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 接下來可選擇該虛擬機名稱以及想要存在電腦的什麼位置上">▲ 接下來可選擇該虛擬機名稱以及想要存在電腦的什麼位置上</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 選擇要切多少硬碟空間給 Ubuntu 使用，預設是 20GB，這邊我們先以 40GB 為例">
-  <img title="" loading="lazy" decoding="async" class="" width="843" height="712" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_7_hu40f92c993c8a4184d1f14d8d28e66696_110936_843x712_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_7_hu40f92c993c8a4184d1f14d8d28e66696_110936_843x712_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 選擇要切多少硬碟空間給 Ubuntu 使用，預設是 20GB，這邊我們先以 40GB 為例">▲ 選擇要切多少硬碟空間給 Ubuntu 使用，預設是 20GB，這邊我們先以 40GB 為例</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 最後會顯示目前設定的總結，但我們先再進去客製化設定一下">
-  <img title="" loading="lazy" decoding="async" class="" width="836" height="712" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_8_hu560b4159ae996e5de8958b1f32756f71_105157_836x712_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_8_hu560b4159ae996e5de8958b1f32756f71_105157_836x712_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 最後會顯示目前設定的總結，但我們先再進去客製化設定一下">▲ 最後會顯示目前設定的總結，但我們先再進去客製化設定一下</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 首先記憶體的部分預設 4GB，我撥到 8GB 給它，多工更輕鬆一點，但各位量力而為">
-  <img title="" loading="lazy" decoding="async" class="" width="870" height="563" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_9_hu591ce09c69651ec8da146cfd0be94bf8_80122_870x563_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_9_hu591ce09c69651ec8da146cfd0be94bf8_80122_870x563_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 首先記憶體的部分預設 4GB，我撥到 8GB 給它，多工更輕鬆一點，但各位量力而為">▲ 首先記憶體的部分預設 4GB，我撥到 8GB 給它，多工更輕鬆一點，但各位量力而為</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 處理器部分則是給到 4 顆，同樣也是量力而為">
-  <img title="" loading="lazy" decoding="async" class="" width="882" height="417" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_10_hue4d14a2b1c9b8b37de42e1f1cb52089d_54142_882x417_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_10_hue4d14a2b1c9b8b37de42e1f1cb52089d_54142_882x417_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 處理器部分則是給到 4 顆，同樣也是量力而為">▲ 處理器部分則是給到 4 顆，同樣也是量力而為</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 最後要記得給定 iso 檔案位置，否則會打不開虛擬機喔">
-  <img title="" loading="lazy" decoding="async" class="" width="877" height="448" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_11_hufd20784e7049eb9672b63ef16d3b7f84_60221_877x448_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_11_hufd20784e7049eb9672b63ef16d3b7f84_60221_877x448_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 最後要記得給定 iso 檔案位置，否則會打不開虛擬機喔">▲ 最後要記得給定 iso 檔案位置，否則會打不開虛擬機喔</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 上述都搞定以後就可以關閉頁面回到總結設定，按下結束（Finish）即完成架設">
-  <img title="" loading="lazy" decoding="async" class="" width="840" height="716" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_12_hue17bdce07f2340ac1f207efcf2eaded4_109972_840x716_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_12_hue17bdce07f2340ac1f207efcf2eaded4_109972_840x716_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 上述都搞定以後就可以關閉頁面回到總結設定，按下結束（Finish）即完成架設">▲ 上述都搞定以後就可以關閉頁面回到總結設定，按下結束（Finish）即完成架設</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-<figure class="img-center" role="group" aria-describedby="caption-▲ 此時就會看到首頁多了剛才架好的虛擬機，可直接開啟（Play）或繼續設定（Edit）">
-  <img title="" loading="lazy" decoding="async" class="" width="836" height="694" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/Screenshot_13_hu1fe7c71b165d37ca955d7f661395bddb_55882_836x694_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no1\/Screenshot_13_hu1fe7c71b165d37ca955d7f661395bddb_55882_836x694_resize_q75_box.jpg'">
-  <figcaption id="caption-▲ 此時就會看到首頁多了剛才架好的虛擬機，可直接開啟（Play）或繼續設定（Edit）">▲ 此時就會看到首頁多了剛才架好的虛擬機，可直接開啟（Play）或繼續設定（Edit）</figcaption>
-</figure>
-
-
-
-
-
-
-
-
-<h3 id="以後的事以後再說">以後的事以後再說</h3>
-<p>本文就先暫停在這邊吧！因為時間的關係，這篇文章已經稍微有些略長，我希望能盡量維持約 10 分鐘的閱讀時間，不過相信目前的測試應該可以讓初次踏入虛擬機或 Linux 領域的人嚐到一點甜頭（應該虛擬機部分更多一點點），尤其 VMWare Player 能夠做的事情就一般消費者來說已經算是相當多，有興趣的話可以針對它網路和其他設定去預先了解一下。</p>
-<p><strong>延伸閱讀</strong></p>
-<ul>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part2/"><font color=#0000FF>從零開始學 Linux (2)：Ubuntu 超基本初次安裝設定</font></a></li>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/"><font color=#0000FF>從零開始學 Linux (3)：安裝完系統後的首要任務</font></a></li>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/"><font color=#0000FF>從零開始學 Linux (4)：常用程式安裝、GUI 和終端機兩種選擇</font></a></li>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no5/"><font color=#0000FF>從零開始學 Linux (5)：Linux 終端機常用指令介紹，你也能成為鍵盤魔人</font></a></li>
-</ul>
-</div>
-        <div class="single-post-meta">
-          
-          <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
-            <li class="list-inline-item">
-              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-linux%2flearn-linux-from-scratch-part1%2f" target="_blank" class="facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com/intent/tweet/?text=%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8%20Linux%20%281%29%ef%bc%9aVMWare%20%e5%92%8c%20Ubuntu%20%e5%85%b1%e8%88%9e&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-linux%2flearn-linux-from-scratch-part1%2f" target="_blank"
-                class="twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-linux%2flearn-linux-from-scratch-part1%2f" target="_blank" class="pinterest">
-                <i class="fab fa-pinterest"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="col-12 mt-5">
-        <div class="single-post-similer section">
-          <div class="row mt-4">
-            <div class="col-12 mb-5">
-              <h2 class="text-center font-secondary text-uppercase">Similar Post</h2>
-            </div>
-
-            
-            
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <article class="card post-card text-center mb-5">
+    <div class="row">
+      
+      <div class="col-lg-4 col-md-6">
+        <article class="card post-card text-center mb-5">
   <a href="/codingexp.github.io/blog/lets-learn-linux/no5/">
     
     
@@ -1353,36 +232,10 @@ if (!doNotTrack) {
     <p>今天繼續進入 Linux 的核心，也就是終端機 Terminal，不過今天會更著重在終端機指令上面，也許經過這篇文章以後你會更了解為何 Linux 伺服器人員操作時都不需要滑鼠了。</p>
   </div>
 </article>
-            </div>
-            
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/vscode-server/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/vscode-server/cover_hu6b3a7ec9d7babaee1580a138875e8b81_80122_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1239" height="759">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/vscode-server/">遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</a>
-    </h5>
-    <p>各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～</p>
-  </div>
-</article>
-            </div>
-            
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <article class="card post-card text-center mb-5">
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <article class="card post-card text-center mb-5">
   <a href="/codingexp.github.io/blog/lets-learn-linux/no4/">
     
     
@@ -1405,11 +258,86 @@ if (!doNotTrack) {
     <p>總算要來開始安裝程式了，不同的 Linux 發行版本有不同的安裝程式方法，不過基本上一通百通，不是用 GUI 桌面環境下載、就是用終端機下載，但前者能做到的，後者也可以。</p>
   </div>
 </article>
-            </div>
-            
-          </div>
-        </div>
       </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <article class="card post-card text-center mb-5">
+  <a href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/">
+    
+    
+    
+    
+    
+    
+    
+    
+    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no3/cover_huec95352d09becd865e5ed376dcd58280_60947_1110x0_resize_q75_box.jpg" alt="post image"
+      width="1821" height="1024">
+    
+    
+  </a>
+
+  <div class="card-body">
+    <h5 class="mt-3">
+      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/">從零開始學 Linux (3)：安裝完系統後的首要任務</a>
+    </h5>
+    <p>今天不管你各位選擇安裝的是哪一款 Linux 發行版本（distro），甚至是哪一套流派的 Linux，在初次安裝完以後都有幾件事情要先做，其中最重要的就是確保系統是最新版。</p>
+  </div>
+</article>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <article class="card post-card text-center mb-5">
+  <a href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part2/">
+    
+    
+    
+    
+    
+    
+    
+    
+    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no2/cover_hu24d03c7823d23f966198173e36bff03b_77659_1110x0_resize_q75_box.jpg" alt="post image"
+      width="1915" height="949">
+    
+    
+  </a>
+
+  <div class="card-body">
+    <h5 class="mt-3">
+      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part2/">從零開始學 Linux (2)：Ubuntu 超基本初次安裝設定</a>
+    </h5>
+    <p>先前講到安裝 VMWare 和架起簡單的 Ubuntu 虛擬機，這次來實際把虛擬機打開吧！同時也把一些最基本的前置設定作業流程做介紹，這年頭要測試作業系統真的很簡單！</p>
+  </div>
+</article>
+      </div>
+      
+      <div class="col-lg-4 col-md-6">
+        <article class="card post-card text-center mb-5">
+  <a href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part1/">
+    
+    
+    
+    
+    
+    
+    
+    
+    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/cover_hud7a65ca8f53ae3659d66b2d8e63e844b_111887_1110x0_resize_q75_box.jpg" alt="post image"
+      width="1915" height="949">
+    
+    
+  </a>
+
+  <div class="card-body">
+    <h5 class="mt-3">
+      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part1/">從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞</a>
+    </h5>
+    <p>雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。</p>
+  </div>
+</article>
+      </div>
+      
     </div>
   </div>
 </section>
