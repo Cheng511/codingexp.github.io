@@ -6,29 +6,7 @@
     <description>Recent content in Categories on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-<<<<<<< HEAD
     <lastBuildDate>Mon, 18 Jul 2022 08:19:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Sat, 16 Jul 2022 23:02:11 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>print新聞</title>
-      <link>https://cheng511.github.io/codingexp.github.io/categories/print%E6%96%B0%E8%81%9E/</link>
-      <pubDate>Sat, 16 Jul 2022 23:02:11 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/categories/print%E6%96%B0%E8%81%9E/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>程式</title>
-      <link>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</link>
-      <pubDate>Sat, 16 Jul 2022 23:02:11 +0800</pubDate>
-      
-      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</guid>
-      <description></description>
-    </item>
-    
->>>>>>> 237558cc4124a040b7b522b94f3dafc43bfa8f98
     <item>
       <title>從零開始學Linux</title>
       <link>https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8linux/</link>
@@ -39,17 +17,11 @@
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>程式</title>
       <link>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</link>
       <pubDate>Mon, 18 Jul 2022 08:19:25 +0800</pubDate>
-=======
-      <title>Python</title>
-      <link>https://cheng511.github.io/codingexp.github.io/categories/python/</link>
-      <pubDate>Mon, 11 Jul 2022 13:05:40 +0800</pubDate>
->>>>>>> 237558cc4124a040b7b522b94f3dafc43bfa8f98
       
-      <guid>https://cheng511.github.io/codingexp.github.io/categories/python/</guid>
+      <guid>https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/</guid>
       <description></description>
     </item>
     

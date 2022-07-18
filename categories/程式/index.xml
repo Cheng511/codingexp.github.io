@@ -6,7 +6,6 @@
     <description>Recent content in 程式 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-<<<<<<< HEAD
     <lastBuildDate>Mon, 18 Jul 2022 08:19:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>從零開始學 Linux (5)：Linux 終端機常用指令介紹，你也能成為鍵盤魔人</title>
@@ -17,9 +16,6 @@
       <description>今天繼續進入 Linux 的核心，也就是終端機 Terminal，不過今天會更著重在終端機指令上面，也許經過這篇文章以後你會更了解為何 Linux 伺服器人員操作時都不需要滑鼠了。</description>
     </item>
     
-=======
-    <lastBuildDate>Sat, 16 Jul 2022 23:02:11 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
->>>>>>> 237558cc4124a040b7b522b94f3dafc43bfa8f98
     <item>
       <title>遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/vscode-server/</link>
