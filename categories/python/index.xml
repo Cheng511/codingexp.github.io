@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on 不務正業文人</title>
+    <link>https://cheng511.github.io/codingexp.github.io/categories/python/</link>
+    <description>Recent content in Python on 不務正業文人</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>繁體中文</language>
+    <lastBuildDate>Mon, 11 Jul 2022 13:05:40 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/learn-python-from-0-to-1-no_1/</link>
+      <pubDate>Mon, 11 Jul 2022 13:05:40 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/learn-python-from-0-to-1-no_1/</guid>
+      <description>在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！</description>
+    </item>
+    
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/easy-encrypted-password-changing-system/</link>
+      <pubDate>Wed, 29 Jun 2022 08:18:20 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/easy-encrypted-password-changing-system/</guid>
+      <description>那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！</description>
+    </item>
+    
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (5)：Python pyautogui 模組鍵盤滑鼠自動化</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/python-keyboard-and-mouse-automation-with-pyautogui/</link>
+      <pubDate>Thu, 23 Jun 2022 13:13:49 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/python-keyboard-and-mouse-automation-with-pyautogui/</guid>
+      <description>提到 Python 自動化，日常辦公的極致自動化是連同鍵盤滑鼠也做到，搭配先前提到的 Excel 對應模組 openpyxl，結合後幾乎可對應所有工作日常。</description>
+    </item>
+    
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/</link>
+      <pubDate>Wed, 22 Jun 2022 09:00:59 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/</guid>
+      <description>在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！</description>
+    </item>
+    
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/</link>
+      <pubDate>Tue, 21 Jun 2022 08:12:17 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/</guid>
+      <description>今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。</description>
+    </item>
+    
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/sql-automatically-detect-and-send-line-notification/</link>
+      <pubDate>Fri, 10 Jun 2022 08:31:28 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/sql-automatically-detect-and-send-line-notification/</guid>
+      <description>Well&amp;hellip;抓是抓了張大數據（Big Data）當首圖，但其實我們目前在用的資料庫也沒有到「大」數據就是了。</description>
+    </item>
+    
+    <item>
+      <title>自學程式如何 100% 提高工作效率 (1)：Python 工作資料庫 GUI 介面</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/</link>
+      <pubDate>Wed, 08 Jun 2022 13:19:34 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/</guid>
+      <description>今天來跟大家介紹一下學會寫程式對於我目前日常工作帶來的影響，同時也會簡單先介紹一下目前日常工作主程式如何幫助我提昇效率。</description>
+    </item>
+    
+  </channel>
+</rss>
