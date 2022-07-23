@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>程式</title>
+<title>從零開始學 Python (3)：管他字串還數字，串列（List）通吃</title>
 
 
 
@@ -40,23 +40,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/codingexp.github.io/images/logo.png" />
-  <meta name="twitter:image" content="https://cheng511.github.io/codingexp.github.io/images/logo.png"/>
-      <meta name="twitter:card" content="summary">
-    <meta property="og:image:width" content="280">
-    <meta property="og:image:height" content="188">
-    <meta property="og:image:type" content="image/png">
-<meta name="twitter:title" content="程式"/>
-<meta name="twitter:description" content="This is meta description"/>
-<meta property="og:title" content="程式" />
-<meta property="og:description" content="This is meta description" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/categories/%E7%A8%8B%E5%BC%8F/" />
+<meta property="og:image" content="https://cheng511.github.io/codingexp.github.io/images/let%27s%20learn%20python/no3/cover.jpg" />
+  <meta name="twitter:image" content="https://cheng511.github.io/codingexp.github.io/images/let%27s%20learn%20python/no3/cover.jpg"/>
+      <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image:width" content="2552">
+    <meta property="og:image:height" content="1080">
+    <meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:title" content="從零開始學 Python (3)：管他字串還數字，串列（List）通吃"/>
+<meta name="twitter:description" content="今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。"/>
+<meta property="og:title" content="從零開始學 Python (3)：管他字串還數字，串列（List）通吃" />
+<meta property="og:description" content="今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no3/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-23T15:27:29+08:00" />
+<meta property="article:modified_time" content="2022-07-23T15:27:29+08:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="程式"/>
-<meta name="twitter:description" content="This is meta description"/>
+<meta name="twitter:title" content="從零開始學 Python (3)：管他字串還數字，串列（List）通吃"/>
+<meta name="twitter:description" content="今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。"/>
 
 
 
@@ -204,12 +206,182 @@ if (!doNotTrack) {
   <main>
     
 
-<section class="section">
+<section id="post-block" class="post-block section pb-0">
   <div class="container">
-    <div class="row">
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
+    <div class="row no-gutters justify-content-center">
+      <div class="col-lg-12">
+        
+        
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        <picture>
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_1110x0_resize_q75_h2_box.webp">
+          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_1110x0_resize_q75_box.jpg"
+            alt="post image" width="2552" height="1080">
+        </picture>
+        
+        
+        
+        
+      </div>
+      <div class="col-lg-9 mt-5">
+        <div class="text-center mb-5">
+          <div class="card-meta-tag ">
+            
+            <a href="/codingexp.github.io/categories/%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8-python/">從零開始學 PYTHON</a>
+            
+            <a href="/codingexp.github.io/categories/%e7%a8%8b%e5%bc%8f/">程式</a>
+            
+          </div>
+          <h1 class="mb-3">從零開始學 Python (3)：管他字串還數字，串列（List）通吃</h1>
+          <div class="card-meta">
+            <em>Jul 23, 2022</em>
+            <em>
+              <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
+                JC
+              </a>
+          </div>
+          </em>
+        </div>
+        <div class="content"><p>今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。</p>
+<h3 id="真的什麼都能放">真的什麼都能放！</h3>
+<p>在 Python 的世界裡，串列是以「<strong>[ ]</strong>」中括號的符號來表示，先前說過 Python 有許多不同的資料類型，像是數字、字串、布林值等等，串列 List 也是其中一種，只是串列是用來放一大堆沒有<strong>無序資料</strong>的資料型態，注意我說的是「無序」，也就是說 List 裏面的資料預設是不會照順序排列的。舉例來說：</p>
+<p>我們先假定 listA 是一個空串列，也就是該串列內容目前為無。我們可以在下一行程式碼中直接定義該串列的內容包含幾個數字，串列中各資料間會以逗號分開，同時每個資料有專有名詞稱為「<strong>數值</strong>」（item）：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">listA <span style="color:#f92672">=</span> [] <span style="color:#75715e"># 空串列語法</span>
+listA <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+print(listA) <span style="color:#75715e"># 輸出: [1, 2, 3, 4, 5]</span>
+</code></pre></div><p>一般來說多數時候同一個字串的內容型態會是相同的，當然也是可以穿插不同的資料型態，只是說大部分時候實務上都會是相同類型居多。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">listB <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;哈囉&#34;</span>, <span style="color:#66d9ef">True</span>]
+print(listB) <span style="color:#75715e"># 輸出: [1, &#34;哈囉&#34;, True]</span>
+</code></pre></div><h3 id="串列可以被切來切去取數值">串列可以被切來切去取數值</h3>
+<p>串列的核心價值在於能夠大幅減少程式碼的複雜度，將多數相同類型的資料存放在串列裡，在維護上會比一個變數一個變數管理簡單的多。但你應該能發現當你嘗試調出串列的內容時，會是以<strong>整串串列內容</strong>一併出現的形式出現，這種輸出型態實務上非常少用（甚至可說是無用的地步）。</p>
+<p>更多時候對於串列來說，會以「<strong>切片</strong>」（slice）的形式去存取資料，這時要先理解一個概念：程式語言的世界裡，<u><strong>第一順位的資料永遠是編號 0</strong></u>，記住這點的話，對於未來在任何程式語言的理解上會更不容易混淆。</p>
+<p>回到串列上，當我想要存取 listA 中最左邊第一個資料時，使用的語法如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 注意第一順位資料編號為 0</span>
+print(listA[<span style="color:#ae81ff">0</span>]) <span style="color:#75715e"># 輸出: 1</span>
+</code></pre></div><p>你會發現「<strong>串列[n]</strong>」這樣的語法（n 代表數字）輸出的內容將會是資料本身，而不再是整盤串列端出來～這樣的資料內容比較有存取意義。</p>
+<p>舉一反三囉～如果要存取的是第二個資料的話&hellip;沒錯，就是中括號中放 1，這樣就會抓到 listA 中的第二個資料內容。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(listA[<span style="color:#ae81ff">1</span>])
+</code></pre></div><p>比較特別的地方來了，如果我今天是要存取串列中的最後一組數字呢？這時候就要反過來思考&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 想要得到串列中最後一個資料數值</span>
+print(listA[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) <span style="color:#75715e"># 輸出: 5</span>
+</code></pre></div><p>這邊可能就是新手入門 Python 以後容易碰到的混淆點，因為 0 是第一個（其實也是最左邊）數值，結果 -1 反而是最後一個（也就是最右邊）數值，這個我只能說「以後慢慢習慣就好」，他會變成一種語言記憶。</p>
+<h3 id="連續切片取數值">連續切片取數值</h3>
+<p>我這邊再簡單附上一個串列在切片取值時常用的小技巧，假設今天你手上有一份王大明同學學期末考試結果，資料結構中包含：</p>
+<ol>
+<li>座號</li>
+<li>姓名</li>
+<li>總分</li>
+<li>錯題數</li>
+<li>年齡</li>
+</ol>
+<p>教務主任說他只要「座號、姓名、總分」三種資料的數值就好。所以上面例子來說，王大明的資料會長這樣：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># 王大明的資料</span>
+scoreA <span style="color:#f92672">=</span> [<span style="color:#ae81ff">11</span>, <span style="color:#e6db74">&#34;王大明&#34;</span>, <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">15</span>] <span style="color:#75715e"># 座號 11、考 95 分錯 2 題，15 歲</span>
+</code></pre></div><p>如果用前面的邏輯來說，這時候你可能會這樣做：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(scoreA[<span style="color:#ae81ff">0</span>]) <span style="color:#75715e"># 輸出: 11</span>
+print(scoreA[<span style="color:#ae81ff">1</span>]) <span style="color:#75715e"># 輸出: &#34;王大明&#34;</span>
+print(scoreA[<span style="color:#ae81ff">2</span>]) <span style="color:#75715e"># 輸出: 95</span>
+</code></pre></div><p>這不能說你錯，但 Python 秉持的精神是「簡潔」，這時可以套用串列的連續切片語法，輕鬆用一行程式碼達成：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">print(scoreA[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">3</span>]) <span style="color:#75715e"># 輸出: [11, &#39;王大明&#39;, 95]</span>
+</code></pre></div><p>這時候拋轉出的資料就可以拿來做別的運用了。我們來看一下上面這個語法跟他輸出的內容：</p>
+<ul>
+<li>首先，他<strong>輸出的仍是一個串列</strong>，所以要進一步存取資料的話要繼續切片。</li>
+<li>再者，中括號中的語法是 [0:3]，0 代表的是切片的第一筆資料、冒號則是語法，可以理解為「到」、3 則是切片中的第四筆資料</li>
+</ul>
+<p>所以我們整理一下的話就會理解這句語法的意思是「<strong>輸出串列中的第 1 筆到第 3 筆資料</strong>」，也就是說，<u>scoreA[0]、scoreA[1]、score[2]</u> 這三個數值會被輸出，跟一開始分三行輸出的結果是相同的。</p>
+<p>一言蔽之的話，「listA[n:m]」這個語法指得就是就是「串列中第 n 筆數值到第 m-1 個數值」，要注意的是 m-1 這個概念喔！結束之前我們再用以下幾個例子呈現這個語法的邏輯讓大家更能理解，大家也可以自行輸入看看這幾行程式實際操作看看：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">listA <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">15</span>]
+print(listA[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">3</span>]) <span style="color:#75715e"># 輸出: [1, 3, 5]</span>
+print(listA[:<span style="color:#ae81ff">3</span>])  <span style="color:#75715e"># 輸出: [1, 3, 5] 這邊和前一行輸出的結果是相同的，0 可省略</span>
+print(listA[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">5</span>]) <span style="color:#75715e"># 輸出: [3, 5, 7, 9]</span>
+print(listA[<span style="color:#ae81ff">6</span>:])  <span style="color:#75715e"># 輸出: [13, 15] 以這個字串來說，會輸出倒數兩個數值</span>
+</code></pre></div><h3 id="串列一定要學會">串列一定要學會</h3>
+<p>以 Python 來說，串列的概念是一定要會的，這篇文章目前講到的其實仍只是串列最最基本的切片取值而已，這邊就先暫時不介紹切片中 [] 實際上可用到的第三個參數意義了。另外，其實串列本身也有許多函式可以使用，不過這部分就等到以後再說了。</p>
+<p>另外要提到的一個重點是，實務上來說要取得串列中數值時最常用的方法是搭配迴圈，尤其又以 for 迴圈最為重要，日常中有許多重複性的冗雜事務，如果要套用成程式語言的話，就是可以利用迴圈的概念來自動解決，大幅減少工作量，以後再慢慢介紹囉～</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img title="" loading="lazy" decoding="async" src="https://cheng511.github.io/codingexp.github.io/" alt="" class=" img-center" width="" height="">
+
+
+
+
+
+
+<p><strong>延伸閱讀</strong></p>
+<ul>
+<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no1/"><font color=#0000FF>從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</font></a></li>
+<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no2/"><font color=#0000FF>從零開始學 Python (2)：先懂基礎資料類型、其餘暫且不談</font></a></li>
+</ul>
+</div>
+        <div class="single-post-meta">
+          
+          <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
+            <li class="list-inline-item">
+              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno3%2f" target="_blank" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://twitter.com/intent/tweet/?text=%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8%20Python%20%283%29%ef%bc%9a%e7%ae%a1%e4%bb%96%e5%ad%97%e4%b8%b2%e9%82%84%e6%95%b8%e5%ad%97%ef%bc%8c%e4%b8%b2%e5%88%97%ef%bc%88List%ef%bc%89%e9%80%9a%e5%90%83&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno3%2f" target="_blank"
+                class="twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno3%2f" target="_blank" class="pinterest">
+                <i class="fab fa-pinterest"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-12 mt-5">
+        <div class="single-post-similer section">
+          <div class="row mt-4">
+            <div class="col-12 mb-5">
+              <h2 class="text-center font-secondary text-uppercase">Similar Post</h2>
+            </div>
+
+            
+            
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <article class="card post-card text-center mb-5">
   <a href="/codingexp.github.io/blog/lets-learn-python/no3/">
     
     
@@ -232,10 +404,10 @@ if (!doNotTrack) {
     <p>今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。</p>
   </div>
 </article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <article class="card post-card text-center mb-5">
   <a href="/codingexp.github.io/blog/lets-learn-python/no2/">
     
     
@@ -258,10 +430,10 @@ if (!doNotTrack) {
     <p>久違了，近期迷上 Linux 系統的操作，幾乎忘了從零開始系列還要 Python 要搞！今天一樣維持 10 分鐘不到的閱讀時間，我們迅速來了解一下 Python 最常用的幾種資料類型。</p>
   </div>
 </article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <article class="card post-card text-center mb-5">
   <a href="/codingexp.github.io/blog/lets-learn-linux/no5/">
     
     
@@ -284,320 +456,11 @@ if (!doNotTrack) {
     <p>今天繼續進入 Linux 的核心，也就是終端機 Terminal，不過今天會更著重在終端機指令上面，也許經過這篇文章以後你會更了解為何 Linux 伺服器人員操作時都不需要滑鼠了。</p>
   </div>
 </article>
+            </div>
+            
+          </div>
+        </div>
       </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/vscode-server/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/vscode-server/cover_hu6b3a7ec9d7babaee1580a138875e8b81_80122_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1239" height="759">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/vscode-server/">遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</a>
-    </h5>
-    <p>各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/lets-learn-linux/no4/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no4/cover_hueb44e96d763333d96b02a52d13c2e4ad_140041_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1919" height="1077">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-linux/no4/">從零開始學 Linux (4)：常用程式安裝、GUI 和終端機兩種選擇</a>
-    </h5>
-    <p>總算要來開始安裝程式了，不同的 Linux 發行版本有不同的安裝程式方法，不過基本上一通百通，不是用 GUI 桌面環境下載、就是用終端機下載，但前者能做到的，後者也可以。</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no3/cover_huec95352d09becd865e5ed376dcd58280_60947_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1821" height="1024">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part3/">從零開始學 Linux (3)：安裝完系統後的首要任務</a>
-    </h5>
-    <p>今天不管你各位選擇安裝的是哪一款 Linux 發行版本（distro），甚至是哪一套流派的 Linux，在初次安裝完以後都有幾件事情要先做，其中最重要的就是確保系統是最新版。</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part2/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no2/cover_hu24d03c7823d23f966198173e36bff03b_77659_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1915" height="949">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part2/">從零開始學 Linux (2)：Ubuntu 超基本初次安裝設定</a>
-    </h5>
-    <p>先前講到安裝 VMWare 和架起簡單的 Ubuntu 虛擬機，這次來實際把虛擬機打開吧！同時也把一些最基本的前置設定作業流程做介紹，這年頭要測試作業系統真的很簡單！</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/lets-learn-python/no1/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/cover_hu214b9fc48aa305847c28e5d3df0f33fd_33759_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1890" height="800">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-python/no1/">從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</a>
-    </h5>
-    <p>在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part1/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no1/cover_hud7a65ca8f53ae3659d66b2d8e63e844b_111887_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1915" height="949">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-linux/learn-linux-from-scratch-part1/">從零開始學 Linux (1)：VMWare 和 Ubuntu 共舞</a>
-    </h5>
-    <p>雖然 Windows 和 Mac 目前都有個人電腦在使用，Linux 其實一直是我自己非常有興趣想要轉換的系統，來做個特別一點的 Linux 系列看看能走多遠。</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/easy-encrypted-password-changing-system/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-password-encrypted/cover_hu1fe2e87f454bc8f16bc9d70936e8e6f7_231667_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1920" height="1238">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/easy-encrypted-password-changing-system/">自學程式如何 100% 提高工作效率 (6)：如何設定更改密碼和加密</a>
-    </h5>
-    <p>那天主管出了個問題，「有沒有辦法讓你的那個程式再優化，讓他們可以自己改密碼？」沒做過這個項目，研究研究搞出點什麼！</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/python-keyboard-and-mouse-automation-with-pyautogui/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/post1-pyautogui/cover_hu216d6e1050afefcbc8ead27ed6ea64d8_131432_1110x0_resize_q75_box.jpg" alt="post image"
-      width="630" height="420">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/python-keyboard-and-mouse-automation-with-pyautogui/">自學程式如何 100% 提高工作效率 (5)：Python pyautogui 模組鍵盤滑鼠自動化</a>
-    </h5>
-    <p>提到 Python 自動化，日常辦公的極致自動化是連同鍵盤滑鼠也做到，搭配先前提到的 Excel 對應模組 openpyxl，結合後幾乎可對應所有工作日常。</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_1110x0_resize_q75_box.jpg" alt="post image"
-      width="900" height="470">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/">自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組</a>
-    </h5>
-    <p>在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/use-python-to-automate-excel-work/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-with-openpyxl/cover_huf89461c1fbd8ecbb6b374c7e145f2370_42561_1110x0_resize_q75_box.jpg" alt="post image"
-      width="736" height="414">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/use-python-to-automate-excel-work/">自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</a>
-    </h5>
-    <p>今天來聊聊 Python 在一般日常工作期間最強大的功能：「與 Microsoft Excel」之間的互動，藉此自動化執行活頁簿達成交辦任務，可以大幅度減少任務時間。</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/sql-automatically-detect-and-send-line-notification/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/sql-automatically-detect-and-send-line-notification/cover_hude3f101b417045c2f9f6f0cbe73a73b8_253070_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1920" height="1082">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/sql-automatically-detect-and-send-line-notification/">自學程式如何 100% 提高工作效率 (2)：SQL 資料庫偵測時間自動發 Line 通知</a>
-    </h5>
-    <p>Well&hellip;抓是抓了張大數據（Big Data）當首圖，但其實我們目前在用的資料庫也沒有到「大」數據就是了。</p>
-  </div>
-</article>
-      </div>
-      
-      <div class="col-lg-4 col-md-6">
-        <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/how-code-helps-me-with-work/cover_hu4378213d357acb6eda5a9983a53a74c1_25665_1110x0_resize_q75_box.jpg" alt="post image"
-      width="640" height="426">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/">自學程式如何 100% 提高工作效率 (1)：Python 工作資料庫 GUI 介面</a>
-    </h5>
-    <p>今天來跟大家介紹一下學會寫程式對於我目前日常工作帶來的影響，同時也會簡單先介紹一下目前日常工作主程式如何幫助我提昇效率。</p>
-  </div>
-</article>
-      </div>
-      
     </div>
   </div>
 </section>
