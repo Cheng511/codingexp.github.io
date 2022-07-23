@@ -6,7 +6,16 @@
     <description>Recent content in 從零開始學Linux on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Fri, 15 Jul 2022 15:11:41 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Jul 2022 08:19:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Linux (5)：Linux 終端機常用指令介紹，你也能成為鍵盤魔人</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no5/</link>
+      <pubDate>Mon, 18 Jul 2022 08:19:25 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no5/</guid>
+      <description>今天繼續進入 Linux 的核心，也就是終端機 Terminal，不過今天會更著重在終端機指令上面，也許經過這篇文章以後你會更了解為何 Linux 伺服器人員操作時都不需要滑鼠了。</description>
+    </item>
+    
     <item>
       <title>從零開始學 Linux (4)：常用程式安裝、GUI 和終端機兩種選擇</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no4/</link>

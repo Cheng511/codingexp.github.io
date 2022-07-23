@@ -6,7 +6,25 @@
     <description>Recent content in 所有不務正業的文章 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Sat, 16 Jul 2022 23:02:11 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Jul 2022 14:59:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Python (2)：先懂基礎資料類型、其餘暫且不談</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no2/</link>
+      <pubDate>Mon, 18 Jul 2022 14:59:25 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no2/</guid>
+      <description>久違了，近期迷上 Linux 系統的操作，幾乎忘了從零開始系列還要 Python 要搞！今天一樣維持 10 分鐘不到的閱讀時間，我們迅速來了解一下 Python 最常用的幾種資料類型。</description>
+    </item>
+    
+    <item>
+      <title>從零開始學 Linux (5)：Linux 終端機常用指令介紹，你也能成為鍵盤魔人</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no5/</link>
+      <pubDate>Mon, 18 Jul 2022 08:19:25 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no5/</guid>
+      <description>今天繼續進入 Linux 的核心，也就是終端機 Terminal，不過今天會更著重在終端機指令上面，也許經過這篇文章以後你會更了解為何 Linux 伺服器人員操作時都不需要滑鼠了。</description>
+    </item>
+    
     <item>
       <title>遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/vscode-server/</link>
@@ -45,10 +63,10 @@
     
     <item>
       <title>從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</title>
-      <link>https://cheng511.github.io/codingexp.github.io/blog/learn-python-from-0-to-1-no_1/</link>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no1/</link>
       <pubDate>Mon, 11 Jul 2022 13:05:40 +0800</pubDate>
       
-      <guid>https://cheng511.github.io/codingexp.github.io/blog/learn-python-from-0-to-1-no_1/</guid>
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no1/</guid>
       <description>在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！</description>
     </item>
     
