@@ -257,7 +257,7 @@ if (!doNotTrack) {
           </em>
         </div>
         <div class="content"><p>久違了，近期迷上 Linux 系統的操作，幾乎忘了從零開始系列還要 Python 要搞！今天一樣維持 10 分鐘不到的閱讀時間，我們迅速來了解一下 Python 最常用的幾種資料類型。</p>
-<p>在開始之前，建議如果尚未安裝 IDE 開發環境的話可以考慮參考前一篇文章安裝 Visual Studio Code。本文如果只是要簡單練習的話，直接使用安裝 Python 後提供的 Launcher 也是 ok 的。</p>
+<p>在開始之前，建議如果尚未安裝 IDE 開發環境的話可以考慮參考前一篇文章安裝 Visual Studio Code。如果只是要簡單練習的話，直接使用安裝 Python 後提供的 Launcher 也是 ok 的。但我這邊還是建議習慣 IDE 的操作環境對於未來程式碼編寫上會更得心應手，所以以下後文在輸出資料時會看到 print 語法都是因為在 IDE 上要輸出資料必須如此。</p>
 <h3 id="實際上可歸類出八大類型">實際上可歸類出八大類型</h3>
 <p>Python 語法中最常用到的類型其實是三大類：數字（Number）、字串（String）和列表（List），但其實真要說的話還有一些其他類型，像是布林值（Boolean）、字典（Dictionary）、元組（Tuple）等等，而數字還可細分出其他兩種待會會提，不過以新入門來說，光是這三大類其實就已經非常夠鑽研了。</p>
 <h4 id="數字number">數字（Number）</h4>
@@ -316,39 +316,10 @@ if (!doNotTrack) {
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">192.168.1.2</span>
 </span></span></code></pre></div><p>這時候就會有問題了，此時的解決方法是以字串的相關函式去解析最後面一組字串，先將最後一個小數點以前的資料全數拋棄（strip），然後把剩餘的字串轉換成數字進行大小比對，然後再做遞增（減）排序以反推回來到整組字串 IP。</p>
 <p>當然，這只是其中一種我現在馬上可以想得到的情境和解法，情境不只一種、解法也有很多，這就要看程式設計師在碰到狀況時如何解決了。我們今天就先聊到這邊吧！下次再來針對比較重要的列表類型來做說明。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" src="https://cheng511.github.io/codingexp.github.io/" alt="" class=" img-center" width="" height="">
-
-
-
-
-
-
 <p><strong>延伸閱讀</strong></p>
 <ul>
 <li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no1/"><font color=#0000FF>從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</font></a></li>
+<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no3/"><font color=#0000FF>從零開始學 Python (3)：管他字串還數字，串列（List）通吃</font></a></li>
 </ul>
 </div>
         <div class="single-post-meta">
@@ -382,6 +353,32 @@ if (!doNotTrack) {
             </div>
 
             
+            
+            <div class="col-lg-4 col-md-4 col-sm-6">
+              <article class="card post-card text-center mb-5">
+  <a href="/codingexp.github.io/blog/lets-learn-python/no3/">
+    
+    
+    
+    
+    
+    
+    
+    
+    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_1110x0_resize_q75_box.jpg" alt="post image"
+      width="2552" height="1080">
+    
+    
+  </a>
+
+  <div class="card-body">
+    <h5 class="mt-3">
+      <a class="post-title" href="/codingexp.github.io/blog/lets-learn-python/no3/">從零開始學 Python (3)：管他字串還數字，串列（List）通吃</a>
+    </h5>
+    <p>今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。</p>
+  </div>
+</article>
+            </div>
             
             <div class="col-lg-4 col-md-4 col-sm-6">
               <article class="card post-card text-center mb-5">
@@ -431,32 +428,6 @@ if (!doNotTrack) {
       <a class="post-title" href="/codingexp.github.io/blog/lets-learn-linux/no5/">從零開始學 Linux (5)：Linux 終端機常用指令介紹，你也能成為鍵盤魔人</a>
     </h5>
     <p>今天繼續進入 Linux 的核心，也就是終端機 Terminal，不過今天會更著重在終端機指令上面，也許經過這篇文章以後你會更了解為何 Linux 伺服器人員操作時都不需要滑鼠了。</p>
-  </div>
-</article>
-            </div>
-            
-            <div class="col-lg-4 col-md-4 col-sm-6">
-              <article class="card post-card text-center mb-5">
-  <a href="/codingexp.github.io/blog/vscode-server/">
-    
-    
-    
-    
-    
-    
-    
-    
-    <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/vscode-server/cover_hu6b3a7ec9d7babaee1580a138875e8b81_80122_1110x0_resize_q75_box.jpg" alt="post image"
-      width="1239" height="759">
-    
-    
-  </a>
-
-  <div class="card-body">
-    <h5 class="mt-3">
-      <a class="post-title" href="/codingexp.github.io/blog/vscode-server/">遠端 IDE 新生活：Vscode Server 發表，編程時間地點從此不受限</a>
-    </h5>
-    <p>各位，這可能是今年我對 Visual Studio Code 最期待的功能了，「隨時隨地都能用瀏覽器連線編程！」你真的不得不愛上遠端工作時代啊～</p>
   </div>
 </article>
             </div>

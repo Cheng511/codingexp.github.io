@@ -6,7 +6,16 @@
     <description>Recent content on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Mon, 18 Jul 2022 14:59:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 23 Jul 2022 15:27:29 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Python (3)：管他字串還數字，串列（List）通吃</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no3/</link>
+      <pubDate>Sat, 23 Jul 2022 15:27:29 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no3/</guid>
+      <description>今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。</description>
+    </item>
+    
     <item>
       <title>從零開始學 Python (2)：先懂基礎資料類型、其餘暫且不談</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no2/</link>

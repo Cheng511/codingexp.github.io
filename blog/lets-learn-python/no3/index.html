@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組</title>
+<title>從零開始學 Python (3)：管他字串還數字，串列（List）通吃</title>
 
 
 
@@ -40,25 +40,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/images/python-os-module-is-useful/cover.jpg" />
-  <meta name="twitter:image" content="https://cheng511.github.io/images/python-os-module-is-useful/cover.jpg"/>
+<meta property="og:image" content="https://cheng511.github.io/codingexp.github.io/images/let%27s%20learn%20python/no3/cover.jpg" />
+  <meta name="twitter:image" content="https://cheng511.github.io/codingexp.github.io/images/let%27s%20learn%20python/no3/cover.jpg"/>
       <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="900">
-    <meta property="og:image:height" content="470">
+    <meta property="og:image:width" content="2552">
+    <meta property="og:image:height" content="1080">
     <meta property="og:image:type" content="image/jpeg">
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組"/>
-<meta name="twitter:description" content="在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！"/>
-<meta property="og:title" content="自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組" />
-<meta property="og:description" content="在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！" />
+<meta name="twitter:title" content="從零開始學 Python (3)：管他字串還數字，串列（List）通吃"/>
+<meta name="twitter:description" content="今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。"/>
+<meta property="og:title" content="從零開始學 Python (3)：管他字串還數字，串列（List）通吃" />
+<meta property="og:description" content="今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/python-os-module-manupulation-is-super-useful/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-06-22T09:00:59+08:00" />
-<meta property="article:modified_time" content="2022-06-22T09:00:59+08:00" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no3/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-23T15:27:29+08:00" />
+<meta property="article:modified_time" content="2022-07-23T15:27:29+08:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組"/>
-<meta name="twitter:description" content="在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！"/>
+<meta name="twitter:title" content="從零開始學 Python (3)：管他字串還數字，串列（List）通吃"/>
+<meta name="twitter:description" content="今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。"/>
 
 
 
@@ -225,12 +225,12 @@ if (!doNotTrack) {
         
         
         <picture>
-          <source srcset="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
-          <source srcset="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
-          <source srcset="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
-          <source srcset="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_1110x0_resize_q75_h2_box.webp">
-          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/python-os-module-is-useful/cover_hu413b5fa3d5016d47c8244cbd30f96f9d_79079_1110x0_resize_q75_box.jpg"
-            alt="post image" width="900" height="470">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_1110x0_resize_q75_h2_box.webp">
+          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20python/no3/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49833_1110x0_resize_q75_box.jpg"
+            alt="post image" width="2552" height="1080">
         </picture>
         
         
@@ -241,14 +241,14 @@ if (!doNotTrack) {
         <div class="text-center mb-5">
           <div class="card-meta-tag ">
             
+            <a href="/codingexp.github.io/categories/%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8-python/">從零開始學 PYTHON</a>
+            
             <a href="/codingexp.github.io/categories/%e7%a8%8b%e5%bc%8f/">程式</a>
             
-            <a href="/codingexp.github.io/categories/python/">python</a>
-            
           </div>
-          <h1 class="mb-3">自學程式如何 100% 提高工作效率 (4)：Python 系統管理大師 os 模組</h1>
+          <h1 class="mb-3">從零開始學 Python (3)：管他字串還數字，串列（List）通吃</h1>
           <div class="card-meta">
-            <em>Jun 22, 2022</em>
+            <em>Jul 23, 2022</em>
             <em>
               <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
                 JC
@@ -256,133 +256,84 @@ if (!doNotTrack) {
           </div>
           </em>
         </div>
-        <div class="content"><p>在接續介紹該模組的功用和使用情境前，想先跟大家介紹 Python 調整電腦系統的大師：os 模組！</p>
-<p>上回提到 openpyxl 的好用之處，部分新手程式入門者可能已經開始著手熟悉該模組帶來的便利性，本來今天是要繼續跟大家介紹的，但因為在做程式微調的過程中發現 os 模組的另一個好用之處，可以進一步的優化我先前提到過的 GUI 主資料庫程式，所以打算今天先講一下 Python os 模組。</p>
+        <div class="content"><p>今天本來想要繼續針對字串再多做一些額外的介紹，但想了想，還是先由淺入深吧！慢慢來，我認為會學得比較容易理解，程式語言一步登天真的很難，基礎打好最重要。</p>
+<h3 id="真的什麼都能放">真的什麼都能放！</h3>
+<p>在 Python 的世界裡，串列是以「<strong>[ ]</strong>」中括號的符號來表示，先前說過 Python 有許多不同的資料類型，像是數字、字串、布林值等等，串列 List 也是其中一種，只是串列是用來放一大堆沒有<strong>無序資料</strong>的資料型態，注意我說的是「無序」，也就是說 List 裏面的資料預設是不會照順序排列的。舉例來說：</p>
+<p>我們先假定 listA 是一個空串列，也就是該串列內容目前為無。我們可以在下一行程式碼中直接定義該串列的內容包含幾個數字，串列中各資料間會以逗號分開，同時每個資料有專有名詞稱為「<strong>數值</strong>」（item）：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listA <span style="color:#f92672">=</span> [] <span style="color:#75715e"># 空串列語法</span>
+</span></span><span style="display:flex;"><span>listA <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>]
+</span></span><span style="display:flex;"><span>print(listA) <span style="color:#75715e"># 輸出: [1, 2, 3, 4, 5]</span>
+</span></span></code></pre></div><p>一般來說多數時候同一個字串的內容型態會是相同的，當然也是可以穿插不同的資料型態，只是說大部分時候實務上都會是相同類型居多。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listB <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;哈囉&#34;</span>, <span style="color:#66d9ef">True</span>]
+</span></span><span style="display:flex;"><span>print(listB) <span style="color:#75715e"># 輸出: [1, &#34;哈囉&#34;, True]</span>
+</span></span></code></pre></div><h3 id="串列可以被切來切去取數值">串列可以被切來切去取數值</h3>
+<p>串列的核心價值在於能夠大幅減少程式碼的複雜度，將多數相同類型的資料存放在串列裡，在維護上會比一個變數一個變數管理簡單的多。但你應該能發現當你嘗試調出串列的內容時，會是以<strong>整串串列內容</strong>一併出現的形式出現，這種輸出型態實務上非常少用（甚至可說是無用的地步）。</p>
+<p>更多時候對於串列來說，會以「<strong>切片</strong>」（slice）的形式去存取資料，這時要先理解一個概念：程式語言的世界裡，<u><strong>第一順位的資料永遠是編號 0</strong></u>，記住這點的話，對於未來在任何程式語言的理解上會更不容易混淆。</p>
+<p>回到串列上，當我想要存取 listA 中最左邊第一個資料時，使用的語法如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 注意第一順位資料編號為 0</span>
+</span></span><span style="display:flex;"><span>print(listA[<span style="color:#ae81ff">0</span>]) <span style="color:#75715e"># 輸出: 1</span>
+</span></span></code></pre></div><p>你會發現「<strong>串列[n]</strong>」這樣的語法（n 代表數字）輸出的內容將會是資料本身，而不再是整盤串列端出來～這樣的資料內容比較有存取意義。</p>
+<p>舉一反三囉～如果要存取的是第二個資料的話&hellip;沒錯，就是中括號中放 1，這樣就會抓到 listA 中的第二個資料內容。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(listA[<span style="color:#ae81ff">1</span>])
+</span></span></code></pre></div><p>比較特別的地方來了，如果我今天是要存取串列中的最後一組數字呢？這時候就要反過來思考&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 想要得到串列中最後一個資料數值</span>
+</span></span><span style="display:flex;"><span>print(listA[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) <span style="color:#75715e"># 輸出: 5</span>
+</span></span></code></pre></div><p>這邊可能就是新手入門 Python 以後容易碰到的混淆點，因為 0 是第一個（其實也是最左邊）數值，結果 -1 反而是最後一個（也就是最右邊）數值，這個我只能說「以後慢慢習慣就好」，他會變成一種語言記憶。</p>
+<h3 id="連續切片取數值">連續切片取數值</h3>
+<p>我這邊再簡單附上一個串列在切片取值時常用的小技巧，假設今天你手上有一份王大明同學學期末考試結果，資料結構中包含：</p>
+<ol>
+<li>座號</li>
+<li>姓名</li>
+<li>總分</li>
+<li>錯題數</li>
+<li>年齡</li>
+</ol>
+<p>教務主任說他只要「座號、姓名、總分」三種資料的數值就好。所以上面例子來說，王大明的資料會長這樣：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># 王大明的資料</span>
+</span></span><span style="display:flex;"><span>scoreA <span style="color:#f92672">=</span> [<span style="color:#ae81ff">11</span>, <span style="color:#e6db74">&#34;王大明&#34;</span>, <span style="color:#ae81ff">95</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">15</span>] <span style="color:#75715e"># 座號 11、考 95 分錯 2 題，15 歲</span>
+</span></span></code></pre></div><p>如果用前面的邏輯來說，這時候你可能會這樣做：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(scoreA[<span style="color:#ae81ff">0</span>]) <span style="color:#75715e"># 輸出: 11</span>
+</span></span><span style="display:flex;"><span>print(scoreA[<span style="color:#ae81ff">1</span>]) <span style="color:#75715e"># 輸出: &#34;王大明&#34;</span>
+</span></span><span style="display:flex;"><span>print(scoreA[<span style="color:#ae81ff">2</span>]) <span style="color:#75715e"># 輸出: 95</span>
+</span></span></code></pre></div><p>這不能說你錯，但 Python 秉持的精神是「簡潔」，這時可以套用串列的連續切片語法，輕鬆用一行程式碼達成：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(scoreA[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">3</span>]) <span style="color:#75715e"># 輸出: [11, &#39;王大明&#39;, 95]</span>
+</span></span></code></pre></div><p>這時候拋轉出的資料就可以拿來做別的運用了。我們來看一下上面這個語法跟他輸出的內容：</p>
+<ul>
+<li>首先，他<strong>輸出的仍是一個串列</strong>，所以要進一步存取資料的話要繼續切片。</li>
+<li>再者，中括號中的語法是 [0:3]，0 代表的是切片的第一筆資料、冒號則是語法，可以理解為「到」、3 則是切片中的第四筆資料</li>
+</ul>
+<p>所以我們整理一下的話就會理解這句語法的意思是「<strong>輸出串列中的第 1 筆到第 3 筆資料</strong>」，也就是說，<u>scoreA[0]、scoreA[1]、score[2]</u> 這三個數值會被輸出，跟一開始分三行輸出的結果是相同的。</p>
+<p>一言蔽之的話，「listA[n:m]」這個語法指得就是就是「串列中第 n 筆數值到第 m-1 個數值」，要注意的是 m-1 這個概念喔！結束之前我們再用以下幾個例子呈現這個語法的邏輯讓大家更能理解，大家也可以自行輸入看看這幾行程式實際操作看看：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listA <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">11</span>, <span style="color:#ae81ff">13</span>, <span style="color:#ae81ff">15</span>]
+</span></span><span style="display:flex;"><span>print(listA[<span style="color:#ae81ff">0</span>:<span style="color:#ae81ff">3</span>]) <span style="color:#75715e"># 輸出: [1, 3, 5]</span>
+</span></span><span style="display:flex;"><span>print(listA[:<span style="color:#ae81ff">3</span>])  <span style="color:#75715e"># 輸出: [1, 3, 5] 這邊和前一行輸出的結果是相同的，0 可省略</span>
+</span></span><span style="display:flex;"><span>print(listA[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">5</span>]) <span style="color:#75715e"># 輸出: [3, 5, 7, 9]</span>
+</span></span><span style="display:flex;"><span>print(listA[<span style="color:#ae81ff">6</span>:])  <span style="color:#75715e"># 輸出: [13, 15] 以這個字串來說，會輸出倒數兩個數值</span>
+</span></span></code></pre></div><h3 id="串列一定要學會">串列一定要學會</h3>
+<p>以 Python 來說，串列的概念是一定要會的，這篇文章目前講到的其實仍只是串列最最基本的切片取值而已，這邊就先暫時不介紹切片中 [] 實際上可用到的第三個參數意義了。另外，其實串列本身也有許多函式可以使用，不過這部分就等到以後再說了。</p>
+<p>另外要提到的一個重點是，實務上來說要取得串列中數值時最常用的方法是搭配迴圈，尤其又以 for 迴圈最為重要，日常中有許多重複性的冗雜事務，如果要套用成程式語言的話，就是可以利用迴圈的概念來自動解決，大幅減少工作量，以後再慢慢介紹囉～</p>
 <p><strong>延伸閱讀</strong></p>
 <ul>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/use-python-to-automate-excel-work/">自學程式如何 100% 提高工作效率 (3)：Python / Excel 圓舞曲 openpyxl - 序</a></li>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/how-being-able-to-code-helps-me-with-work/">自學程式如何 100% 提高工作效率 (1)：Python 工作資料庫 GUI 介面</a></li>
+<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no1/"><font color=#0000FF>從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</font></a></li>
+<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no2/"><font color=#0000FF>從零開始學 Python (2)：先懂基礎資料類型、其餘暫且不談</font></a></li>
 </ul>
-<h3 id="系統管理大師os-模組">系統管理大師：os 模組</h3>
-<p>先來快速說一下這次發現的小東西吧！os 模組的主要功能在於以類似 Linux 系統的 Command-line 邏輯語言去做系統溝通，比如像是 mkdir（新增目錄）就是一個簡單的例子，不過這邊要提的是 os 模組中的其中一個小方法。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>user_name <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin() <span style="color:#75715e"># 這裡</span>
-</span></span><span style="display:flex;"><span>print(user_name)
-</span></span></code></pre></div><p>相信每個讀者各位在使用的電腦本身都會有一個登入使用者名稱，以 Windows 系統來說的話會記錄在 Users 資料夾以下，形成 「<strong>Users/ (使用者名稱)</strong>」這樣的結構。而許多程式在下載安裝後，部分可能會在該資料夾中建立各自的獨立資料夾，這點以我們的ERP系統來說即是，而且因為ERP程式路徑的安裝位置是固定的，所以每台使用者之間最大的差異就只在最前面的使用者名稱不同。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="405" height="189" src="/codingexp.github.io/images/python-os-module-is-useful/Screenshot_1_hu5c9772f616e96522f88daf19785a3c22_14405_405x189_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/python-os-module-is-useful\/Screenshot_1_hu5c9772f616e96522f88daf19785a3c22_14405_405x189_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>上圖來說我的使用者名稱是「cheng」，但我主管的名稱可能是其他名字，這時先前設計的 GUI 程式中最針對 ERP 路徑名稱的不同，去抓去指定路徑中的特定路徑檔案，但因我們兩台電腦間的使用者名稱不同，所以我原先設計兩個 .py 檔案，一個給我自己、一個給我主管，以此來做維護。</p>
-<p>然而，雖然說已經將程式的設計型態改成物件導向，但兩者之間要做的改良還是有些麻煩，而且在寫程式語言時，我自己最不喜歡看到的地方就是「複製貼上」，只要在寫程式時出現需要複製貼上動作時，通常就代表 9 成會有更好的解決辦法。</p>
-<p>因此我就將新的程式做了以下的簡單設計：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> os
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>user_name <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin() <span style="color:#75715e"># 取得使用者名稱</span>
-</span></span><span style="display:flex;"><span>password <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;假設是 Tkinter entry 擷取來的字串&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> user_name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;我的使用者名字&#34;</span> <span style="color:#f92672">and</span> password <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;設定好的密碼&#34;</span> <span style="color:#f92672">or</span> user_name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;主管使用者名字&#34;</span> <span style="color:#f92672">and</span> password <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;設定好的密碼&#34;</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;那我這時候才開始執行下一個任務&#34;</span>)
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
-</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;否則的話就跳使用者密碼錯誤之類的訊息&#34;</span>)
-</span></span></code></pre></div><p>另外一種情境則是可以將 user_name 變數套入 format 語法中更輕鬆的帶出程式執行的絕對路徑，比如說我可以利用 os.startfile() 這個方法去執行參數的絕對路徑程式。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>user_name <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>getlogin() <span style="color:#75715e"># 一樣先取得使用者名稱</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>os<span style="color:#f92672">.</span>startfile(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;C://Users//</span><span style="color:#e6db74">{</span>user_name<span style="color:#e6db74">}</span><span style="color:#e6db74">//前往//指定程式//的絕對路徑&#34;</span>)
-</span></span></code></pre></div><p>綜合上述兩段程式碼的指令，我就可以將原本的兩套程式碼檔案縮減成一個版本即可，可以進一步減少後續程式碼維護所需的時間。</p>
-<p>這樣的設計邏輯可以讓程式設計人員有更多的彈性想像空間，別忘了程式設計的天花板不在語言能力，其實是在想像力，儘管現實和電腦世界不同，但多數時候都會有辦法化作電腦世界語言的。</p>
-<h3 id="os-模組還有很多好用的功能">os 模組還有很多好用的功能</h3>
-<p>同樣的，我這次只先針對 os.getlogin() 這個方法先做簡單的介紹，其實 os 模組還有很多好用的方法，包含像是取得目前目錄、遍尋資料夾內容等等，都可以藉由程式碼來執行，許多時候甚至會比 Windows 內建的命令提示元件或 Powershell 的指令還要好用，缺點就是要先預設好程式碼，不過後續的其他 os 模組用法就留到以後再聊囉！</p>
 </div>
         <div class="single-post-meta">
           
           <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
             <li class="list-inline-item">
-              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fpython-os-module-manupulation-is-super-useful%2f" target="_blank" class="facebook">
+              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno3%2f" target="_blank" class="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/intent/tweet/?text=%e8%87%aa%e5%ad%b8%e7%a8%8b%e5%bc%8f%e5%a6%82%e4%bd%95%20100%25%20%e6%8f%90%e9%ab%98%e5%b7%a5%e4%bd%9c%e6%95%88%e7%8e%87%20%284%29%ef%bc%9aPython%20%e7%b3%bb%e7%b5%b1%e7%ae%a1%e7%90%86%e5%a4%a7%e5%b8%ab%20os%20%e6%a8%a1%e7%b5%84&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fpython-os-module-manupulation-is-super-useful%2f" target="_blank"
+              <a href="https://twitter.com/intent/tweet/?text=%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8%20Python%20%283%29%ef%bc%9a%e7%ae%a1%e4%bb%96%e5%ad%97%e4%b8%b2%e9%82%84%e6%95%b8%e5%ad%97%ef%bc%8c%e4%b8%b2%e5%88%97%ef%bc%88List%ef%bc%89%e9%80%9a%e5%90%83&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno3%2f" target="_blank"
                 class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fpython-os-module-manupulation-is-super-useful%2f" target="_blank" class="pinterest">
+              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno3%2f" target="_blank" class="pinterest">
                 <i class="fab fa-pinterest"></i>
               </a>
             </li>
