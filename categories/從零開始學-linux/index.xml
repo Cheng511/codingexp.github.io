@@ -6,7 +6,16 @@
     <description>Recent content in 從零開始學 Linux on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Mon, 18 Jul 2022 08:19:25 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8-linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Jul 2022 15:51:47 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/categories/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E5%AD%B8-linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Linux (6)：從終端機建立任何檔案，輕輕「touch」一下就好！</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no6/</link>
+      <pubDate>Tue, 26 Jul 2022 15:51:47 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no6/</guid>
+      <description>用終端機在各個資料夾間移動熟悉以後，接下來試試看建立檔案吧！我們這邊會需要介紹另外兩個指令：touch。</description>
+    </item>
+    
     <item>
       <title>從零開始學 Linux (5)：Linux 終端機常用指令介紹，你也能成為鍵盤魔人</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no5/</link>
