@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</title>
+<title>從零開始學 Linux (7)：從中端建立資料夾目錄，單行 mkdir 指令輕鬆搞定</title>
 
 
 
@@ -40,25 +40,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/images/let%27s%20learn%20python/no1/cover.jpg" />
-  <meta name="twitter:image" content="https://cheng511.github.io/images/let%27s%20learn%20python/no1/cover.jpg"/>
+<meta property="og:image" content="https://cheng511.github.io/images/let%27s%20learn%20linux/no7/cover.jpg" />
+  <meta name="twitter:image" content="https://cheng511.github.io/images/let%27s%20learn%20linux/no7/cover.jpg"/>
       <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="1890">
-    <meta property="og:image:height" content="800">
+    <meta property="og:image:width" content="1909">
+    <meta property="og:image:height" content="1075">
     <meta property="og:image:type" content="image/jpeg">
-<meta name="twitter:title" content="從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦"/>
-<meta name="twitter:description" content="在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！"/>
-<meta property="og:title" content="從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦" />
-<meta property="og:description" content="在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！" />
+<meta name="twitter:title" content="從零開始學 Linux (7)：從中端建立資料夾目錄，單行 mkdir 指令輕鬆搞定"/>
+<meta name="twitter:description" content="先前提到如何在終端機中的任何位置「輕輕 touch 一下」建立檔案，這次來講新增資料夾的指令吧！只要 mkdir 就能搞定～"/>
+<meta property="og:title" content="從零開始學 Linux (7)：從中端建立資料夾目錄，單行 mkdir 指令輕鬆搞定" />
+<meta property="og:description" content="先前提到如何在終端機中的任何位置「輕輕 touch 一下」建立檔案，這次來講新增資料夾的指令吧！只要 mkdir 就能搞定～" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no1/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-07-11T13:05:40+08:00" />
-<meta property="article:modified_time" content="2022-07-11T13:05:40+08:00" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no7/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-07-27T10:34:02+08:00" />
+<meta property="article:modified_time" content="2022-07-27T10:34:02+08:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦"/>
-<meta name="twitter:description" content="在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！"/>
+<meta name="twitter:title" content="從零開始學 Linux (7)：從中端建立資料夾目錄，單行 mkdir 指令輕鬆搞定"/>
+<meta name="twitter:description" content="先前提到如何在終端機中的任何位置「輕輕 touch 一下」建立檔案，這次來講新增資料夾的指令吧！只要 mkdir 就能搞定～"/>
 
 
 
@@ -225,12 +225,12 @@ if (!doNotTrack) {
         
         
         <picture>
-          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no1/cover_hu214b9fc48aa305847c28e5d3df0f33fd_33759_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
-          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no1/cover_hu214b9fc48aa305847c28e5d3df0f33fd_33759_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
-          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no1/cover_hu214b9fc48aa305847c28e5d3df0f33fd_33759_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
-          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no1/cover_hu214b9fc48aa305847c28e5d3df0f33fd_33759_1110x0_resize_q75_h2_box.webp">
-          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/cover_hu214b9fc48aa305847c28e5d3df0f33fd_33759_1110x0_resize_q75_box.jpg"
-            alt="post image" width="1890" height="800">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20linux/no7/cover_hu4afd9c7ebe4f0b18392589382c8c19a9_82375_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20linux/no7/cover_hu4afd9c7ebe4f0b18392589382c8c19a9_82375_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20linux/no7/cover_hu4afd9c7ebe4f0b18392589382c8c19a9_82375_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20linux/no7/cover_hu4afd9c7ebe4f0b18392589382c8c19a9_82375_1110x0_resize_q75_h2_box.webp">
+          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20linux/no7/cover_hu4afd9c7ebe4f0b18392589382c8c19a9_82375_1110x0_resize_q75_box.jpg"
+            alt="post image" width="1909" height="1075">
         </picture>
         
         
@@ -241,14 +241,12 @@ if (!doNotTrack) {
         <div class="text-center mb-5">
           <div class="card-meta-tag ">
             
-            <a href="/codingexp.github.io/categories/%e7%a8%8b%e5%bc%8f/">程式</a>
-            
-            <a href="/codingexp.github.io/categories/%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8-python/">從零開始學 python</a>
+            <a href="/codingexp.github.io/categories//"></a>
             
           </div>
-          <h1 class="mb-3">從零開始學 Python (1)：下載安裝過程和 IDE 開發環境推薦</h1>
+          <h1 class="mb-3">從零開始學 Linux (7)：從中端建立資料夾目錄，單行 mkdir 指令輕鬆搞定</h1>
           <div class="card-meta">
-            <em>Jul 11, 2022</em>
+            <em>Jul 27, 2022</em>
             <em>
               <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
                 JC
@@ -256,10 +254,11 @@ if (!doNotTrack) {
           </div>
           </em>
         </div>
-        <div class="content"><p>在這個 Python 應用領域爆炸的時間點，花個 10 分鐘快速了解 Python 的安裝步驟，幾個簡單的注意事項，另外也和大家推薦我常用的 IDE 開發環境！</p>
-<h3 id="python-安裝">Python 安裝</h3>
-<p>這篇文章先不跟各位講 Python 的由來和歷史，這些資料在 Wikipedia 上有更詳細的介紹，其實多數部落格文章也幾乎都只是節錄相關內容再轉譯而已，我認為這樣相對浪費時間（也懶得寫這部分老實說～XD！）。</p>
-<p>直接進入重點囉！安裝 Python 的流程非常簡單，原則上直接 Google 前往 Python 的官網上就可以找到最新版本下載，我目前使用的版本是 3.10.5，不過其實 3.11 版也快要問世了，各版本間會新增一些語法功能，這部分我最常用的新語法日後再提。</p>
+        <div class="content"><p>先前提到如何在終端機中的任何位置「輕輕 touch 一下」建立檔案，這次來講<strong>新增資料夾</strong>的指令吧！只要 mkdir 就能搞定～</p>
+<h3 id="建立目錄直白好記">「建立」「目錄」直白好記</h3>
+<p>想必各位從先前的介紹系列到現在就可以猜到，Linux 畢竟還是人設計的系統，在指令的設定上也會遵照著一定的語言邏輯，比如像之前的 <u>cd 就代表 change directory</u>、<u>sudo 代表 superuser do</u> 等等，而建立資料夾的指令也符合這套邏輯。</p>
+<p>「<strong>mkdir</strong>」，意思是「<strong>make directory</strong>」，其實就是「<strong>建立目錄</strong>」的意思，你會發現在 Linux 的世界中稱呼資料夾為目錄，比如之前的 cd 指令也是用 directory 這個字，其實也就相當於 Windows 或 MacOS 中的資料夾，這點習慣就好。</p>
+<p>至於 mkdir 怎麼用？指令後方直接接上「目錄名稱」即可。比如：</p>
 
 
 
@@ -327,7 +326,7 @@ if (!doNotTrack) {
 
 
 
-<img title="" loading="lazy" decoding="async" class=" img-center" width="1891" height="854" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_1_hu690fba8a5caf8848f4c66087e7790883_196142_1891x854_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_1_hu690fba8a5caf8848f4c66087e7790883_196142_1891x854_resize_q75_box.jpg'">
+<img title="" loading="lazy" decoding="async" class=" img-center" width="1101" height="537" src="/codingexp.github.io/images/let%27s%20learn%20linux/no7/Screenshot_1_huff70e70557a2e46df4d91503fde9b30c_79520_1101x537_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no7\/Screenshot_1_huff70e70557a2e46df4d91503fde9b30c_79520_1101x537_resize_q75_box.jpg'">
 
 
 
@@ -336,7 +335,87 @@ if (!doNotTrack) {
 
 
 
-<p>下載完畢後直接開啟安裝程式，將下方的「增加到環境變數選項」打勾，這樣之後就可以直接從 CMD 或 Powershell 上輸入 python 打開 launcher，接著選擇開始安裝，也就是一路下一步的過程等待了。</p>
+<p>這樣一來就會在當前目錄新增「myDir」這個目錄囉！同時一樣是在畫面的右下方會出現新建立好的目錄。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="img-center" role="group" aria-describedby="caption-這時候當然也可以直接 cd 到該目錄中去建立更多檔案或其他目錄了">
+  <img title="" loading="lazy" decoding="async" class="" width="1441" height="640" src="/codingexp.github.io/images/let%27s%20learn%20linux/no7/Screenshot_2_hu1e6daf985c52046795f5a9a6167c9135_115355_1441x640_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no7\/Screenshot_2_hu1e6daf985c52046795f5a9a6167c9135_115355_1441x640_resize_q75_box.jpg'">
+  <figcaption id="caption-這時候當然也可以直接 cd 到該目錄中去建立更多檔案或其他目錄了">這時候當然也可以直接 cd 到該目錄中去建立更多檔案或其他目錄了</figcaption>
+</figure>
+
+
+
+
+
+
+
+
+<h3 id="有些小限制">有些小限制</h3>
+<p>建立目錄其實就是這麼簡單而已，不過各位應該有發現目前為止在不管是建立檔案還是目錄時，可能有些人已經碰到過幾個報錯狀況，比如說：</p>
 
 
 
@@ -404,7 +483,7 @@ if (!doNotTrack) {
 
 
 
-<img title="" loading="lazy" decoding="async" class=" img-center" width="561" height="347" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_2_huf26ba128a29dcd8e80ab30ee53e9d0ef_56248_561x347_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_2_huf26ba128a29dcd8e80ab30ee53e9d0ef_56248_561x347_resize_q75_box.jpg'">
+<img title="" loading="lazy" decoding="async" class=" img-center" width="994" height="507" src="/codingexp.github.io/images/let%27s%20learn%20linux/no7/Screenshot_3_hu7e4259eb3e315ec51c8c6306f761380b_76149_994x507_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no7\/Screenshot_3_hu7e4259eb3e315ec51c8c6306f761380b_76149_994x507_resize_q75_box.jpg'">
 
 
 
@@ -413,7 +492,87 @@ if (!doNotTrack) {
 
 
 
-<p>最後面結束安裝前記得勾選一下將環境變數路徑字元限制取消的選項，日後操作時比較不會碰到路徑太長的問題。</p>
+<p>上圖兩個例子就是不管是用 touch 還是 mkdir 指令，你想要在多階級目錄中建立檔案或目錄時，就會報出檔案或目錄不存在的錯誤訊息，這是因為這兩個指令在預設情況下，都<strong>只能在當前目錄、或是給定已存在的絕對路徑時，才能完成的指令</strong>。舉例來說如果你的桌面上已經存在 myDir 資料夾後，此時就可以用以下的指令完成：</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<figure class="img-center" role="group" aria-describedby="caption-myDir 目錄已存在，這時直接在桌面目錄下 touch myDir/newfile.txt 時就能成功">
+  <img title="" loading="lazy" decoding="async" class="" width="937" height="464" src="/codingexp.github.io/images/let%27s%20learn%20linux/no7/Screenshot_4_hu3f58a5fca4c1105711b7bf93e8918bb5_79530_937x464_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no7\/Screenshot_4_hu3f58a5fca4c1105711b7bf93e8918bb5_79530_937x464_resize_q75_box.jpg'">
+  <figcaption id="caption-myDir 目錄已存在，這時直接在桌面目錄下 touch myDir/newfile.txt 時就能成功">myDir 目錄已存在，這時直接在桌面目錄下 touch myDir/newfile.txt 時就能成功</figcaption>
+</figure>
+
+
+
+
+
+
+
+
+<p>那所以這時候如果我就是想要在其他目錄下也能直接一路用單行指令架構起整個原本不存在的目錄結構時該怎麼做呢？</p>
+<p>這時候就要提到電腦系統指令獨特的「<strong>參數設置</strong>」，以 mkdir 指令來說，我們只要在和目錄名稱之間多加一個「<strong>-p</strong>」，此時後方就能直接接一大串目錄結構設計，並且不會報錯囉！如下圖：</p>
 
 
 
@@ -481,7 +640,7 @@ if (!doNotTrack) {
 
 
 
-<img title="" loading="lazy" decoding="async" class=" img-center" width="556" height="343" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_3_hu9f6e95d0ad456bb9d575843b190f7151_46040_556x343_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_3_hu9f6e95d0ad456bb9d575843b190f7151_46040_556x343_resize_q75_box.jpg'">
+<img title="" loading="lazy" decoding="async" class=" img-center" width="1240" height="704" src="/codingexp.github.io/images/let%27s%20learn%20linux/no7/Screenshot_5_hu6c77040532134a5c44222cdd179758d1_122854_1240x704_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20linux\/no7\/Screenshot_5_hu6c77040532134a5c44222cdd179758d1_122854_1240x704_resize_q75_box.jpg'">
 
 
 
@@ -490,7 +649,10 @@ if (!doNotTrack) {
 
 
 
-<p>待一切都安裝完畢以後，Python 也就安裝成功了，這時候如果要測試是否成功安裝的話，可以打開命令提示元件或 Powershell 並直接輸入 python 後按下 Enter，若成功安裝 Python 的話，會出現如下的指令圖：</p>
+<p>比較可惜的是 touch 指令就沒有類似的功能了，所以如果建立完多層級目錄結構後、要再去新建立好的最終目錄建立檔案的話，就必須依靠 cd 加上絕對路徑到該目錄後，再搭配 touch 指令了。</p>
+<h3 id="建立目錄和檔案告一段落">建立目錄和檔案告一段落</h3>
+<p>ok！最近這兩篇文章基本上已經將一般日常比較容易用到的建立檔案和目錄的指令都介紹完了，剩下的其實就是 touch 還有一些進階的小撇步可以搭配使用，不過這個就留到以後再跟大家做介紹囉！</p>
+<!-- 
 
 
 
@@ -513,630 +675,34 @@ if (!doNotTrack) {
 
 
 
+<img title="" loading="lazy" decoding="async" src="https://cheng511.github.io/codingexp.github.io/" alt="" class=" img-center" width="" height="">
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="1126" height="525" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_4_hu683ca1f22dadb33049736145c76e059a_66983_1126x525_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_4_hu683ca1f22dadb33049736145c76e059a_66983_1126x525_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>這樣就代表 Python 已成功安裝到電腦裡囉！可以開始寫程式了～（因為我本來就有裝 Python 了，所以上面兩張截圖是抓網路的，解析度低了一點大家見諒～）</p>
-<p>這邊是以常用的 Windows 為例說明，如果是 MacOS 的話官網也可以直接下載一鍵開啟的 dmg 檔案安裝，安裝過程中選項和 Windows 版相同。如果是 Linux 版本的話就稍微比較麻煩了，這部分日後有機會的話再跟大家介紹。底下的 IDE 環境中，Windows 和 MacOS 的安裝過程也是大抵相同，但 Linux 同樣需要以其他指令下載。</p>
-<h3 id="ide-推薦visual-studio-code">IDE 推薦：Visual Studio Code</h3>
-<p>我說真的，你真的可以直接用上面所謂的 Python Launcher 介面開始寫程式，如果是ㄧ些十幾行程式碼就能解決的程式的話，我還真的有時候會直接用 launcher 寫，這個介面其實也滿適合初心者測試使用，因為它的整個回饋更直接，</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="997" height="434" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_5_hu87d0cb0090a083966254d9078c079171_43959_997x434_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_5_hu87d0cb0090a083966254d9078c079171_43959_997x434_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>不過我個人認為 launcher 介面更適合做單行單行的即時回饋，如果要做大型專案的話，還是建議使用專門的 IDE 開發環境會比較好，IDE 全名為「Integrated Development Environment」，中文是「整合開發環境」，顧名思義就是整合了各式程式語言和相關擴充套件的程式，可以更快速方便的開發程式。</p>
-<p>這邊我自己最推薦的就是微軟開發的 Visual Studio Code（下稱 VS Code），畢竟後面有個有錢的爸爸在開發，所以功能上也相對其他環境更加完整些，加上如果碰到問題要抓 bug 的話，即便是上網關鍵字搜尋也更容易找到資料。</p>
-<p>前往 VS Code 官網下載軟體，這部分就真的直接一路下載到底並開啟即可。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="1885" height="858" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_6_hu0f708011a7ffd2cb09eafc77d23500b3_246548_1885x858_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_6_hu0f708011a7ffd2cb09eafc77d23500b3_246548_1885x858_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>初次開啟時會出現基本的歡迎訊息，若各位電腦系統是中文的話，稍等一會喔程式右下方應該會跳出是否要轉換成繁體中文語言的訊息，這時點擊是或重啟後即可獲得繁忠介面了。</p>
-<p>這時我們其實已經可以開始準備來寫程式了，首先先利用左側的目錄欄中，開啟一個隨機的測試資料夾位置，然後點擊上方的新增檔案圖示，我們選擇將程式命名為 hello.py 並按下 Enter，此時 VS Code 會偵測到使用的程式語言是 Python，這時就會自動跳出是否要安裝相關套件的訊息，點擊是讓他開始下載即可。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="1206" height="639" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_8_hu91b01ff6f13425206ecd0c3568eef1f0_44341_1206x639_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_8_hu91b01ff6f13425206ecd0c3568eef1f0_44341_1206x639_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>PS: 如果後續 Python 相關檔案要寫得輕鬆的話，建議可以直接在擴充套件商店中搜尋 python，然後找到官方建議的<strong>程式語言包</strong>，直接整個下載安裝就可以了。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="1493" height="812" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_7_huc6724ff61dfb6b44d0b66fc28a582c56_198774_1493x812_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_7_huc6724ff61dfb6b44d0b66fc28a582c56_198774_1493x812_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>這時候我們繼續完成剛才的 hello.py 檔案，先簡單在旁邊的內容中輸入以下內容：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hello, world!&#34;</span>)
-</span></span></code></pre></div><p>這時會在 hello.py 檔案名稱旁邊出現一個白點，代表著該檔案內容有更動，請記得按下快捷鍵 Ctrl + S 儲存，否則 IDE 不會知道程式做過更動喔！</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="452" height="231" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_9_hue845fb6feb436d0893f8af4fa08c02a9_9863_452x231_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_9_hue845fb6feb436d0893f8af4fa08c02a9_9863_452x231_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>完成後可以按下快捷鍵 Ctrl + ` 在畫面下方開啟對應的終端機視窗（或者也可調整成 Powershell），請比對路徑是否和 hello.py 檔案所在位置相同。</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="1401" height="860" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_10_hu0f195e4570b67d376def35723107a339_54041_1401x860_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_10_hu0f195e4570b67d376def35723107a339_54041_1401x860_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>假如路徑相同的話，輸入 python hello.py 並按下 Enter 執行，就會獲得 Hello, world! 的輸出，恭喜各位成功寫出第一個程式了！</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<img title="" loading="lazy" decoding="async" class=" img-center" width="628" height="278" src="/codingexp.github.io/images/let%27s%20learn%20python/no1/Screenshot_11_huba8fe4dd0a0a3dd2ee256a9da907d1fd_19202_628x278_resize_q75_h2_box.webp" alt="" onerror="this.onerror='null';this.src='\/codingexp.github.io\/images\/let%27s%20learn%20python\/no1\/Screenshot_11_huba8fe4dd0a0a3dd2ee256a9da907d1fd_19202_628x278_resize_q75_box.jpg'">
-
-
-
-
-
-
-
-
-<p>從上面過程中會看到 IDE 環境針對使用的程式語言語法對特定的用字以其他顏色做醒目調整，這樣一來可以方便寫程式時更輕鬆的判斷與法，IDE 環境在寫程式上還有許多好用的功能，未來有機會再跟大家慢慢聊，這篇文章就先聊到這邊囉！</p>
+ -->
 <p><strong>延伸閱讀</strong></p>
 <ul>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no2/"><font color=#0000FF>從零開始學 Python (2)：先懂基礎資料類型、其餘暫且不談</font></a></li>
-<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no3/"><font color=#0000FF>從零開始學 Python (3)：管他字串還數字，串列（List）通吃</font></a></li>
+<li><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no6/"><font color=#0000FF>從零開始學 Linux (6)：從終端機建立任何檔案，輕輕「touch」一下就好！</font></a></li>
 </ul>
 </div>
         <div class="single-post-meta">
           
           <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
             <li class="list-inline-item">
-              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno1%2f" target="_blank" class="facebook">
+              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-linux%2fno7%2f" target="_blank" class="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/intent/tweet/?text=%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8%20Python%20%281%29%ef%bc%9a%e4%b8%8b%e8%bc%89%e5%ae%89%e8%a3%9d%e9%81%8e%e7%a8%8b%e5%92%8c%20IDE%20%e9%96%8b%e7%99%bc%e7%92%b0%e5%a2%83%e6%8e%a8%e8%96%a6&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno1%2f" target="_blank"
+              <a href="https://twitter.com/intent/tweet/?text=%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8%20Linux%20%287%29%ef%bc%9a%e5%be%9e%e4%b8%ad%e7%ab%af%e5%bb%ba%e7%ab%8b%e8%b3%87%e6%96%99%e5%a4%be%e7%9b%ae%e9%8c%84%ef%bc%8c%e5%96%ae%e8%a1%8c%20mkdir%20%e6%8c%87%e4%bb%a4%e8%bc%95%e9%ac%86%e6%90%9e%e5%ae%9a&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-linux%2fno7%2f" target="_blank"
                 class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno1%2f" target="_blank" class="pinterest">
+              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-linux%2fno7%2f" target="_blank" class="pinterest">
                 <i class="fab fa-pinterest"></i>
               </a>
             </li>

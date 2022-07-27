@@ -6,7 +6,16 @@
     <description>Recent content on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Tue, 26 Jul 2022 15:51:47 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 10:34:02 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Linux (7)：從中端建立資料夾目錄，單行 mkdir 指令輕鬆搞定</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no7/</link>
+      <pubDate>Wed, 27 Jul 2022 10:34:02 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no7/</guid>
+      <description>先前提到如何在終端機中的任何位置「輕輕 touch 一下」建立檔案，這次來講新增資料夾的指令吧！只要 mkdir 就能搞定～</description>
+    </item>
+    
     <item>
       <title>從零開始學 Linux (6)：從終端機建立任何檔案，輕輕「touch」一下就好！</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no6/</link>
