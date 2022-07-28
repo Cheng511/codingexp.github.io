@@ -6,7 +6,16 @@
     <description>Recent content on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Wed, 27 Jul 2022 10:34:02 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 28 Jul 2022 08:23:05 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Python (4)：做好流程控制，「if」想學好程式語言</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no4/</link>
+      <pubDate>Thu, 28 Jul 2022 08:23:05 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no4/</guid>
+      <description>前幾篇文章算是簡單介紹了幾個 Python 中最常用的資料型態，開始要進入重頭戲了，也就是「流程控制」的系列介紹，今天先來講 if 陳述句。</description>
+    </item>
+    
     <item>
       <title>從零開始學 Linux (7)：從中端建立資料夾目錄，單行 mkdir 指令輕鬆搞定</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-linux/no7/</link>
