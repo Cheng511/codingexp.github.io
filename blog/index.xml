@@ -6,7 +6,16 @@
     <description>Recent content in 所有不務正業的文章 on 不務正業文人</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>繁體中文</language>
-    <lastBuildDate>Thu, 28 Jul 2022 08:23:05 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 01 Aug 2022 08:23:33 +0800</lastBuildDate><atom:link href="https://cheng511.github.io/codingexp.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>從零開始學 Python (5)：「for」那些需要重複執行的動作，迴圈控制是首選</title>
+      <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no5/</link>
+      <pubDate>Mon, 01 Aug 2022 08:23:33 +0800</pubDate>
+      
+      <guid>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no5/</guid>
+      <description>上篇文章開始進入控制流程的語法介紹，這次要來講講迴圈了，其中又以 for 迴圈最為常見，個人認為彈性也比較大一點，因此先針對它來介紹。</description>
+    </item>
+    
     <item>
       <title>從零開始學 Python (4)：做好流程控制，「if」想學好程式語言</title>
       <link>https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no4/</link>

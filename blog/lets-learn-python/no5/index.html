@@ -5,7 +5,7 @@
 
 <head>
   <meta charset="utf-8">
-<title>MIS 維護日記 (1)：善用原生信件系統，避免 IMAP / POP3</title>
+<title>從零開始學 Python (5)：「for」那些需要重複執行的動作，迴圈控制是首選</title>
 
 
 
@@ -40,25 +40,25 @@
 
 
 <!-- Open Graph image and Twitter Card metadata -->
-<meta property="og:image" content="https://cheng511.github.io/images/increase-working-efficiency-number1-use-native-mail-service/cover.jpg" />
-  <meta name="twitter:image" content="https://cheng511.github.io/images/increase-working-efficiency-number1-use-native-mail-service/cover.jpg"/>
+<meta property="og:image" content="https://cheng511.github.io/codingexp.github.io/images/let%27s%20learn%20python/no5/cover.jpg" />
+  <meta name="twitter:image" content="https://cheng511.github.io/codingexp.github.io/images/let%27s%20learn%20python/no5/cover.jpg"/>
       <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="751">
-    <meta property="og:image:height" content="420">
+    <meta property="og:image:width" content="2552">
+    <meta property="og:image:height" content="1080">
     <meta property="og:image:type" content="image/jpeg">
-<meta name="twitter:title" content="MIS 維護日記 (1)：善用原生信件系統，避免 IMAP / POP3"/>
-<meta name="twitter:description" content="作為一個企業的 MIS 維護，除非你各位的公司有自己的 Mail Server，否則建議是不要用 IMAP 和 POP3 去收發信，麻煩事很多&hellip;"/>
-<meta property="og:title" content="MIS 維護日記 (1)：善用原生信件系統，避免 IMAP / POP3" />
-<meta property="og:description" content="作為一個企業的 MIS 維護，除非你各位的公司有自己的 Mail Server，否則建議是不要用 IMAP 和 POP3 去收發信，麻煩事很多&hellip;" />
+<meta name="twitter:title" content="從零開始學 Python (5)：「for」那些需要重複執行的動作，迴圈控制是首選"/>
+<meta name="twitter:description" content="上篇文章開始進入控制流程的語法介紹，這次要來講講迴圈了，其中又以 for 迴圈最為常見，個人認為彈性也比較大一點，因此先針對它來介紹。"/>
+<meta property="og:title" content="從零開始學 Python (5)：「for」那些需要重複執行的動作，迴圈控制是首選" />
+<meta property="og:description" content="上篇文章開始進入控制流程的語法介紹，這次要來講講迴圈了，其中又以 for 迴圈最為常見，個人認為彈性也比較大一點，因此先針對它來介紹。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/increase-working-efficiency-use-native-mail-service/" /><meta property="article:section" content="blog" />
-<meta property="article:published_time" content="2022-06-27T10:48:15+08:00" />
-<meta property="article:modified_time" content="2022-06-27T10:48:15+08:00" />
+<meta property="og:url" content="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no5/" /><meta property="article:section" content="blog" />
+<meta property="article:published_time" content="2022-08-01T08:23:33+08:00" />
+<meta property="article:modified_time" content="2022-08-01T08:23:33+08:00" />
 
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="MIS 維護日記 (1)：善用原生信件系統，避免 IMAP / POP3"/>
-<meta name="twitter:description" content="作為一個企業的 MIS 維護，除非你各位的公司有自己的 Mail Server，否則建議是不要用 IMAP 和 POP3 去收發信，麻煩事很多&hellip;"/>
+<meta name="twitter:title" content="從零開始學 Python (5)：「for」那些需要重複執行的動作，迴圈控制是首選"/>
+<meta name="twitter:description" content="上篇文章開始進入控制流程的語法介紹，這次要來講講迴圈了，其中又以 for 迴圈最為常見，個人認為彈性也比較大一點，因此先針對它來介紹。"/>
 
 
 
@@ -225,12 +225,12 @@ if (!doNotTrack) {
         
         
         <picture>
-          <source srcset="/codingexp.github.io/images/increase-working-efficiency-number1-use-native-mail-service/cover_hu8dd96fa91bc5aa598018e2ef474fc893_146011_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
-          <source srcset="/codingexp.github.io/images/increase-working-efficiency-number1-use-native-mail-service/cover_hu8dd96fa91bc5aa598018e2ef474fc893_146011_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
-          <source srcset="/codingexp.github.io/images/increase-working-efficiency-number1-use-native-mail-service/cover_hu8dd96fa91bc5aa598018e2ef474fc893_146011_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
-          <source srcset="/codingexp.github.io/images/increase-working-efficiency-number1-use-native-mail-service/cover_hu8dd96fa91bc5aa598018e2ef474fc893_146011_1110x0_resize_q75_h2_box.webp">
-          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/increase-working-efficiency-number1-use-native-mail-service/cover_hu8dd96fa91bc5aa598018e2ef474fc893_146011_1110x0_resize_q75_box.jpg"
-            alt="post image" width="751" height="420">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no5/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49939_545x0_resize_q75_h2_box.webp" media="(max-width: 575px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no5/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49939_600x0_resize_q75_h2_box.webp" media="(max-width: 767px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no5/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49939_650x0_resize_q75_h2_box.webp" media="(max-width: 991px)">
+          <source srcset="/codingexp.github.io/images/let%27s%20learn%20python/no5/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49939_1110x0_resize_q75_h2_box.webp">
+          <img loading="lazy" decoding="async" class="img-fluid w-100" src="/codingexp.github.io/images/let%27s%20learn%20python/no5/cover_hu03adbd3dd27722b2d6ea39ce03be6197_49939_1110x0_resize_q75_box.jpg"
+            alt="post image" width="2552" height="1080">
         </picture>
         
         
@@ -241,12 +241,14 @@ if (!doNotTrack) {
         <div class="text-center mb-5">
           <div class="card-meta-tag ">
             
-            <a href="/codingexp.github.io/categories/mis-%e7%b6%ad%e8%ad%b7/">MIS 維護</a>
+            <a href="/codingexp.github.io/categories/%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8-python/">從零開始學 PYTHON</a>
+            
+            <a href="/codingexp.github.io/categories/%e7%a8%8b%e5%bc%8f/">程式</a>
             
           </div>
-          <h1 class="mb-3">MIS 維護日記 (1)：善用原生信件系統，避免 IMAP / POP3</h1>
+          <h1 class="mb-3">從零開始學 Python (5)：「for」那些需要重複執行的動作，迴圈控制是首選</h1>
           <div class="card-meta">
-            <em>Jun 27, 2022</em>
+            <em>Aug 1, 2022</em>
             <em>
               <a href="/codingexp.github.io/about/" class="card-meta-author text-primary">
                 JC
@@ -254,44 +256,171 @@ if (!doNotTrack) {
           </div>
           </em>
         </div>
-        <div class="content"><p>作為一個企業的 MIS 維護，除非你各位的公司有自己的 Mail Server，否則建議是不要用 IMAP 和 POP3 去收發信，麻煩事很多&hellip;</p>
-<h3 id="imap--pop3-不是不好">IMAP / POP3 不是不好</h3>
-<p>重點還是先說在前頭，用不管是 IMAP 還是 POP3 去收發郵件沒有不對，比如我們公司內也時常會有用 hinet 信箱服務，但是以 Mac 郵件或是 Outlook 來收發的使用者，然而如果這些使用者本身對這些電子郵件的運作有些概念的話那還好處理，畢竟他們會知道這麼做的優缺點，但如果他們不懂的話&hellip;MIS 會很辛苦&hellip;</p>
-<p>簡單藉由 Microsoft 的官方說明介紹一下 IMAP 和 POP 的差異好了↓</p>
+        <div class="content"><p>上篇文章開始進入控制流程的語法介紹，這次要來講講迴圈了，其中又以 for 迴圈最為常見，個人認為彈性也比較大一點，因此先針對它來介紹。</p>
+<h3 id="for那些最常用的重複任務">「for」那些最常用的重複任務</h3>
+<p>如果你在日常生活中有許多需要重複執行的動作，尤其又是在電腦上執行的話，for 迴圈就可以很輕鬆的幫你達成這個目的。</p>
+<p>我們先來用一個簡單的例子看一下 for 迴圈的語法：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listA <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;鼠&#34;</span>, <span style="color:#e6db74">&#34;牛&#34;</span>, <span style="color:#e6db74">&#34;虎&#34;</span>, <span style="color:#e6db74">&#34;兔&#34;</span>, <span style="color:#e6db74">&#34;龍&#34;</span>, <span style="color:#e6db74">&#34;蛇&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;馬&#34;</span>, <span style="color:#e6db74">&#34;羊&#34;</span>, <span style="color:#e6db74">&#34;猴&#34;</span>, <span style="color:#e6db74">&#34;雞&#34;</span>, <span style="color:#e6db74">&#34;狗&#34;</span>, <span style="color:#e6db74">&#34;豬&#34;</span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> s <span style="color:#f92672">in</span> listA:
+</span></span><span style="display:flex;"><span>    print(s)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 輸出如下: </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 鼠</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 牛</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 虎</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 兔</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 龍</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 蛇</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 馬</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 羊</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 猴</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 雞</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 狗</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 豬</span>
+</span></span></code></pre></div><p>for 迴圈的語法為：</p>
 <blockquote>
-<h3 id="imap">IMAP</h3>
-<p>IMAP 讓您不論身在何處、使用何種裝置，都能夠存取電子郵件。當您使用 IMAP 存取或讀取電子郵件時，並非實際將郵件下載或儲存於您的電腦，而是從電子郵件服務中讀取。因此，您可以檢查來自世界各地不同裝置的電子郵件：您的手機、電腦、朋友的電腦。</p>
+<p><u><strong>「for」後面加上任一變數（此處為 s），後續以「in」接上條件 / 情境，最後加上冒號並且在下一行縮排。</strong></u></p>
 </blockquote>
+<p>以上面的 12 生肖列表來說就是，「<strong>將 listA 裡面的數值，逐一 print 輸出</strong>」。此外，for 後方的變數是可以隨意定義的，我這邊是用 s（主要是取 String）的代稱而已，但此處的變數也可以隨意改成任意名稱，尤其如果你確定這個變數只是單純為了此迴圈設計而沒有其他用途的話，你甚至可以直接用一個底線符號（_）取代，只是要記得的是後續如果要 print 輸出的話，括號內的變數也要是 _ 才行。</p>
+<h3 id="range-函式最常搭配使用">range() 函式最常搭配使用</h3>
+<p>從上面的例子中應該可以發現，for 迴圈使用的語法其實是相對簡單的，這邊也順便介紹一下 for 迴圈實務上最容易搭配的另一個 Python 內建函式：range()。</p>
+<p>我這邊先用一個簡單的 for 迴圈搭配 range() 函式作介紹：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">5</span>):
+</span></span><span style="display:flex;"><span>    print(i)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 輸出如下:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4</span>
+</span></span></code></pre></div><p>range(5) 的範圍代表「0 1 2 3 4」這五個數字會被輸出，以此類推的話，range(10) 就代表會輸出「0～9」，化作數學公式的話可以這樣理解：</p>
 <blockquote>
-<h3 id="pop">POP</h3>
-<p>POP 的運作方式是與您的電子郵件服務連線，並下載電子郵件服務中的所有新郵件。一旦郵件下載至您的 PC 或 Mac 後，電子郵件服務就會將它們刪除。這表示電子郵件下載之後，就只能使用同一台電腦來存取該郵件。若您嘗試從不同裝置存取電子郵件，您將無法使用那些先前已下載的郵件。只有當您按一下郵件時，IMAP 才會下載該郵件，並且不會自動下載附件。如此一來，比起使用 POP，您能夠更加快速的檢查郵件。</p>
+<p>range(n) 代表 0 ～ n-1</p>
 </blockquote>
-<p>要注意的是 IMAP 只是單純擷取，但它並不會去動你原生信箱內的信件，但 POP 模式的話會，而且它是將所有郵件都下載下來，並且將原生信件內的信件刪除，所以「一次只能一台電腦存取郵件」的意思是這樣。POP 的優點也是速度相對會比較快，但如果使用者不瞭解這些概念的話，就會常常來煩你說「為什麼他的信件收比較快？」、「為什麼我的信件沒了！」等問題&hellip;這時你只能深吸一口氣告訴自己要心平氣和！！</p>
-<p>不過當然，也可以理解許多使用者特別習慣某些信箱的軟體操作介面，如果對方堅持要這麼做的話，就要把責任撇除清楚，並且對話紀錄也要講明白，告知 IMAP 或 POP3 以後的缺點，以免到時對方不認帳，MIS 自己白吃虧。</p>
-<h3 id="每人一組信箱才叫正常">每人一組信箱才叫正常</h3>
-<p>這點我相信一般人應該都能理解了，在企業內部不除非是幫忙管理信件的職務，否則每個員工都應該要有自己的信箱，如此一來才不會有互相衝突、互相讀取信件的問題，任何原生郵件服務都不會允許你在 A 電腦讀取信件後、B電腦上的相同信件顯示「未讀取」的&hellip;第三方外掛套件當然不在此討論中。</p>
-<p>邏輯上還是建議「每個員工一人一組信箱」如此一來最簡單處理，MIS 要維護時其實也相對輕鬆，不必因為使用相同信箱去影響到另一個使用者&hellip;</p>
-<h3 id="不只-mis-提高工作效率">不只 MIS 提高工作效率</h3>
-<p>其實這篇文章或許給人一種抱怨文的感受，但其實說的是實際日常業務中很容易發生的問題，一旦改正以上這兩個很簡單的問題後，MIS 的日常會少很多無意義的問題&hellip;畢竟不是我要看不起某些信箱服務，但當這個時代下免費的電子郵件都可以達到更快、更穩定、空間更大的優勢後，我完全看不出那些舊時代的信箱還有什麼理由足夠讓人堅持要使用。</p>
-<p>請善用目前所有的電子郵件原生服務，Gmail、Outlook 等等都是很方便的服務，即便是非企業用戶版也能有不錯的使用體驗，但真的不建議使用其中一個服務後，再用別的信箱軟體去做 IMAP 或 POP3，這麼做的話不只信件同步不即時，面對不瞭解電子信箱概念的使用者時，還要多花時間解釋真的很沒效率&hellip;</p>
-<p>此外，這篇文章最重要的一點其實是，改正這些使用者邏輯的話，不管是 MIS 自己還是這些員工，都能在提高很多日常工作效率，畢竟少了這些需要額外提問的時間，就能將精神專注在其他工作項目中。當然也是有人會以這些問題當藉口偷時間的&hellip;這種人令人鼻酸但就不多談了。</p>
+<p>要注意的是，range(n) 裡面的這個 n 必須得是整數，同時實務上多數時候會是正整數，你如果自己測試的時候給它 -10 這種負整數的話，程式不會報錯，但也不會有結果輸出就是了。</p>
+<h3 id="計算數值有多少就考它len">計算數值有多少就考它：len()</h3>
+<p>我們延續一下前面 12 生肖的例子，當然我們是因為已經知道有「12」個生肖所以才這麼稱呼，但如果今天有個序列是專門用來記錄使用者輸入過的資料內容，我們又想要紀錄這個資料內容有多少數值的話，這時候就必須依靠 len() 這個同樣式 Python 內建的函式了。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listA <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;鼠&#34;</span>, <span style="color:#e6db74">&#34;牛&#34;</span>, <span style="color:#e6db74">&#34;虎&#34;</span>, <span style="color:#e6db74">&#34;兔&#34;</span>, <span style="color:#e6db74">&#34;龍&#34;</span>, <span style="color:#e6db74">&#34;蛇&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;馬&#34;</span>, <span style="color:#e6db74">&#34;羊&#34;</span>, <span style="color:#e6db74">&#34;猴&#34;</span>, <span style="color:#e6db74">&#34;雞&#34;</span>, <span style="color:#e6db74">&#34;狗&#34;</span>, <span style="color:#e6db74">&#34;豬&#34;</span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>print(len(listA))
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 輸出: 12</span>
+</span></span></code></pre></div><p>像上面這個例子就是用來記錄 listA 這個列表有多少資料內容的意思，len() 函式的 len 可以解讀為「length」的意思，也就是去取得資料的長度，這邊的長度自然指的是就是該串列有多少資料囉！</p>
+<h3 id="for-迴圈和-rangelen-結合">for 迴圈和 range()、len() 結合</h3>
+<p>說了這麼多當然就是因為 for 迴圈可以藉由搭配 range() 和 len() 輸出簡單易懂的結果，我們延續上面 12 生肖的例子：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>listA <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;鼠&#34;</span>, <span style="color:#e6db74">&#34;牛&#34;</span>, <span style="color:#e6db74">&#34;虎&#34;</span>, <span style="color:#e6db74">&#34;兔&#34;</span>, <span style="color:#e6db74">&#34;龍&#34;</span>, <span style="color:#e6db74">&#34;蛇&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;馬&#34;</span>, <span style="color:#e6db74">&#34;羊&#34;</span>, <span style="color:#e6db74">&#34;猴&#34;</span>, <span style="color:#e6db74">&#34;雞&#34;</span>, <span style="color:#e6db74">&#34;狗&#34;</span>, <span style="color:#e6db74">&#34;豬&#34;</span>
+</span></span><span style="display:flex;"><span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(listA)):
+</span></span><span style="display:flex;"><span>    print(i, listA[i])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 此時將會輸出如下的結果:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 0 鼠</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1 牛</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2 虎</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3 兔</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4 龍</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5 蛇</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 6 馬</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 7 羊</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 8 猴</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 9 雞</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 10 狗</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 11 豬</span>
+</span></span></code></pre></div><p>是不是開始變得有點意思了？從上面的輸出中我們可以知道「串列中第 1 個數值為『鼠 』」、「串列中第 12 個數值為『豬』。</p>
+<p>我們先來嘗試解讀一下上面的程式碼，「for i」是在用來查找數量時，很常使用的通俗語法，i 這邊用來代指 integer 整數，至於後方的程式碼這邊要先跟大家說一個觀念：程式碼解讀要先從<strong>最裡面的括號內容開始判斷</strong>。</p>
+<p>也就是說，range(len(listA)) 這段程式碼我們先理解 len(listA) 的意思，這邊指得自然就是 <strong>listA 這個串列的資料數量</strong>，它會拋轉出 12 這個正整數（因為是 12 生肖）。</p>
+<p>接下來我們再把來套用外面的 range() 套用進去，可以得到就是 range(12) 的意思，所以後面輸出結果中，前面才會是 0～11 的整數出現。</p>
+<p>但我們在最後面 print 輸出地方做了點手腳，<strong>print(i, listA[i])</strong>，中間的逗號指是 Python 語法上用來區隔不同變數之間的間隔而已，實際輸出時已此處的語法來說是不會出現逗號的。而後方的 listA[i] 則是套用了先前介紹串列時提到的切片（slice）概念，所以其實可以將上述的輸出結果轉換成如下：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#ae81ff">0</span> listA[<span style="color:#ae81ff">0</span>] <span style="color:#75715e"># 鼠</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span> listA[<span style="color:#ae81ff">1</span>] <span style="color:#75715e"># 牛</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span> listA[<span style="color:#ae81ff">2</span>] <span style="color:#75715e"># 虎</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">3</span> listA[<span style="color:#ae81ff">3</span>] <span style="color:#75715e"># 兔</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">4</span> listA[<span style="color:#ae81ff">4</span>] <span style="color:#75715e"># 龍</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">5</span> listA[<span style="color:#ae81ff">5</span>] <span style="color:#75715e"># 蛇</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">6</span> listA[<span style="color:#ae81ff">6</span>] <span style="color:#75715e"># 馬</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">7</span> listA[<span style="color:#ae81ff">7</span>] <span style="color:#75715e"># 羊</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">8</span> listA[<span style="color:#ae81ff">8</span>] <span style="color:#75715e"># 猴</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">9</span> listA[<span style="color:#ae81ff">9</span>] <span style="color:#75715e"># 雞</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">10</span> listA[<span style="color:#ae81ff">10</span>] <span style="color:#75715e"># 狗</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">11</span> listA[<span style="color:#ae81ff">11</span>] <span style="color:#75715e"># 豬</span>
+</span></span></code></pre></div><p>如此一來就可以對應出先前的輸出內容囉！</p>
+<p>你最後可能還會有一個困擾的地方是，在實際輸出時如果一般使用者看到的畫面是 0 代表 鼠、1 代表 牛等等的表達方式的話，可能會容易造成誤解。這時候該怎麼辦？</p>
+<p>你可能會還記得我剛才有提到過在 12 生肖的這個例子中，最一開始的「for i」當中的這個「<strong>i</strong>」<strong>是代表整數</strong>的（而且是正整數），只要是整數，其實就可以做數字運算，所以這邊如果我們把最後面的輸出改成：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(len(listA)):
+</span></span><span style="display:flex;"><span>    print(i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>, listA[i])
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 輸出如下:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1 鼠</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2 牛</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 3 虎</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 4 兔</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 5 龍</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 6 蛇</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 7 馬</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 8 羊</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 9 猴</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 10 雞</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 11 狗</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 12 豬</span>
+</span></span></code></pre></div><p>這樣一來就會正確輸出符合我們閱讀邏輯的結果囉！</p>
+<h3 id="for-迴圈rangelen">for 迴圈、range()、len()</h3>
+<p>for 迴圈的介紹基本上就先到這邊了，假如能夠利用 for 迴圈、range() 和 len() 做更多舉一反三的運用的話，基本上就能夠用 Python 完成很多日常的工作，強烈建議大家一定要把這三招學起來，能夠大幅提高工作效率。</p>
+<!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img title="" loading="lazy" decoding="async" src="https://cheng511.github.io/codingexp.github.io/" alt="" class=" img-center" width="" height="">
+
+
+
+
+
+ -->
+<p><strong>延伸閱讀</strong></p>
+<ul>
+<li><strong><a href="https://cheng511.github.io/codingexp.github.io/blog/lets-learn-python/no4/"><font color=#0000FF>從零開始學 Python (4)：做好流程控制，「if」想學好程式語言</font></a></strong></li>
+</ul>
 </div>
         <div class="single-post-meta">
           
           <ul class="social-links is-circle-filled list-unstyled list-inline mt-5">
             <li class="list-inline-item">
-              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fincrease-working-efficiency-use-native-mail-service%2f" target="_blank" class="facebook">
+              <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno5%2f" target="_blank" class="facebook">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://twitter.com/intent/tweet/?text=MIS%20%e7%b6%ad%e8%ad%b7%e6%97%a5%e8%a8%98%20%281%29%ef%bc%9a%e5%96%84%e7%94%a8%e5%8e%9f%e7%94%9f%e4%bf%a1%e4%bb%b6%e7%b3%bb%e7%b5%b1%ef%bc%8c%e9%81%bf%e5%85%8d%20IMAP%20%2f%20POP3&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fincrease-working-efficiency-use-native-mail-service%2f" target="_blank"
+              <a href="https://twitter.com/intent/tweet/?text=%e5%be%9e%e9%9b%b6%e9%96%8b%e5%a7%8b%e5%ad%b8%20Python%20%285%29%ef%bc%9a%e3%80%8cfor%e3%80%8d%e9%82%a3%e4%ba%9b%e9%9c%80%e8%a6%81%e9%87%8d%e8%a4%87%e5%9f%b7%e8%a1%8c%e7%9a%84%e5%8b%95%e4%bd%9c%ef%bc%8c%e8%bf%b4%e5%9c%88%e6%8e%a7%e5%88%b6%e6%98%af%e9%a6%96%e9%81%b8&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno5%2f" target="_blank"
                 class="twitter">
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2fincrease-working-efficiency-use-native-mail-service%2f" target="_blank" class="pinterest">
+              <a href="https://www.pinterest.com/pin/?text=&amp;url=https%3a%2f%2fcheng511.github.io%2fcodingexp.github.io%2fblog%2flets-learn-python%2fno5%2f" target="_blank" class="pinterest">
                 <i class="fab fa-pinterest"></i>
               </a>
             </li>
